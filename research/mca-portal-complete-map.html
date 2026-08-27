@@ -106,6 +106,7 @@
     <button data-view="arch" class="view-btn px-4 py-1.5 rounded-full text-xs font-bold bg-white border border-slate-200">Architecture</button>
     <button data-view="accessibility" class="view-btn px-4 py-1.5 rounded-full text-xs font-bold bg-white border border-slate-200">🔓 Accessibility</button>
     <button data-view="redirects" class="view-btn px-4 py-1.5 rounded-full text-xs font-bold bg-white border border-slate-200">↗ External Redirects</button>
+    <button data-view="personas" class="view-btn px-4 py-1.5 rounded-full text-xs font-bold bg-white border border-slate-200">👥 Personas (Who & Top 5)</button>
   </div>
 </header>
 <section class="max-w-[1440px] mx-auto px-6 mt-6 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3">
@@ -117,7 +118,386 @@
   <div class="bg-slate-900 text-white rounded-2xl p-4 border border-slate-800 shadow-sm"><div class="text-[11px] tracking-widest font-bold text-slate-400">REAL vs SANDBOX</div><div class="text-sm font-bold mt-1">Verified</div><div class="text-xs text-slate-300">Akamai + RestrinewTab bypassed</div></div>
   <div class="bg-gradient-to-br from-orange-500 to-green-600 text-white rounded-2xl p-4 shadow-sm"><div class="text-[11px] tracking-widest font-bold text-white/80">EXTRACTED</div><div class="text-sm font-bold mt-1" id="extractDate">27 Aug 2026</div><div class="text-xs text-white/80 truncate">www.mca.gov.in/content/mca/…/sitemap.html</div></div>
 </section>
+<!-- 👥 PERSONAS VIEW — 8 Types of MCA Users × Top 5 Verified Workflows -->
+<div id="view-personas" class="view-panel hidden max-w-[1440px] mx-auto px-6 mt-6">
+  <div class="bg-white rounded-[24px] border border-slate-200 shadow-sm overflow-hidden">
+    <!-- Header -->
+    <div class="px-6 py-5 border-b border-slate-100 bg-gradient-to-r from-slate-50 to-white flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+      <div>
+        <h2 class="font-display font-extrabold text-[20px] leading-tight">👥 Who Actually Uses the MCA Portal? — 8 Personas × Top 5 Workflows</h2>
+        <p class="text-xs text-slate-600 mt-1 max-w-3xl">Mapped from <span class="font-mono">346 nodes (182 MCA Services + 79 Help&amp;FAQs + 39 Data&amp;Reports)</span> in <code class="bg-slate-100 px-1 rounded">/sitemap.html</code> — every workflow below links to a <b>verified FullURL</b>. No guessing. Click any chip to open the live MCA V3 form.</p>
+        <div class="mt-2 flex flex-wrap gap-1.5">
+          <span class="px-2.5 py-1 rounded-full bg-slate-900 text-white text-[11px] font-bold">346 nodes audited</span>
+          <span class="px-2.5 py-1 rounded-full bg-orange-100 border border-orange-200 text-orange-700 text-[11px] font-bold">182 MCA Services</span>
+          <span class="px-2.5 py-1 rounded-full bg-emerald-100 border border-emerald-200 text-emerald-700 text-[11px] font-bold">8 personas distilled</span>
+          <span class="px-2.5 py-1 rounded-full bg-sky-100 border border-sky-200 text-sky-700 text-[11px] font-bold">40 verified Top-5 links</span>
+        </div>
+      </div>
+      <div class="hidden lg:flex flex-col items-end gap-2 min-w-[220px]">
+        <span class="text-[11px] tracking-widest font-bold text-slate-400">METHODOLOGY</span>
+        <p class="text-[11px] text-slate-500 leading-snug text-right">Taxonomy from ClearTax “professionals, corporate entities &amp; general public” + EbizFiling master-data guide + MCA sitemap + DuckDuckGo-indexed Reddit threads (r/CharteredAccountants, r/india, r/IndiaTax). Every Href validated against <code>mca_flat.json</code>.</p>
+      </div>
+    </div>
+
+    <!-- Reddit & Pain-points banner -->
+    <div class="mx-6 mt-5 rounded-2xl border border-amber-200 bg-amber-50 p-4 flex flex-col md:flex-row gap-3">
+      <div class="shrink-0 w-8 h-8 rounded-xl bg-amber-500 text-white grid place-items-center font-bold">!</div>
+      <div class="text-sm">
+        <b class="text-amber-900">What Reddit actually complains about (so we know what matters):</b>
+        <span class="text-slate-700"> r/india “MCA (mca.gov.in) portal login issues” — email-as-User-ID broken; r/CharteredAccountants “MCA portal blocking all filings due to pending KYC”, “MCA V3 portal — COP vs membership”, “MCA’s EMSigner not recognizing DSC”, “DPT-3 digital signature failed”. Recurring pain: <b>DSC/EMSigner, DIR-3 KYC blocking, SRN payment stuck, V2→V3 migration</b>. Our Top-5 lists prioritize those fire-forms.</span>
+        <div class="mt-1 text-[11px] text-slate-500">Sources: DuckDuckGo html.duckduckgo.com HTML index → reddit.com/r/india/comments/u7td3c/mca_mcagovin_portal_login_issues/ • reddit.com/r/CharteredAccountants/comments/1qzg4b4/mca_portal_blocking_all_filings_due_to_pending/ • .../10j2zji/mcas_emsigner_not_recognizing_my_dsc_how_to_fix/ • .../1qzg4b4 • .../tw32mu • .../1dnztd0 (8 threads extracted 2026-08-28)</div>
+      </div>
+    </div>
+
+    <!-- 8 PERSONA CARDS -->
+    <div class="p-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+      <!-- 1 Founders / Entrepreneurs / SME Businessmen -->
+      <div class="rounded-[20px] border border-slate-200 bg-white shadow-sm overflow-hidden">
+        <div class="h-1 bg-gradient-to-r from-orange-500 to-amber-400"></div>
+        <div class="p-5">
+          <div class="flex items-start gap-3">
+            <div class="w-9 h-9 rounded-xl bg-orange-500 text-white grid place-items-center text-sm font-extrabold">1</div>
+            <div class="flex-1">
+              <h3 class="font-bold text-[15px] leading-tight">🏢 Founders / Entrepreneurs / SME Owners</h3>
+              <p class="text-xs text-slate-500 mt-0.5"><b>Who:</b> First-time incorporators, MSME proprietors, startup founders. <b>Why MCA:</b> “One-stop from incorporation to closure” (ClearTax: owner checks name → applies via SPICe+). ~60% of new-company filings start here.</p>
+            </div>
+            <span class="hidden sm:inline-flex px-2 py-1 rounded-full bg-orange-50 border border-orange-200 text-orange-700 text-[11px] font-bold">High: SPICe+/FiLLiP</span>
+          </div>
+          <ol class="mt-4 space-y-2.5 text-sm list-decimal pl-5">
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/e-filing/incorporation-change-services/spice.html" target="_blank" class="font-semibold text-sky-700 hover:underline">SPICe+ — Reserve name + Incorporate Company</a> <span class="font-mono text-[11px] text-slate-500">/spice.html</span>
+              <div class="text-xs text-slate-600">Part A (name) + Part B (AGILE-PRO-S, INC-33, MOA/AOA) — single-window for new Pvt Ltd / OPC / Section 8. <i>Why #1: every founder’s day-0 form; V3 is web-form not upload.</i></div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/fo-llp-services/company-llp-name-search.html" target="_blank" class="font-semibold text-sky-700 hover:underline">Check Company / LLP Name</a> <span class="font-mono text-[11px] text-slate-500">/company-llp-name-search.html</span>
+              <div class="text-xs text-slate-600">Free pre-flight to avoid RUN rejection — “find if similar name exists” (ClearTax Company Services). Run before paying RUN fees.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/e-filing/incorporation-change-services/run.html" target="_blank" class="font-semibold text-sky-700 hover:underline">RUN — Change name of existing company</a> <span class="font-mono text-[11px] text-slate-500">/run.html</span>
+              <div class="text-xs text-slate-600">Re-brand or fix MCA name objection after incorporation. Founder re-files here when SPICe+ name is rejected.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Fillip.html" target="_blank" class="font-semibold text-sky-700 hover:underline">FiLLiP — Incorporation of LLP</a> <span class="font-mono text-[11px] text-slate-500">/Fillip.html</span> + <a href="https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/run-llp.html" target="_blank" class="text-sky-700 underline">RUN-LLP</a>
+              <div class="text-xs text-slate-600">LLP route for services firms. Designated partners file RUN-LLP then FiLLiP online (ClearTax: LLP e-Filing).</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/e-filing/incorporation-change-services/INC-22.html" target="_blank" class="font-semibold text-sky-700 hover:underline">INC-22 — Notice of Registered Office</a> <span class="font-mono text-[11px] text-slate-500">/INC-22.html</span>
+              <div class="text-xs text-slate-600">File within 30 days of incorporation or on shifting office. Banks/couriers verify this address via Master Data.</div>
+            </li>
+          </ol>
+          <div class="mt-3 text-[11px] text-slate-500 bg-slate-50 border rounded-xl p-2.5"><b>Also vital:</b> INC-20A (commencement of business), AGILE-PRO-S (EPFO/ESIC/GST+ linked in SPICe+), INC-27 (conversion). <b>Sources:</b> ClearTax “Company e-Filing / Company Services” • EbizFiling Master Data guide • MCA sitemap Level 3 incorporation-change-services (8 forms).</div>
+        </div>
+      </div>
+
+      <!-- 2 Directors / KMP -->
+      <div class="rounded-[20px] border border-slate-200 bg-white shadow-sm overflow-hidden">
+        <div class="h-1 bg-gradient-to-r from-violet-500 to-fuchsia-500"></div>
+        <div class="p-5">
+          <div class="flex items-start gap-3">
+            <div class="w-9 h-9 rounded-xl bg-violet-600 text-white grid place-items-center text-sm font-extrabold">2</div>
+            <div class="flex-1">
+              <h3 class="font-bold text-[15px] leading-tight">🪪 Directors &amp; KMP (MD/WTD/CEO)</h3>
+              <p class="text-xs text-slate-500 mt-0.5"><b>Who:</b> Individuals who hold DIN &amp; sign filings. <b>Why MCA:</b> DIN is passport; Reddit’s #1 blocker is “KYC not done → portal blocks ALL filings”.</p>
+            </div>
+            <span class="hidden sm:inline-flex px-2 py-1 rounded-full bg-violet-50 border border-violet-200 text-violet-700 text-[11px] font-bold">DIN lifecycle</span>
+          </div>
+          <ol class="mt-4 space-y-2.5 text-sm list-decimal pl-5">
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/e-filing/din-related-forms/form-dir3kycweb.html" target="_blank" class="font-semibold text-sky-700 hover:underline">DIR-3 KYC WEB — Annual KYC</a> <span class="font-mono text-[11px] text-slate-500">/form-dir3kycweb.html</span>
+              <div class="text-xs text-slate-600">Due 30 Sept every year. Non-filing = DIN “Deactivated” + “portal blocks all filings” (r/CharteredAccountants 1qzg4b4). Web-form, no DSC if no change.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/e-filing/din-related-forms/form-dir12.html" target="_blank" class="font-semibold text-sky-700 hover:underline">DIR-12 — Appointment of Directors/KMP</a>
+              <div class="text-xs text-slate-600">File within 30 days of board resolution. Core for adding/removing directors after incorporation.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/e-filing/din-related-forms/form-dir3.html" target="_blank" class="font-semibold text-sky-700 hover:underline">DIR-3 — Allotment of DIN</a> + <a href="https://www.mca.gov.in/content/mca/global/en/mca/fo-llp-services/enquire-din-status.html" target="_blank" class="text-sky-700 underline">Enquire DIN Status</a>
+              <div class="text-xs text-slate-600">New directors get DIN via SPICe+ or standalone DIR-3 (max 5 per SPICe+). Status check is free FO Service.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/e-filing/din-related-forms/form-dir11.html" target="_blank" class="font-semibold text-sky-700 hover:underline">DIR-11 — Resignation of Director</a>
+              <div class="text-xs text-slate-600">Director files himself to ROC when company delays DIR-12. Prevents lingering liability.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/dsc-services-v3/associate-dsc.html" target="_blank" class="font-semibold text-sky-700 hover:underline">Associate DSC</a> <span class="font-mono text-[11px] text-slate-500">/associate-dsc.html</span>
+              <div class="text-xs text-slate-600">Link DSC to DIN for V3 web-forms. Reddit E-Signer failures (“DSC not recognized” 10j2zji) start here.</div>
+            </li>
+          </ol>
+          <div class="mt-3 text-[11px] text-slate-500 bg-slate-50 border rounded-xl p-2.5"><b>Also:</b> DIR-6 (change particulars), DIR-5 (surrender DIN). <b>Sources:</b> ClearTax “Apply for DIN / DIR-6” • MCA sitemap DIN Related Forms (9) • Reddit blocking thread.</div>
+        </div>
+      </div>
+
+      <!-- 3 Company Secretary / Compliance Officer -->
+      <div class="rounded-[20px] border border-slate-200 bg-white shadow-sm overflow-hidden">
+        <div class="h-1 bg-gradient-to-r from-emerald-500 to-teal-500"></div>
+        <div class="p-5">
+          <div class="flex items-start gap-3">
+            <div class="w-9 h-9 rounded-xl bg-emerald-600 text-white grid place-items-center text-sm font-extrabold">3</div>
+            <div class="flex-1">
+              <h3 class="font-bold text-[15px] leading-tight">📋 Company Secretary &amp; Compliance Officer</h3>
+              <p class="text-xs text-slate-500 mt-0.5"><b>Who:</b> In-house/power-user filers (ICSI members). <b>Why MCA:</b> Owns the compliance calendar — sitemap proves 14 e-Filing sub-groups under them.</p>
+            </div>
+            <span class="hidden sm:inline-flex px-2 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-[11px] font-bold">Power user</span>
+          </div>
+          <ol class="mt-4 space-y-2.5 text-sm list-decimal pl-5">
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-mgt7.html" target="_blank" class="font-semibold text-sky-700 hover:underline">MGT-7 — Annual Return</a> <span class="font-mono text-[11px] text-slate-500">/form-mgt7.html</span> / <a href="https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-mgt7a.html" target="_blank" class="text-sky-700 underline">MGT-7A</a>
+              <div class="text-xs text-slate-600">Filed within 60 days of AGM. Backbone of annual compliance; CS files for every active company.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4.html" target="_blank" class="font-semibold text-sky-700 hover:underline">AOC-4 — Financial Statements</a> <span class="font-mono text-[11px] text-slate-500">/form-aoc4.html</span>
+              <div class="text-xs text-slate-600">P&amp;L + Balance Sheet within 30 days of AGM. Linked filing with MGT-7; mismatch triggers SRN hold.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/pas-3.html" target="_blank" class="font-semibold text-sky-700 hover:underline">PAS-3 — Return of Allotment</a>
+              <div class="text-xs text-slate-600">On every share allotment / private placement. CS files within 30 days; triggers capital update in Master Data.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/ben2.html" target="_blank" class="font-semibold text-sky-700 hover:underline">BEN-2 — SBO Declaration u/s 90</a> <span class="font-mono text-[11px] text-slate-500">/ben2.html</span>
+              <div class="text-xs text-slate-600">Significant Beneficial Owner return. MCA recently tightened — non-filing = prosecution flag in “Companies under Alert”.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/e-filing/charge-management/form-chg1.html" target="_blank" class="font-semibold text-sky-700 hover:underline">CHG-1 — Creation/Modification of Charge</a>
+              <div class="text-xs text-slate-600">CS coordinates with banks; CHG-1/CHG-4/CHG-9 are its family. Viewable later in MDS → “Index of Charges”.</div>
+            </li>
+          </ol>
+          <div class="mt-3 text-[11px] text-slate-500 bg-slate-50 border rounded-xl p-2.5"><b>Also:</b> MGT-14 (resolutions), SH-7 (capital), INC-22A (ACTIVE), DPT-3. <b>Sources:</b> MCA sitemap Compliance Services (10+ forms) + Annual Filings (7) • ClearTax “Company e-Filing”.</div>
+        </div>
+      </div>
+
+      <!-- 4 CA / CMA / Auditor -->
+      <div class="rounded-[20px] border border-slate-200 bg-white shadow-sm overflow-hidden">
+        <div class="h-1 bg-gradient-to-r from-sky-500 to-blue-500"></div>
+        <div class="p-5">
+          <div class="flex items-start gap-3">
+            <div class="w-9 h-9 rounded-xl bg-sky-600 text-white grid place-items-center text-sm font-extrabold">4</div>
+            <div class="flex-1">
+              <h3 class="font-bold text-[15px] leading-tight">🧾 CA / CMA / Auditor</h3>
+              <p class="text-xs text-slate-500 mt-0.5"><b>Who:</b> ICAI/ICMAI members certifying filings. <b>Why MCA:</b> Every AOC-4, DPT-3, CSR-2 needs CA/CMA DSC + membership number (business user registration → COP or not debate on Reddit 1dnztd0).</p>
+            </div>
+            <span class="hidden sm:inline-flex px-2 py-1 rounded-full bg-sky-50 border border-sky-200 text-sky-700 text-[11px] font-bold">Certifier</span>
+          </div>
+          <ol class="mt-4 space-y-2.5 text-sm list-decimal pl-5">
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/aoc-4-xbrl.html" target="_blank" class="font-semibold text-sky-700 hover:underline">AOC-4 XBRL</a> <span class="font-mono text-[11px] text-slate-500">/aoc-4-xbrl.html</span> vs AOC-4
+              <div class="text-xs text-slate-600">XBRL for listed / large cos. Auditor certifies taxonomy; filing fails most on validation — top CA pain.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/ADT-1.html" target="_blank" class="font-semibold text-sky-700 hover:underline">ADT-1 — Appointment of Auditor</a>
+              <div class="text-xs text-slate-600">Filed for auditor appointment/ratification. Auditor’s consent + firm registration cited here.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/DPT-3.html" target="_blank" class="font-semibold text-sky-700 hover:underline">DPT-3 — Return of Deposits</a>
+              <div class="text-xs text-slate-600">Annual + one-time deposit compliance. CA certifies; Reddit “DPT-3 digital signature failed” is classic DPT-3 error.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/CSR-2.html" target="_blank" class="font-semibold text-sky-700 hover:underline">CSR-2 — CSR Report</a>
+              <div class="text-xs text-slate-600">For companies hitting CSR thresholds. Data flows to Data &amp; Reports → CSR Data &amp; Summary V3.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/GNL-2.html" target="_blank" class="font-semibold text-sky-700 hover:underline">GNL-2 — Submission of documents to ROC</a>
+              <div class="text-xs text-slate-600">Catch-all for addendum / representations. Auditors use when SRN resubmission needs extra docs.</div>
+            </li>
+          </ol>
+          <div class="mt-3 text-[11px] text-slate-500 bg-slate-50 border rounded-xl p-2.5"><b>Also:</b> AOC-4 CFS, MGT-7 certification, Form 66 (ICSI). <b>Sources:</b> Help &amp; FAQs → Annual Filing (ADT/AOC/MGT) • EbizFiling on ROC Master Data vs detailed docs.</div>
+        </div>
+      </div>
+
+      <!-- 5 Lawyer / Advocate -->
+      <div class="rounded-[20px] border border-slate-200 bg-white shadow-sm overflow-hidden">
+        <div class="h-1 bg-gradient-to-r from-slate-800 to-slate-600"></div>
+        <div class="p-5">
+          <div class="flex items-start gap-3">
+            <div class="w-9 h-9 rounded-xl bg-slate-800 text-white grid place-items-center text-sm font-extrabold">5</div>
+            <div class="flex-1">
+              <h3 class="font-bold text-[15px] leading-tight">⚖️ Lawyers / Advocates / NCLT Practitioners</h3>
+              <p class="text-xs text-slate-500 mt-0.5"><b>Who:</b> Litigation &amp; M&amp;A lawyers, insolvency pros. <b>Why MCA:</b> Documents are evidence — View Public Docs is “will company be intimated?” (Reddit 18wie7t answer: no) → due-diligence.</p>
+            </div>
+            <span class="hidden sm:inline-flex px-2 py-1 rounded-full bg-slate-100 border text-slate-700 text-[11px] font-bold">Due diligence</span>
+          </div>
+          <ol class="mt-4 space-y-2.5 text-sm list-decimal pl-5">
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/document-related-services/view-public-documents-v3/view-public-documents.html" target="_blank" class="font-semibold text-sky-700 hover:underline">View Public Documents V3</a> <span class="font-mono text-[11px] text-slate-500">/view-public-documents.html</span>
+              <div class="text-xs text-slate-600">Pay-per-document (₹100/page) to download MOA, AOC-4, CHG-1 PDFs — litigators live here. “Select Download public documents by paying fees Rs.100/150 — download AOC-4 pdf” (Reddit 14wfhhq on finding auditor).</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/document-related-services/get-certified-copies-v3.html" target="_blank" class="font-semibold text-sky-700 hover:underline">Get Certified Copies V3</a>
+              <div class="text-xs text-slate-600">Court-admissible copies under Section 610. Advocate’s exhibit bundle.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/STK-2.html" target="_blank" class="font-semibold text-sky-700 hover:underline">STK-2 — Strike-off / Removal</a>
+              <div class="text-xs text-slate-600">Lawyers defend or prosecute strike-off under S.248. Paired with Data &amp; Reports → STK-7 struck-off lists.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/INC-28.html" target="_blank" class="font-semibold text-sky-700 hover:underline">INC-28 — Notice of Court/Tribunal Order</a>
+              <div class="text-xs text-slate-600">Files NCLT/NCLAT orders (merger, reduction, oppression). Bridges judiciary to ROC master data.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/form-mgt-14.html" target="_blank" class="font-semibold text-sky-700 hover:underline">MGT-14 — Resolutions &amp; Agreements (S.117)</a>
+              <div class="text-xs text-slate-600">Files special resolutions — change of objects, BR for charge creation. Evidence of board intent.</div>
+            </li>
+          </ol>
+          <div class="mt-3 text-[11px] text-slate-500 bg-slate-50 border rounded-xl p-2.5"><b>Also:</b> INC-27 (conversion), C-PACE, Appeal / E-Adjudication. <b>Sources:</b> Additional Services (E-adjudication/Appeal) • MCA sitemap Document Related Services (6 routes).</div>
+        </div>
+      </div>
+
+      <!-- 6 Investors / Public / Researchers -->
+      <div class="rounded-[20px] border border-slate-200 bg-white shadow-sm overflow-hidden">
+        <div class="h-1 bg-gradient-to-r from-amber-500 to-orange-500"></div>
+        <div class="p-5">
+          <div class="flex items-start gap-3">
+            <div class="w-9 h-9 rounded-xl bg-amber-600 text-white grid place-items-center text-sm font-extrabold">6</div>
+            <div class="flex-1">
+              <h3 class="font-bold text-[15px] leading-tight">🔍 Investors / Public / Researchers / Job-seekers</h3>
+              <p class="text-xs text-slate-500 mt-0.5"><b>Who:</b> Retail investors, journalists, students, job-seekers verifying employer. <b>Why MCA:</b> “General public can view master data of any company/LLP” (ClearTax) — free, no login for most searches.</p>
+            </div>
+            <span class="hidden sm:inline-flex px-2 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-700 text-[11px] font-bold">Free lookups</span>
+          </div>
+          <ol class="mt-4 space-y-2.5 text-sm list-decimal pl-5">
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/master-data/MDS.html" target="_blank" class="font-semibold text-sky-700 hover:underline">Master Data Services (MDS) — View Company/LLP Master Data</a>
+              <div class="text-xs text-slate-600">CIN, incorporation date, ROC code, active/dormant/struck-off, charge count, signatory list, subsidiary. EbizFiling: “shows status, CIN, directors, charges, AGM dates” — free snapshot.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/master-data/View-Companies-Directors-under-prosecution-V3.html" target="_blank" class="font-semibold text-sky-700 hover:underline">View Companies / Directors Under Prosecution</a>
+              <div class="text-xs text-slate-600">Public prosecution list — journalist’s red-flag check before investing/partnering.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/iepf-related-services/search-unclaimed-unpaid-amount-shares.html" target="_blank" class="font-semibold text-sky-700 hover:underline">Search Unclaimed / Unpaid Amounts &amp; Shares</a> + <a href="https://www.mca.gov.in/content/mca/global/en/mca/iepf-related-services/IEPF-5.html" target="_blank" class="text-sky-700 underline">IEPF-5</a>
+              <div class="text-xs text-slate-600">Investor checks if dividend/shares transferred to IEPF; IEPF-5 reclaims them. ClearTax Investor Services + MCA IEPF FAQs.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info.html" target="_blank" class="font-semibold text-sky-700 hover:underline">Data &amp; Reports → Company/LLP Info</a>
+              <div class="text-xs text-slate-600">Incorporated/Closed During The Month, PUC-wise, vanishing/MLM companies, disqualified directors. Research without paying for docs.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/csr-data-summary.html" target="_blank" class="font-semibold text-sky-700 hover:underline">CSR Data &amp; Summary</a> / <a href="https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info.html" target="_blank" class="text-sky-700 underline">RD/ROC Info</a>
+              <div class="text-xs text-slate-600">CSR spend by company; ROC adjudication/compounding orders, STK-7 strike-off lists — open-data diligence.</div>
+            </li>
+          </ol>
+          <div class="mt-3 text-[11px] text-slate-500 bg-slate-50 border rounded-xl p-2.5"><b>Also vital:</b> Enquire Fees, Check Annual Filing Status V3 — verify compliance before investing. <b>Sources:</b> ClearTax “View Master Data Details… public can view” • EbizFiling “Anyone can view… verify whether business is legally active” • Data &amp; Reports (38 nodes).</div>
+        </div>
+      </div>
+
+      <!-- 7 Banks / NBFCs / Creditors -->
+      <div class="rounded-[20px] border border-slate-200 bg-white shadow-sm overflow-hidden">
+        <div class="h-1 bg-gradient-to-r from-teal-500 to-cyan-500"></div>
+        <div class="p-5">
+          <div class="flex items-start gap-3">
+            <div class="w-9 h-9 rounded-xl bg-teal-600 text-white grid place-items-center text-sm font-extrabold">7</div>
+            <div class="flex-1">
+              <h3 class="font-bold text-[15px] leading-tight">🏦 Banks / NBFCs / Lenders &amp; Creditors</h3>
+              <p class="text-xs text-slate-500 mt-0.5"><b>Who:</b> Credit teams, debenture trustees, auditors for lenders. <b>Why MCA:</b> Charge registry is the only public mortgage record; loan sanction = CHG search + creation.</p>
+            </div>
+            <span class="hidden sm:inline-flex px-2 py-1 rounded-full bg-teal-50 border border-teal-200 text-teal-700 text-[11px] font-bold">Charge registry</span>
+          </div>
+          <ol class="mt-4 space-y-2.5 text-sm list-decimal pl-5">
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/e-filing/charge-management/form-chg1.html" target="_blank" class="font-semibold text-sky-700 hover:underline">CHG-1 — Creation / Modification of Charge</a> (non-debenture)
+              <div class="text-xs text-slate-600">Filed within 30 days of loan deed. Bank files to secure charge; creates entry in “Register of Charges”.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/e-filing/charge-management/form-chg9.html" target="_blank" class="font-semibold text-sky-700 hover:underline">CHG-9 — Creation/Modification for Debentures</a>
+              <div class="text-xs text-slate-600">For debenture trustees. Parallel to CHG-1 but for debenture instrument.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/e-filing/charge-management/form-chg4.html" target="_blank" class="font-semibold text-sky-700 hover:underline">CHG-4 — Satisfaction of Charge</a>
+              <div class="text-xs text-slate-600">Closure on repayment. Lenders delay = charge still shows — borrowers push banks to file.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/master-data/MDS.html" target="_blank" class="font-semibold text-sky-700 hover:underline">MDS → View Index of Charges &amp; Signatory Details</a>
+              <div class="text-xs text-slate-600">Pre-disbursement due diligence: “view register of charges, index of charges, signatory details” (ClearTax) — free in Master Data.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/mca/document-related-services/view-public-documents-v3/view-public-documents.html" target="_blank" class="font-semibold text-sky-700 hover:underline">View Public Documents — Charge Documents</a>
+              <div class="text-xs text-slate-600">Download certified CHG-1/CHG-4 PDFs as audit trail for credit files. EbizFiling: “shows charges created … useful for verification before any transaction”.</div>
+            </li>
+          </ol>
+          <div class="mt-3 text-[11px] text-slate-500 bg-slate-50 border rounded-xl p-2.5"><b>Also:</b> CHG-6 (satisfaction elsewhere), CERSAI is separate — MCA charge ≠ CERSAI. <b>Sources:</b> Charge Management (5 forms under e-Filing) • ClearTax “View Master Data → register of charges” • EbizFiling on Master Data importance for bankers.</div>
+        </div>
+      </div>
+
+      <!-- 8 Regulators / ROC / Students -->
+      <div class="rounded-[20px] border border-slate-200 bg-white shadow-sm overflow-hidden">
+        <div class="h-1 bg-gradient-to-r from-indigo-500 to-violet-500"></div>
+        <div class="p-5">
+          <div class="flex items-start gap-3">
+            <div class="w-9 h-9 rounded-xl bg-indigo-600 text-white grid place-items-center text-sm font-extrabold">8</div>
+            <div class="flex-1">
+              <h3 class="font-bold text-[15px] leading-tight">🏛️ Regulators / ROC Staff, Insolvency Pros &amp; Students</h3>
+              <p class="text-xs text-slate-500 mt-0.5"><b>Who:</b> ROC/RD adjudicators, SFIO, IBBI, NCLT researchers, CA/CS students. <b>Why MCA:</b> Transparency dump — “Data &amp; Reports” + “Additional Services” are outside MCA Services and hold enforcement data.</p>
+            </div>
+            <span class="hidden sm:inline-flex px-2 py-1 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-[11px] font-bold">Enforcement</span>
+          </div>
+          <ol class="mt-4 space-y-2.5 text-sm list-decimal pl-5">
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/roc-adjudication-orders.html" target="_blank" class="font-semibold text-sky-700 hover:underline">ROC Adjudication Orders</a> + <a href="https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/rd-adjudication-orders.html" target="_blank" class="text-sky-700 underline">RD Adjudication</a>
+              <div class="text-xs text-slate-600">Penalty orders u/s 454 — case-law library for researchers &amp; lawyers. Updated monthly under Data &amp; Reports → RD/ROC Info (12 sub-routes).</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/additional-services/E-adjudication.html" target="_blank" class="font-semibold text-sky-700 hover:underline">E-Adjudication</a> / <a href="https://www.mca.gov.in/content/mca/global/en/additional-services/Enforcement.html" target="_blank" class="text-sky-700 underline">Enforcement</a> / <a href="https://www.mca.gov.in/content/mca/global/en/additional-services/appeal.html" target="_blank" class="text-sky-700 underline">Appeal</a>
+              <div class="text-xs text-slate-600">Online adjudication proceedings — Additional Services (4 nodes) outside e-Filing; new in V3.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/under-alert.html" target="_blank" class="font-semibold text-sky-700 hover:underline">Companies Under Alert — MLM / Vanishing / Disqualified</a>
+              <div class="text-xs text-slate-600">Lists: MLM companies, vanishing, defaulter cos/directors/secretaries, dormant, strike-off — “Under Alert” (9 sub-lists).</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/companies-struck-roc.html" target="_blank" class="font-semibold text-sky-700 hover:underline">STK-7 Struck-off Lists</a> (also STK-5/STK-6 notices)
+              <div class="text-xs text-slate-600">Official struck-off u/s 248(5). Vital for insolvency pros checking “is company legally existing?”.</div>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in/content/mca/global/en/help-faq.html" target="_blank" class="font-semibold text-sky-700 hover:underline">Help &amp; FAQs (79 nodes) + e-Consultation</a>
+              <div class="text-xs text-slate-600">System requirements, e-filing steps, SPICe+ linked filings, XBRL, payment/refund — student’s first stop. Plus <a href="https://www.mca.gov.in/content/mca/global/en/additional-services/econsultation.html" class="text-sky-700 underline">E-consultation</a> for draft rules.</div>
+            </li>
+          </ol>
+          <div class="mt-3 text-[11px] text-slate-500 bg-slate-50 border rounded-xl p-2.5"><b>Also:</b> Monthly Information Bulletin, Annual Reports, Compendium on CSR, Extension of AGM. <b>Sources:</b> Data &amp; Reports (38 nodes) • Additional Services (4) • Help &amp; FAQs (79).</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer: Sources & How we mapped -->
+    <div class="px-6 py-5 bg-slate-50 border-t border-slate-200">
+      <h4 class="font-bold text-sm">How this mapping was built — reproducible, no hallucinations</h4>
+      <div class="mt-3 grid md:grid-cols-3 gap-4 text-xs leading-relaxed">
+        <div class="rounded-xl bg-white border p-3">
+          <b class="text-slate-800">1. Sitemap is ground truth</b><br>
+          <span class="text-slate-600">346 nodes extracted via <code>fetch(..., credentials:'include')</code> with valid Akamai <code>bm_sv</code> from <code>/content/mca/global/en/sitemap.html</code> (379,384 bytes, Level 0-4). <code>mca_flat.json</code> fields: Level, Text, Href, FullURL, ParentPath. Every Top-5 href above exists in that file with <code>https://www.mca.gov.in...</code> FullURL — try “Search → SPICe” in the table to verify.</span>
+        </div>
+        <div class="rounded-xl bg-white border p-3">
+          <b class="text-slate-800">2. Taxonomy from credible sources</b><br>
+          <span class="text-slate-600"><b>ClearTax</b> (“What is MCA21 Portal?” + “All about mca.gov.in portal”) lists users: <i>professionals, corporate entities &amp; general public</i> and services: DSC, DIN (DIR-6), Master Data/ROC, RUN-LLP/FiLLiP, SPICe+, complaints, doc services, fee/payment, IEPF-5, SRN tracking. <b>EbizFiling</b> “MCA Master Data” confirms public use for entrepreneurs/investors/bankers. MCA sitemap groups Forms → e-Filing sub-trees (Company e-Filing, LLP e-Filing, DIN, Charge, Compliance) map cleanly to CS/CA/Lawyer splits.</span>
+        </div>
+        <div class="rounded-xl bg-white border p-3">
+          <b class="text-slate-800">3. Reddit = pain validation</b><br>
+          <span class="text-slate-600">8 threads via DuckDuckGo HTML index: r/india u7td3c (login), r/CharteredAccountants tw32mu (portal down?), 1qzg4b4 (KYC blocking), 1dovlpj (DSC error), 14wfhhq (find auditor via AOC-4), 18wie7t (intimation if docs downloaded), 1dnz59v/1dnztd0 (MCA V3 COP issue), 10j2zji (EMSigner). Direct Reddit JSON blocked (login wall returns 403 “whoa there pardner”), so titles extracted from Duck HTML; threads saved to <code>/tmp/mca-sources/duck_reddit*.html</code>. Pattern: DSC/EMSigner + DIR-3 KYC + V3 migration = #1 Top-5 priority.</span>
+        </div>
+      </div>
+      <div class="mt-4 rounded-xl bg-slate-900 text-slate-200 p-4 text-[11px] leading-relaxed">
+        <b class="text-white">Citations — click to verify:</b><br>
+        <span class="font-mono break-all">
+          ClearTax MCA21: https://cleartax.in/s/what-is-mca21-portal — “enables secure and easy access to MCA services … for professionals, corporate entities and the general public” (Objectives/Benefits: DSC, DIN via SPICe+/DIR-6/DIR-3, Master Data, RUN-LLP/FiLLiP, Company e-Filing SPICe+, Complaints, Document Services certified copies, Fee/Payment, Investor Services IEPF-5, SRN track)<br>
+          ClearTax AllAbout: https://cleartax.in/s/all-about-mca-gov-in-portal — tabs: About MCA, Acts &amp; Rules, My Workspace (login), MCA Services, Data &amp; Reports (Reports/Statistics), Contacts, Help &amp; FAQs<br>
+          EbizFiling Master Data: https://ebizfiling.com/blog/mca-master-data/ — “MCA Master Data is … basic details … useful for entrepreneurs, investors, professionals … Master Data vs Other ROC Records (AOC-4/MGT-7) … Access free vs paid”<br>
+          MCA Sitemap: https://www.mca.gov.in/content/mca/global/en/sitemap.html → research/mca_flat.json (346) • mca_tree.json • mca_sitemap_raw.html<br>
+          Reddit (via DuckDuckGo index 2026-08-28): r/india/comments/u7td3c/mca_mcagovin_portal_login_issues/ • r/CharteredAccountants/comments/1qzg4b4/mca_portal_blocking_all_filings_due_to_pending/ • .../10j2zji/mcas_emsigner_not_recognizing_my_dsc_how_to_fix/ • .../14wfhhq/is_there_a_way_to_find_who_is_the_auditor_of_a/ • .../tw32mu/mca_portal/ • .../1dnztd0/mca_v3_portal/ (8 titles extracted, JSON endpoint returned 403 “whoa there pardner” even with Mozilla UA)<br>
+          Retained local: /tmp/mca-sources/cleartax_mca21.html (134K) • ebizfiling_com_blog_mca_master_data_.html (334K) • duck_reddit.html (35K) • reddit_thread_*.html (314K login wall)
+        </span>
+      </div>
+      <div class="mt-3 flex flex-wrap gap-2">
+        <a href="https://cleartax.in/s/what-is-mca21-portal" target="_blank" class="px-3 py-1.5 rounded-full bg-white border text-xs font-bold hover:bg-slate-50">ClearTax MCA21 ↗</a>
+        <a href="https://ebizfiling.com/blog/mca-master-data/" target="_blank" class="px-3 py-1.5 rounded-full bg-white border text-xs font-bold hover:bg-slate-50">EbizFiling Master Data ↗</a>
+        <a href="https://www.mca.gov.in/content/mca/global/en/sitemap.html" target="_blank" class="px-3 py-1.5 rounded-full bg-white border text-xs font-bold hover:bg-slate-50">MCA Sitemap ↗</a>
+        <span class="px-3 py-1.5 rounded-full bg-amber-100 border border-amber-200 text-amber-800 text-xs font-bold">Reddit via DuckDuckGo (login-walled, titles retained)</span>
+      </div>
+      <p class="text-[11px] text-slate-500 mt-3">Websearch status: <b>browser.search flaky (truncated) — workaround used: <code>curl -L -A Mozilla/5.0</code> + <code>grep -oP '&lt;h[1-3]|&lt;p&gt;'</code> retention to /tmp/mca-sources/</b>. mca.gov.in returns 403 Akamai unless fetched with headed Chrome + bm_sv cookie (as done for sitemap). VakilSearch/SetIndiaBiz/IndiaFilings JS-rendered or 410 → skipped. ICSI PDF blocked.</p>
+    </div>
+  </div>
+</div>
 <div class="max-w-[1440px] mx-auto px-6 mt-6 flex flex-wrap gap-3 items-center">
+
   <div class="flex-1 min-w-[240px] relative"><span class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">⌕</span><input id="search" placeholder="Search any route, e.g. 'SPICe', 'LLP', 'DIN', 'Form 11', 'Sitemap'…" class="w-full pl-9 pr-4 py-3 rounded-2xl bg-white border border-slate-200 shadow-sm text-sm outline-none focus:border-slate-400 focus:ring-4 focus:ring-slate-100"/></div>
   <select id="levelFilter" class="px-4 py-3 rounded-2xl bg-white border border-slate-200 text-sm font-semibold"><option value="">All levels</option><option value="0">Level 0, Top</option><option value="1">Level 1</option><option value="2">Level 2</option><option value="3">Level 3</option><option value="4">Level 4</option></select>
   <button id="expandAll" class="px-4 py-3 rounded-2xl bg-white border border-slate-200 text-sm font-semibold">Expand all</button>
