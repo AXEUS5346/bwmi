@@ -1,0 +1,3210 @@
+{
+  "total_links": 723,
+  "internal": 702,
+  "external": 21,
+  "domain_counts": {
+    "www.mca.gov.in (relative)": 702,
+    "ipindia.gov.in (Trademark)": 2,
+    "esahajmcaservices.nic.in (MHA)": 1,
+    "amritmahotsav.nic.in": 1,
+    "sfio.gov.in": 1,
+    "www.iepf.gov.in": 1,
+    "iica.nic.in": 1,
+    "www.cci.gov.in": 1,
+    "ibbi.gov.in": 1,
+    "nfra.gov.in": 1,
+    "nclat.nic.in": 1,
+    "nclt.gov.in": 1,
+    "csr.gov.in": 1,
+    "www.nfcg.in": 1,
+    "www.india.gov.in": 1,
+    "www.mcacdm.nic.in": 1,
+    "twitter/x.com": 1,
+    "facebook.com": 1,
+    "youtube.com": 1,
+    "instagram.com": 1,
+    "linkedin.com": 1
+  },
+  "external_links": [
+    {
+      "href": "https://tmrsearch.ipindia.gov.in/tmrpublicsearch/frmmain.aspx",
+      "text": "Public Search of Trademark"
+    },
+    {
+      "href": "https://esahajmcaservices.nic.in/",
+      "text": "Application for MHA Security Clearance"
+    },
+    {
+      "href": "https://amritmahotsav.nic.in/",
+      "text": ""
+    },
+    {
+      "href": "https://sfio.gov.in/",
+      "text": ""
+    },
+    {
+      "href": "http://www.iepf.gov.in",
+      "text": ""
+    },
+    {
+      "href": "http://iica.nic.in",
+      "text": ""
+    },
+    {
+      "href": "https://www.cci.gov.in",
+      "text": ""
+    },
+    {
+      "href": "https://ibbi.gov.in/en/",
+      "text": ""
+    },
+    {
+      "href": "http://nfra.gov.in",
+      "text": ""
+    },
+    {
+      "href": "http://nclat.nic.in",
+      "text": ""
+    },
+    {
+      "href": "http://nclt.gov.in",
+      "text": ""
+    },
+    {
+      "href": "https://csr.gov.in",
+      "text": ""
+    },
+    {
+      "href": "https://www.nfcg.in/",
+      "text": ""
+    },
+    {
+      "href": "https://www.india.gov.in/",
+      "text": ""
+    },
+    {
+      "href": "https://www.mcacdm.nic.in/",
+      "text": ""
+    },
+    {
+      "href": "https://tmrsearch.ipindia.gov.in/tmrpublicsearch/",
+      "text": "Trademark&#39;s Portal"
+    },
+    {
+      "href": "https://x.com/MCA21India",
+      "text": ""
+    },
+    {
+      "href": "https://www.facebook.com/MCA21India",
+      "text": ""
+    },
+    {
+      "href": "https://www.youtube.com/@MCA21India",
+      "text": ""
+    },
+    {
+      "href": "https://www.instagram.com/mca21india/",
+      "text": ""
+    },
+    {
+      "href": "https://www.linkedin.com/company/mca21india/",
+      "text": ""
+    }
+  ],
+  "internal_links": [
+    {
+      "href": "/content/mca/global/en/sitemap.html",
+      "text": "Sitemap"
+    },
+    {
+      "href": "/content/mca/global/en/home.html",
+      "text": ""
+    },
+    {
+      "href": "/content/mca/global/en/foportal/fologin.html",
+      "text": "Login/Register"
+    },
+    {
+      "href": "/content/mca/global/en/home.html",
+      "text": "HOME"
+    },
+    {
+      "href": "/content/mca/global/en/about-us.html",
+      "text": "About MCA"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/aboutmca.html",
+      "text": "About MCA"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/image-gallery.html",
+      "text": "Image Gallery"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/right-to-information.html",
+      "text": "Right To Information"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/right-to-information/disclosure.html",
+      "text": "Disclosure of information under Section 4(1)(b) of the RTI Act, 2005"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/right-to-information/orders.html",
+      "text": "Orders"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/right-to-information/list-of-cpios--aas.html",
+      "text": "List of CPIOs/ AAs"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/newsletter.html",
+      "text": "Newsletters"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/achievements.html",
+      "text": "Achievements"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/mca-offices.html",
+      "text": "MCA Offices"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices.html",
+      "text": "Affiliated Offices"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/cci.html",
+      "text": "Competition Commission of India"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/ibbi.html",
+      "text": "Insolvency and Bankruptcy Board of India"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/icai.html",
+      "text": "Institute of Chartered Accountants of India"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/icoai.html",
+      "text": "Institute of Cost Accountants of India"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/icsi.html",
+      "text": "Institute of Company Secretaries of India"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/iepfa.html",
+      "text": "Investor Education And Protection Fund Authority"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/iica.html",
+      "text": "Indian Institute Of Corporate Affairs"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/nclat.html",
+      "text": "National Company Law Appellate Tribunal"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/nclt.html",
+      "text": "National Company Law Tribunal"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/nfcg.html",
+      "text": "National Foundation for Corporate Governance"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/nfra.html",
+      "text": "National Financial Reporting Authority"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/nfcsr.html",
+      "text": "National Foundation for Corporate Social Responsibility"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/sfo.html",
+      "text": "Serious Fraud Investigation Office"
+    },
+    {
+      "href": "/content/mca/global/en/acts-rules.html",
+      "text": "Acts &amp; Rules"
+    },
+    {
+      "href": "/content/mca/global/en/application-history.html",
+      "text": "My Application"
+    },
+    {
+      "href": "/content/mca/global/en/mca.html",
+      "text": "MCA Services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/master-data.html",
+      "text": "Master Data"
+    },
+    {
+      "href": "/content/mca/global/en/mca/master-data/MDS.html",
+      "text": "Master Data Services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/master-data/View-Companies-Directors-under-prosecution-V3.html",
+      "text": "View Companies/Directors Under Prosecution"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling.html",
+      "text": "LLP e-Filing"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/run-llp.html",
+      "text": "RUN-LLP (Reserve Unique Name)"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Fillip.html",
+      "text": "Fillip Incorporation of LLP"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-3.html",
+      "text": "Form 3 - Information for LLP agreement and changes"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-04.html",
+      "text": "Form 4 - Notice for change in information of partners/designated partners"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/form5.html",
+      "text": "Form 5 - Notice for change of name"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-8.html",
+      "text": "Form 8 - Statement of Account &amp; Solvency"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-11.html",
+      "text": "Form 11 - Annual Return of LLP"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form12.html",
+      "text": "Form 12 - Form for intimating other address for service of documents"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form15.html",
+      "text": "Form 15 - Notice for change of place of registered office"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/form22.html",
+      "text": "Form 22 - Notice of Intimation of Order to the Registrar"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/form-23.html",
+      "text": "Form 23 - Application for direction to LLP to change its name to the Registrar"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/form-24.html",
+      "text": "Form 24 - Application for striking off name"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-25.html",
+      "text": "Form 25 - Reservation/ renewal of name by a FLLP or Foreign Company"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-27.html",
+      "text": "Form 27 - Registration of particulars by FLLP"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-28.html",
+      "text": "Form 28 - Reporting of Alteration / closure"
+    }
+  ],
+  "all_links": [
+    {
+      "href": "/content/mca/global/en/sitemap.html",
+      "text": "Sitemap"
+    },
+    {
+      "href": "/content/mca/global/en/home.html",
+      "text": ""
+    },
+    {
+      "href": "/content/mca/global/en/foportal/fologin.html",
+      "text": "Login/Register"
+    },
+    {
+      "href": "/content/mca/global/en/home.html",
+      "text": "HOME"
+    },
+    {
+      "href": "/content/mca/global/en/about-us.html",
+      "text": "About MCA"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/aboutmca.html",
+      "text": "About MCA"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/image-gallery.html",
+      "text": "Image Gallery"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/right-to-information.html",
+      "text": "Right To Information"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/right-to-information/disclosure.html",
+      "text": "Disclosure of information under Section 4(1)(b) of the RTI Act, 2005"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/right-to-information/orders.html",
+      "text": "Orders"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/right-to-information/list-of-cpios--aas.html",
+      "text": "List of CPIOs/ AAs"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/newsletter.html",
+      "text": "Newsletters"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/achievements.html",
+      "text": "Achievements"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/mca-offices.html",
+      "text": "MCA Offices"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices.html",
+      "text": "Affiliated Offices"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/cci.html",
+      "text": "Competition Commission of India"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/ibbi.html",
+      "text": "Insolvency and Bankruptcy Board of India"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/icai.html",
+      "text": "Institute of Chartered Accountants of India"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/icoai.html",
+      "text": "Institute of Cost Accountants of India"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/icsi.html",
+      "text": "Institute of Company Secretaries of India"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/iepfa.html",
+      "text": "Investor Education And Protection Fund Authority"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/iica.html",
+      "text": "Indian Institute Of Corporate Affairs"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/nclat.html",
+      "text": "National Company Law Appellate Tribunal"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/nclt.html",
+      "text": "National Company Law Tribunal"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/nfcg.html",
+      "text": "National Foundation for Corporate Governance"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/nfra.html",
+      "text": "National Financial Reporting Authority"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/nfcsr.html",
+      "text": "National Foundation for Corporate Social Responsibility"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/sfo.html",
+      "text": "Serious Fraud Investigation Office"
+    },
+    {
+      "href": "/content/mca/global/en/acts-rules.html",
+      "text": "Acts &amp; Rules"
+    },
+    {
+      "href": "/content/mca/global/en/application-history.html",
+      "text": "My Application"
+    },
+    {
+      "href": "/content/mca/global/en/mca.html",
+      "text": "MCA Services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/master-data.html",
+      "text": "Master Data"
+    },
+    {
+      "href": "/content/mca/global/en/mca/master-data/MDS.html",
+      "text": "Master Data Services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/master-data/View-Companies-Directors-under-prosecution-V3.html",
+      "text": "View Companies/Directors Under Prosecution"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling.html",
+      "text": "LLP e-Filing"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/run-llp.html",
+      "text": "RUN-LLP (Reserve Unique Name)"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Fillip.html",
+      "text": "Fillip Incorporation of LLP"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-3.html",
+      "text": "Form 3 - Information for LLP agreement and changes"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-04.html",
+      "text": "Form 4 - Notice for change in information of partners/designated partners"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/form5.html",
+      "text": "Form 5 - Notice for change of name"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-8.html",
+      "text": "Form 8 - Statement of Account &amp; Solvency"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-11.html",
+      "text": "Form 11 - Annual Return of LLP"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form12.html",
+      "text": "Form 12 - Form for intimating other address for service of documents"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form15.html",
+      "text": "Form 15 - Notice for change of place of registered office"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/form22.html",
+      "text": "Form 22 - Notice of Intimation of Order to the Registrar"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/form-23.html",
+      "text": "Form 23 - Application for direction to LLP to change its name to the Registrar"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/form-24.html",
+      "text": "Form 24 - Application for striking off name"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-25.html",
+      "text": "Form 25 - Reservation/ renewal of name by a FLLP or Foreign Company"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-27.html",
+      "text": "Form 27 - Registration of particulars by FLLP"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-28.html",
+      "text": "Form 28 - Reporting of Alteration / closure"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/form31.html",
+      "text": "Form 31 - Application for compounding of an offence under the Act"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/form-32.html",
+      "text": "Form 32 - Filing addendum for rectification of defects or incompleteness"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/LLP-BEN-2.html",
+      "text": "Form LLP BEN 2 - Return to the Registrar in respect of declaration under section 90"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-4D.html",
+      "text": "Form 4D - Return to the Registrar in respect of declaration of beneficial interest in contribution received by the LLP"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-LLP-ADJ.html",
+      "text": "Form LLP-ADJ"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/LLP-Form-24-LetterView.html",
+      "text": "LLP Form-24 Letter View"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services.html",
+      "text": "FO Services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/verify-din-pan-details-of-director.html",
+      "text": "Verify DIN PAN Details of Director"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/enquire-din-status.html",
+      "text": "Enquire DIN Status"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/find-llpin.html",
+      "text": "Find LLPIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/findCinFinalSingleCom.html",
+      "text": "Find CIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/track-payment-status-at-ntrp.html",
+      "text": "Track Payment Status at NTRP"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/enquire-fees.html",
+      "text": "Enquire Fees"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/company-llp-name-search.html",
+      "text": "Check Company/LLP Name"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/fo-user-functionality-flow.html",
+      "text": "Authorize / Suspend User"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/check-annual-filing-status.html",
+      "text": "Check Annual Filing Status V3"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/list-of-proclaimed-offenders.html",
+      "text": "List of Proclaimed Offenders u/s 82 Cr.PC."
+    },
+    {
+      "href": "/content/mca/global/en/mca/dsc-services-v3.html",
+      "text": "DSC Services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/dsc-services-v3/acquire-dsc.html",
+      "text": "Acquire DSC"
+    },
+    {
+      "href": "/content/mca/global/en/mca/dsc-services-v3/associate-dsc.html",
+      "text": "Associate DSC"
+    },
+    {
+      "href": "/content/mca/global/en/mca/dsc-services-v3/dsc-certifying-authorities.html",
+      "text": "DSC Certifying Authorities"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing.html",
+      "text": "Company e-Filing"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services.html",
+      "text": "Incorporation &amp; Change services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services/run.html",
+      "text": "RUN - Application for change of name of existing company"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services/spice.html",
+      "text": "SPICe+ Form - Reserve name for new company incorporation"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services/INC-4.html",
+      "text": "INC-4 - One Person Company - Change in Member/ Nominee"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services/MR-1.html",
+      "text": "MR-1 - Appointment of MD/WTD/Manager"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services/INC-22.html",
+      "text": "INC-22 - Notice of situation of registered office"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services/INC-27.html",
+      "text": "INC-27 - Conversion of company"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services/SH-7.html",
+      "text": "SH-7 - Alteration of share capital"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services/INC-6.html",
+      "text": "INC-6 - One Person Company - Conversion form"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms.html",
+      "text": "DIN Related Forms"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/form-dir3.html",
+      "text": "DIR-3 - Application for allotment of DIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/form-dir3c.html",
+      "text": "DIR-3C - Intimation of DIN by the company"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/form-dir6.html",
+      "text": "DIR-6 - Change in particulars of Director"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/form-dir12.html",
+      "text": "DIR-12 - Appointment of Directors and KMP"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/form-dir3kycweb.html",
+      "text": "DIR-3-KYC-WEB \u2013 Intimation of Changes or Reactivation of DIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/form-dir11.html",
+      "text": "DIR-11 - Resignation of a Director"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/form-dir5.html",
+      "text": "DIR-5 - Surrender of DIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/DIR-10.html",
+      "text": "DIR-10 \u2013 Removal of disqualification of directors"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/DIR-9.html",
+      "text": "DIR-9 - Disqualification of Directors"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/charge-management.html",
+      "text": "Charge Management"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/charge-management/form-chg1.html",
+      "text": "Form CHG-1 - Intimation of creation / modification of charge (other than those related to debentures)"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/charge-management/form-chg4.html",
+      "text": "Form CHG-4 - Intimation of satisfaction of charge"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/charge-management/form-chg6.html",
+      "text": "Form CHG-6 - Intimation of appointment / cessation of receiver / manager"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/charge-management/form-chg8.html",
+      "text": "Form CHG-8 - RD approval for delay in creation / modification / rectification of charge"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/charge-management/form-chg9.html",
+      "text": "Form CHG-9 - Intimation for registration of creation or modification of charge for debentures or rectification of partic"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services.html",
+      "text": "Informational and Investor services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/INC-20A.html",
+      "text": "INC-20A - Declaration for commencement of business"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/INC-20.html",
+      "text": "INC-20 - Intimation of revocation of license issued u/s 8"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/INC-28.html",
+      "text": "INC-28 - Notice of Order of the Court/Competent authority"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/CRL-1.html",
+      "text": "CRL-1 - Return regarding number of layers"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/GNL-4.html",
+      "text": "GNL-4 - Addendum to form"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/MGT-3.html",
+      "text": "MGT-3 - Notice of situation where foreign register shall be kept"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/form-pas-2.html",
+      "text": "PAS-2 - Information Memorandum"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/complaint-form.html",
+      "text": "Complaint form - Investor complaint form"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/Refund.html",
+      "text": "Refund - Refund form"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices.html",
+      "text": "Compliance Services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/ADT-1.html",
+      "text": "ADT-1 - Appointment of auditor"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/ADT-3.html",
+      "text": "ADT-3 - Resignation by the auditor"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/ben2.html",
+      "text": "BEN-2 - Return to the Registrar in respect of declaration under section 90"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/CSR-1.html",
+      "text": "CSR-1 \u2013 Registration of Entities for Undertaking CSR Activities"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/INC-22A.html",
+      "text": "INC-22A - Active Company Tagging Identities and Verification"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/form-mgt-14.html",
+      "text": "MGT-14 - Resolutions and agreements u/s 117"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/MSC-3.html",
+      "text": "MSC-3 - Return of dormant companies"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/MSME.html",
+      "text": "MSME - Half yearly return of Micro or Small Enterprise"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/pas-3.html",
+      "text": "PAS-3 - Return of Allotment"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/PAS-6.html",
+      "text": "PAS-6 - Reconciliation of Share Capital Audit Report"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/SH-11.html",
+      "text": "SH-11 - Buy-back of securities"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/GNL-2.html",
+      "text": "GNL-2 - Submission of documents with the Registrar"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/GNL-3.html",
+      "text": "GNL-3 - Particulars of person(s) of clause 60 of section 2"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/Form-MGT-6.html",
+      "text": "MGT-6 - Declaration under section 89"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/SH-8.html",
+      "text": "SH-8 - Letter of Offer"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/SH-9.html",
+      "text": "SH-9 - Declaration of Solvency"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/leap-1.html",
+      "text": "LEAP - 1 Form for submission of Prospectus with the Registrar"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/PAS-7.html",
+      "text": "PAS-7 - Details of pending share warrants"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq.html",
+      "text": "Approval Services (ROC/RD/HQ)"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/INC-23.html",
+      "text": "INC-23 - Application to shift Registered Office"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-inc18.html",
+      "text": "INC-18 - Conversion of section 8 company"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/ADT-2.html",
+      "text": "ADT-2 - Removal of auditor(s)"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-rd-1.html",
+      "text": "RD-1 - Filing application to Regional Director"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-adj.html",
+      "text": "ADJ - Memorandum of Appeal"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/INC24.html",
+      "text": "INC-24 - Application for change of name"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-inc12.html",
+      "text": "INC-12 - Application for License to an existing company u/s 8"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/msc-1.html",
+      "text": "MSC-1 - Application for obtaining status of dormant company"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/msc-4.html",
+      "text": "Form MSC-4 \u2013 Application for obtaining active status"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/STK-2.html",
+      "text": "STK-2 - Removal of name from Register of Companies"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/GNL-1.html",
+      "text": "GNL-1 - Application with Registrar of Companies"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/MR-2.html",
+      "text": "MR-2 - CG Approval for Appointment/Reappointment of directors"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-adt4.html",
+      "text": "ADT-4 - Form ADT-4 to the Central Government"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-cra2.html",
+      "text": "CRA-2 - Appointment of cost auditor"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/change-request.html",
+      "text": "Change Request Form"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings.html",
+      "text": "Annual Filings"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-cra-4.html",
+      "text": "CRA-4 - Cost audit report"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4.html",
+      "text": "AOC-4 - Financial statement and other documents"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4-offline.html",
+      "text": "AOC-4 - Financial statement and other documents - OFFLINE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/CSR-2.html",
+      "text": "CSR-2 - Reporting on CSR"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4cfs.html",
+      "text": "AOC-4 CFS - Consolidated financial statements"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4cfs-offline.html",
+      "text": "AOC-4 CFS - Consolidated financial statements - OFFLINE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4nbfc.html",
+      "text": "AOC-4 NBFC - Financial statement for NBFCs"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4nbfc-offline.html",
+      "text": "AOC-4 NBFC - Financial statement for NBFCs - OFFLINE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/aoc-4-xbrl.html",
+      "text": "AOC-4 (XBRL) - Form for filing XBRL document in respect of financial statement and other documents with the Registrar"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/AOC-5.html",
+      "text": "AOC-5 - Notice of address at which books of account are maintained"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4cfsnbfc.html",
+      "text": "AOC-4 NBFC CFS - Consolidated financial statements for NBFCs"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4cfsnbfc-offline.html",
+      "text": "AOC-4 NBFC CFS - Consolidated financial statements for NBFCs - OFFLINE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-mgt7.html",
+      "text": "MGT-7 - Annual Return other than OPCs and Small Companies"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-mgt7-offline.html",
+      "text": "MGT-7 - Annual Return other than OPCs and Small Companies - OFFLINE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-mgt7a.html",
+      "text": "MGT-7A - Abridged Annual Return for OPCs and Small Companies"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-mgt7a-offline.html",
+      "text": "MGT-7A - Abridged Annual Return for OPCs and Small Companies - OFFLINE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-mgt15.html",
+      "text": "MGT-15 - Report on Annual General Meeting"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services.html",
+      "text": "Foreign company, Deposits &amp; Nidhi services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/DPT-3.html",
+      "text": "Form DPT 3 \u2013 Return of deposits"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/DPT-4.html",
+      "text": "Form DPT 4 \u2013 Statement regarding deposits existing on the commencement of the Act"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/form-ndh1.html",
+      "text": "NDH-1 \u2013 Return of Statutory Compliances"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/form-ndh2.html",
+      "text": "NDH-2 - Application for extension of time"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/form-ndh3.html",
+      "text": "NDH-3 - Return of Nidhi Company (Half year)"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/ndh-4-.html",
+      "text": "NDH-4 - Declaration as Nidhi Company"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/FormFC1.html",
+      "text": "FC-1 - Information by foreign company"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/FC-2-Alteration-in-the-documents-of-foreign-company.html",
+      "text": "FC-2 - Alteration in the documents of foreign company"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/FC-3.html",
+      "text": "FC-3 - Annual accounts by foreign company"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/FC-4.html",
+      "text": "FC-4 - Annual accounts by foreign company"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms.html",
+      "text": "Companies Act 1956 Forms"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-20b.html",
+      "text": "Form 20B - Filing annual return by a company having a share capital with the Registrar"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-21a.html",
+      "text": "Form 21A - Particulars of annual return for the company not having share capital"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-23ac.html",
+      "text": "23AC - Filing balance sheet"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-23ac-xbrl.html",
+      "text": "23AC XBRL - Filing XBRL document (Balance sheet)"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-23b.html",
+      "text": "Form 23B - Information by auditor to Registrar"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-23c.html",
+      "text": "Form 23C - Application for appointment of cost auditor"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-23d.html",
+      "text": "Form 23D - Information by cost auditor to Central Government"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-a-xbrl.html",
+      "text": "Form A-XBRL - Filing XBRL document in respect of compliance report and other documents with the Central Government"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-66.html",
+      "text": "Form 66 - Submission of compliance certificate with the Registrar"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-i-xbrl.html",
+      "text": "Form I-XBRL - Filing XBRL document in respect of cost audit report and other documents with the Central Government"
+    },
+    {
+      "href": "/content/mca/global/en/mca/complaints.html",
+      "text": "Complaints"
+    },
+    {
+      "href": "/content/mca/global/en/mca/complaints/create-service-related-complaint.html",
+      "text": "Create Service Related Complaint"
+    },
+    {
+      "href": "/content/mca/global/en/mca/complaints/track-service-related-complaint.html",
+      "text": "Track/Update Service Related Complaint"
+    },
+    {
+      "href": "/content/mca/global/en/mca/complaints/feedback-suggestions.html",
+      "text": "FeedBack/Suggestions"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services.html",
+      "text": "Document Related Services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services/view-public-documents-v3.html",
+      "text": "View Public Documents V3"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services/view-public-documents-v3/view-public-documents.html",
+      "text": "View Public Documents"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services/view-public-documents-v3/mycart.html",
+      "text": "My Cart"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services/view-public-documents-v3/workspace.html",
+      "text": "Workspace"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services/get-certified-copies-v3.html",
+      "text": "Get Certified Copies"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services/get-certified-copies-v3/my-cart-gcc.html",
+      "text": "My Cart GCC"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services/get-certified-copies-v3/my-workspace-gcc.html",
+      "text": "My Workspace GCC"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services/request-for-scanned-documents-v3.html",
+      "text": "Request For Scanned Documents"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fee-and-payment-services.html",
+      "text": "Fee And Payment Services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fee-and-payment-services/pay-miscellaneous-fee.html",
+      "text": "Pay Miscellaneous Fee"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fee-and-payment-services/pay-stamp-duty.html",
+      "text": "Pay Stamp Duty"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fee-and-payment-services/track-payment-status.html",
+      "text": "Track Payment Status"
+    },
+    {
+      "href": "/content/mca/global/en/mca/iepf-related-services.html",
+      "text": "IEPF related services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/iepf-related-services/IEPF-1.html",
+      "text": "IEPF-1 - Statement of amounts credited/Transfer of amounts"
+    },
+    {
+      "href": "/content/mca/global/en/mca/iepf-related-services/IEPF-1A.html",
+      "text": "IEPF-1A - Statement of amounts credited"
+    },
+    {
+      "href": "/content/mca/global/en/mca/iepf-related-services/IEPF-2.html",
+      "text": "IEPF-2 - Statement of unclaimed/unpaid amounts"
+    },
+    {
+      "href": "/content/mca/global/en/mca/iepf-related-services/IEPF-4.html",
+      "text": "IEPF-4 - Statement of shares and unclaimed/unpaid amounts"
+    },
+    {
+      "href": "/content/mca/global/en/mca/iepf-related-services/IEPF-5.html",
+      "text": "IEPF-5 Web form - Claiming unpaid amounts and shares"
+    },
+    {
+      "href": "/content/mca/global/en/mca/iepf-related-services/search-unclaimed-unpaid-amount-shares.html",
+      "text": "Search Unclaimed/ Unpaid Amount and Shares"
+    },
+    {
+      "href": "/content/mca/global/en/mca/iepf-related-services/details-of-nodal-officer-and-deputy-nodal-officer.html",
+      "text": "Details of Nodal Officer and Deputy Nodal officer"
+    },
+    {
+      "href": "/content/mca/global/en/mca/id-databank-services.html",
+      "text": "ID Databank services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/id-databank-services/corporate-registration-v3-new.html",
+      "text": "Corporate Registration"
+    },
+    {
+      "href": "/content/mca/global/en/mca/id-databank-services/individual-registration-v3-new.html",
+      "text": "Individual Registration"
+    },
+    {
+      "href": "/content/mca/global/en/mca/address-for-sending-physical-copy-of-gar-33.html",
+      "text": "Address For Sending Physical Copy of G.A.R 33"
+    },
+    {
+      "href": "https://tmrsearch.ipindia.gov.in/tmrpublicsearch/frmmain.aspx",
+      "text": "Public Search of Trademark"
+    },
+    {
+      "href": "https://esahajmcaservices.nic.in/",
+      "text": "Application for MHA Security Clearance"
+    },
+    {
+      "href": "/content/mca/global/en/additional-services.html",
+      "text": "Additional Services"
+    },
+    {
+      "href": "/content/mca/global/en/additional-services/Enforcement.html",
+      "text": "Enforcement"
+    },
+    {
+      "href": "/content/mca/global/en/additional-services/E-adjudication.html",
+      "text": "E-adjudication"
+    },
+    {
+      "href": "/content/mca/global/en/additional-services/appeal.html",
+      "text": "Appeal"
+    },
+    {
+      "href": "/content/mca/global/en/additional-services/econsultation.html",
+      "text": "E-Consultation"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports.html",
+      "text": "Data &amp; Reports"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports.html",
+      "text": "Reports"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/annual-reports.html",
+      "text": "Annual Reports"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/annual-reports/annual-report.html",
+      "text": "Annual Report"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/annual-reports/companies-2013.html",
+      "text": "Annual Reports on Working &amp; Administration of Companies Act, 2013"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/annual-reports/companies-1956.html",
+      "text": "Annual Reports on Working &amp; Administration of Companies Act, 1956"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/monthly-information-bulletin.html",
+      "text": "Monthly Information Bulletin"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/report-company-law.html",
+      "text": "Report Of The Expert Committee On Company Law"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/library.html",
+      "text": "Expert Committee Reports"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/miscellaneous.html",
+      "text": "Miscellaneous"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/miscellaneous/compendium-on-csr.html",
+      "text": "Compendium-on-CSR"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info.html",
+      "text": "Company/LLP Information"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/incorporated-closed-month.html",
+      "text": "Incorporated Or Closed During The Month"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/csr-data-summary.html",
+      "text": "CSR Data &amp; Summary"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/puc-range-wise.html",
+      "text": "PUC Range Wise"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert.html",
+      "text": "Companies Under Alert"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/mlm.html",
+      "text": "MLM Companies"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/vanishing-companies.html",
+      "text": "Vanishing Companies"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/disqualified-directors.html",
+      "text": "Disqualified Directors"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/defaulter-companies.html",
+      "text": "Defaulter Companies"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/defaulter-directors.html",
+      "text": "Defaulter Directors"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/defaulter-secretaries.html",
+      "text": "Defaulter Secretaries"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/dormant-companies.html",
+      "text": "Dormant Companies"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/companies-under-strike-off.html",
+      "text": "Companies under strike off"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/llps-under-strike-off.html",
+      "text": "LLPs under strike off"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/companies-nf-5inv.html",
+      "text": "Companies not filed 5INV"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info.html",
+      "text": "RD/ROC Information"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/companies-struck-roc.html",
+      "text": "List Of Companies Struck-Off By RoCs (STK-7) U/S 248(5) \u2013 CA,13"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/strike-off-notice-registrar.html",
+      "text": "Notice Of Strike-Off By Registrar(STK-7) As Per Sec. 248(1)-CA,13"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/public-notices.html",
+      "text": "Public Notices (STK-5) U/S 248(1)-CA,13"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/public-notices-stk6.html",
+      "text": "Public Notices (STK-6) U/S 248(2)-CA, 2013"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/directors-with-struckoff-companies.html",
+      "text": "List Of Directors Associated With Struck Off Companies U/S 248"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/proclaimed-offenders.html",
+      "text": "List Of Proclaimed Offenders U/S 82 Cr.PC."
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/disqualified-directors.html",
+      "text": "List Of Disqualified Directors U/S 164 (2)(A)"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/roc-adjudication-orders.html",
+      "text": "ROC Adjudication Orders"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/extension-agm.html",
+      "text": "Extension of AGM"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/strike-off-notice.html",
+      "text": "Notice Of Strike-Off Under LLP Rule 37"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/rd-adjudication-orders.html",
+      "text": "RD Adjudication Orders"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/rd-Compounding-orders.html",
+      "text": "RD Compounding orders"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq.html",
+      "text": "Help &amp; FAQs"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs.html",
+      "text": "FAQs"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/e-filing2.html",
+      "text": "E-Filing"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/e-filing2/steps-for-e-filing.html",
+      "text": "Steps for E-Filing"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/e-filing2/revised-filing-steps-faqs-of-form-3-llp.html",
+      "text": "Revised filing steps &amp; FAQs of Form 3 LLP"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/e-filing2/revised-filing-steps-faqs-of-form-11-llp.html",
+      "text": "Revised filing steps &amp; FAQs of Form 11 LLP"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/e-filing2/prerequisite-software-for-e-filing.html",
+      "text": "Prerequisite Software For E-Filing"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services.html",
+      "text": "Company Services"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/incorporation.html",
+      "text": "Incorporation &amp; Change services"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/incorporation/spiceplus-linked-filings.html",
+      "text": "SPICe+ &amp; linked filings"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/incorporation/one-person-company.html",
+      "text": "One Person Company"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/incorporation/agile-pro-s-form.html",
+      "text": "AGILE-PRO-S Form"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/incorporation/change-company-information.html",
+      "text": "Change Company Information"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/din-related.html",
+      "text": "DIN Related Forms"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/din-related/dir-3-kyc.html",
+      "text": "DIR-3 KYC"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/charge-management.html",
+      "text": "Charge Management"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/informational-services.html",
+      "text": "Informational &amp; Investor Services"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/compliance-filing.html",
+      "text": "Compliance Filing"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/approval-services.html",
+      "text": "Approval Services (ROC/RD/HQ)"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/others.html",
+      "text": "Others"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/user-registration2.html",
+      "text": "User Registration &amp; Login"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/payment2.html",
+      "text": "Payment"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/payment2/payment.html",
+      "text": "Payment"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/payment2/list-of-authorised-banks.html",
+      "text": "List Of Authorised Banks"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/payment2/refund.html",
+      "text": "Refund"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/payment2/cancel-srn-due-to-unsuccessful-payment.html",
+      "text": "Cancel SRN Due To Unsuccessful Payment"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/payment2/rates-of-stamp-duty.html",
+      "text": "Rates of Stamp Duty"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/payment2/estamp.html",
+      "text": "Estamp"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/offline-payment.html",
+      "text": "Offline Payment"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/offline-payment/faqs-offline-payment.html",
+      "text": "Offline payment"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/offline-payment/Steps-to-make-Offline-Payment.html",
+      "text": "Steps to make offline Payment"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/offline-payment/iepf-for-Pay-Miscellaneous-fee.html",
+      "text": "Offline payment process for IEPF-1 Form for Pay Miscellaneous Fee"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/dsc-services.html",
+      "text": "DSC Services"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/dsc-services/digital-signature-certificate.html",
+      "text": "DSC"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/dsc-services/associate-dsc.html",
+      "text": "V3 Associate DSC"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/dsc-services/dsc-registration.html",
+      "text": "Process for DSC Registration"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/dsc-services/dsc-requirements.html",
+      "text": "V2 DSC Requirements"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/xbrl1.html",
+      "text": "XBRL"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/mca-website.html",
+      "text": "MCA Website"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/mca-website/v3-website.html",
+      "text": "V3 Website"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/mca-website/e-book.html",
+      "text": "E-Book"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/mca-website/e-consultation.html",
+      "text": "E-Consultation"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/e-adjudication.html",
+      "text": "E-adjudication"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/iepf-website.html",
+      "text": "IEPF"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/iepf-website/iepf-5-Claimant.html",
+      "text": "FAQs for filing new IEPF-5 -Claimant"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/iepf-website/new-evr-company.html",
+      "text": "FAQs for filing new EVR -Company"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/crc.html",
+      "text": "Central Registration Center(CRC)"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/c-pace.html",
+      "text": "Centre For Processing Accelerated Corporate Exit (C-PACE)"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/system-requirements1.html",
+      "text": "System Requirements"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/system-requirements1/viewing-file-formats.html",
+      "text": "Viewing File Formats"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/important-documents.html",
+      "text": "Training Documents"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/annual-filing.html",
+      "text": "FAQs for Annual Filing"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/annual-filing/commonly-asked-questions.html",
+      "text": "Commonly Asked Questions on Annual Filing Forms"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/annual-filing/general.html",
+      "text": "General"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/annual-filing/adt-forms.html",
+      "text": "ADT forms"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/annual-filing/aoc-4-and-linked-filings.html",
+      "text": "AOC-4 and linked filings"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/annual-filing/cost-audit-forms.html",
+      "text": "Cost Audit forms"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/annual-filing/mgt-7-and-mgt-7a.html",
+      "text": "MGT-7 &amp; MGT-7A"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/annual-filing/offline-lilings-of-annual-forms.html",
+      "text": "Offline Filings of Annual Forms"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits.html",
+      "text": "e-filing Help Kits"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings.html",
+      "text": "Company e-filing"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/incorporation-services.html",
+      "text": "Incorporation Services"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/din-related-forms.html",
+      "text": "DIN Related Forms"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/charge-management.html",
+      "text": "Charge Management"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/Deposits.html",
+      "text": "Deposits"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/informational-services.html",
+      "text": "Informational Services"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/change-services.html",
+      "text": "Change Services"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/compliance-services.html",
+      "text": "Compliance Services"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/approval-services-regional-director.html",
+      "text": "Approval Services (Regional Director)"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/approval-services.html",
+      "text": "Approval Services (Registrar of Companies)"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/approval-services-headquarters.html",
+      "text": "Approval Services (Headquarters)"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/annual-filings.html",
+      "text": "Annual Filings"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/nidhi-services.html",
+      "text": "Nidhi Services"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/foreign-company-services.html",
+      "text": "Foreign Company Services"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/investor-services.html",
+      "text": "Investor Services"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/iepf-services.html",
+      "text": "IEPF Services"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/companies-act-1956-forms.html",
+      "text": "Companies Act 1956 Forms"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/llp-efilings.html",
+      "text": "LLP e-filing"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/penalties-and-Offences-under-companies-act-2013.html",
+      "text": "Penalties And Offences Under Companies&#39; Act, 2013"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us.html",
+      "text": "Contact Us"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/grievance-cell.html",
+      "text": "Grievance Cell"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/minister-corporate-affairs.html",
+      "text": "Minister of Corporate Affairs"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/minister-state-for-corporate-affairs.html",
+      "text": "Minister of State for Corporate Affairs"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/officials-at-head-quarters.html",
+      "text": "Officials at Head Quarters"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/DGCOA-Officers.html",
+      "text": "D G C O A Officers"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/rd.html",
+      "text": "Regional Directors"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/roc.html",
+      "text": "Registrar of Companies"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/official-liquidators.html",
+      "text": "Official Liquidators"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/cost-audit-branch.html",
+      "text": "Cost Audit Branch (CAB)"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/investor-grievance-management-cell.html",
+      "text": "Investor Grievance Management Cell"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/liasion-office.html",
+      "text": "Liasion Office for SC/ST/OBC"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/web-information-manager.html",
+      "text": "Web Information Manager"
+    },
+    {
+      "href": "/content/mca/global/en/home.html",
+      "text": "HOME"
+    },
+    {
+      "href": "/content/mca/global/en/home.html",
+      "text": "HOME"
+    },
+    {
+      "href": "/content/mca/global/en/about-us.html",
+      "text": "About MCA"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/aboutmca.html",
+      "text": "About MCA"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/image-gallery.html",
+      "text": "Image Gallery"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/right-to-information.html",
+      "text": "Right To Information"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/right-to-information/disclosure.html",
+      "text": "Disclosure of information under Section 4(1)(b) of the RTI Act, 2005"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/right-to-information/orders.html",
+      "text": "Orders"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/right-to-information/list-of-cpios--aas.html",
+      "text": "List of CPIOs/ AAs"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/newsletter.html",
+      "text": "Newsletters"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/achievements.html",
+      "text": "Achievements"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/mca-offices.html",
+      "text": "MCA Offices"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices.html",
+      "text": "Affiliated Offices"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/cci.html",
+      "text": "Competition Commission of India"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/ibbi.html",
+      "text": "Insolvency and Bankruptcy Board of India"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/icai.html",
+      "text": "Institute of Chartered Accountants of India"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/icoai.html",
+      "text": "Institute of Cost Accountants of India"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/icsi.html",
+      "text": "Institute of Company Secretaries of India"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/iepfa.html",
+      "text": "Investor Education And Protection Fund Authority"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/iica.html",
+      "text": "Indian Institute Of Corporate Affairs"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/nclat.html",
+      "text": "National Company Law Appellate Tribunal"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/nclt.html",
+      "text": "National Company Law Tribunal"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/nfcg.html",
+      "text": "National Foundation for Corporate Governance"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/nfra.html",
+      "text": "National Financial Reporting Authority"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/nfcsr.html",
+      "text": "National Foundation for Corporate Social Responsibility"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/sfo.html",
+      "text": "Serious Fraud Investigation Office"
+    },
+    {
+      "href": "/content/mca/global/en/acts-rules.html",
+      "text": "Acts &amp; Rules"
+    },
+    {
+      "href": "/content/mca/global/en/application-history.html",
+      "text": "My Application"
+    },
+    {
+      "href": "/content/mca/global/en/mca.html",
+      "text": "MCA Services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/master-data.html",
+      "text": "Master Data"
+    },
+    {
+      "href": "/content/mca/global/en/mca/master-data/MDS.html",
+      "text": "Master Data Services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/master-data/View-Companies-Directors-under-prosecution-V3.html",
+      "text": "View Companies/Directors Under Prosecution"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling.html",
+      "text": "LLP e-Filing"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/run-llp.html",
+      "text": "RUN-LLP (Reserve Unique Name)"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Fillip.html",
+      "text": "Fillip Incorporation of LLP"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-3.html",
+      "text": "Form 3 - Information for LLP agreement and changes"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-04.html",
+      "text": "Form 4 - Notice for change in information of partners/designated partners"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/form5.html",
+      "text": "Form 5 - Notice for change of name"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-8.html",
+      "text": "Form 8 - Statement of Account &amp; Solvency"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-11.html",
+      "text": "Form 11 - Annual Return of LLP"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form12.html",
+      "text": "Form 12 - Form for intimating other address for service of documents"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form15.html",
+      "text": "Form 15 - Notice for change of place of registered office"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/form22.html",
+      "text": "Form 22 - Notice of Intimation of Order to the Registrar"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/form-23.html",
+      "text": "Form 23 - Application for direction to LLP to change its name to the Registrar"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/form-24.html",
+      "text": "Form 24 - Application for striking off name"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-25.html",
+      "text": "Form 25 - Reservation/ renewal of name by a FLLP or Foreign Company"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-27.html",
+      "text": "Form 27 - Registration of particulars by FLLP"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-28.html",
+      "text": "Form 28 - Reporting of Alteration / closure"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/form31.html",
+      "text": "Form 31 - Application for compounding of an offence under the Act"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/form-32.html",
+      "text": "Form 32 - Filing addendum for rectification of defects or incompleteness"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/LLP-BEN-2.html",
+      "text": "Form LLP BEN 2 - Return to the Registrar in respect of declaration under section 90"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-4D.html",
+      "text": "Form 4D - Return to the Registrar in respect of declaration of beneficial interest in contribution received by the LLP"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-LLP-ADJ.html",
+      "text": "Form LLP-ADJ"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/LLP-Form-24-LetterView.html",
+      "text": "LLP Form-24 Letter View"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services.html",
+      "text": "FO Services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/verify-din-pan-details-of-director.html",
+      "text": "Verify DIN PAN Details of Director"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/enquire-din-status.html",
+      "text": "Enquire DIN Status"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/find-llpin.html",
+      "text": "Find LLPIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/findCinFinalSingleCom.html",
+      "text": "Find CIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/track-payment-status-at-ntrp.html",
+      "text": "Track Payment Status at NTRP"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/enquire-fees.html",
+      "text": "Enquire Fees"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/company-llp-name-search.html",
+      "text": "Check Company/LLP Name"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/fo-user-functionality-flow.html",
+      "text": "Authorize / Suspend User"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/check-annual-filing-status.html",
+      "text": "Check Annual Filing Status V3"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/list-of-proclaimed-offenders.html",
+      "text": "List of Proclaimed Offenders u/s 82 Cr.PC."
+    },
+    {
+      "href": "/content/mca/global/en/mca/dsc-services-v3.html",
+      "text": "DSC Services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/dsc-services-v3/acquire-dsc.html",
+      "text": "Acquire DSC"
+    },
+    {
+      "href": "/content/mca/global/en/mca/dsc-services-v3/associate-dsc.html",
+      "text": "Associate DSC"
+    },
+    {
+      "href": "/content/mca/global/en/mca/dsc-services-v3/dsc-certifying-authorities.html",
+      "text": "DSC Certifying Authorities"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing.html",
+      "text": "Company e-Filing"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services.html",
+      "text": "Incorporation &amp; Change services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services/run.html",
+      "text": "RUN - Application for change of name of existing company"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services/spice.html",
+      "text": "SPICe+ Form - Reserve name for new company incorporation"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services/INC-4.html",
+      "text": "INC-4 - One Person Company - Change in Member/ Nominee"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services/MR-1.html",
+      "text": "MR-1 - Appointment of MD/WTD/Manager"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services/INC-22.html",
+      "text": "INC-22 - Notice of situation of registered office"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services/INC-27.html",
+      "text": "INC-27 - Conversion of company"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services/SH-7.html",
+      "text": "SH-7 - Alteration of share capital"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services/INC-6.html",
+      "text": "INC-6 - One Person Company - Conversion form"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms.html",
+      "text": "DIN Related Forms"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/form-dir3.html",
+      "text": "DIR-3 - Application for allotment of DIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/form-dir3c.html",
+      "text": "DIR-3C - Intimation of DIN by the company"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/form-dir6.html",
+      "text": "DIR-6 - Change in particulars of Director"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/form-dir12.html",
+      "text": "DIR-12 - Appointment of Directors and KMP"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/form-dir3kycweb.html",
+      "text": "DIR-3-KYC-WEB \u2013 Intimation of Changes or Reactivation of DIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/form-dir11.html",
+      "text": "DIR-11 - Resignation of a Director"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/form-dir5.html",
+      "text": "DIR-5 - Surrender of DIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/DIR-10.html",
+      "text": "DIR-10 \u2013 Removal of disqualification of directors"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/DIR-9.html",
+      "text": "DIR-9 - Disqualification of Directors"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/charge-management.html",
+      "text": "Charge Management"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/charge-management/form-chg1.html",
+      "text": "Form CHG-1 - Intimation of creation / modification of charge (other than those related to debentures)"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/charge-management/form-chg4.html",
+      "text": "Form CHG-4 - Intimation of satisfaction of charge"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/charge-management/form-chg6.html",
+      "text": "Form CHG-6 - Intimation of appointment / cessation of receiver / manager"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/charge-management/form-chg8.html",
+      "text": "Form CHG-8 - RD approval for delay in creation / modification / rectification of charge"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/charge-management/form-chg9.html",
+      "text": "Form CHG-9 - Intimation for registration of creation or modification of charge for debentures or rectification of partic"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services.html",
+      "text": "Informational and Investor services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/INC-20A.html",
+      "text": "INC-20A - Declaration for commencement of business"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/INC-20.html",
+      "text": "INC-20 - Intimation of revocation of license issued u/s 8"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/INC-28.html",
+      "text": "INC-28 - Notice of Order of the Court/Competent authority"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/CRL-1.html",
+      "text": "CRL-1 - Return regarding number of layers"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/GNL-4.html",
+      "text": "GNL-4 - Addendum to form"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/MGT-3.html",
+      "text": "MGT-3 - Notice of situation where foreign register shall be kept"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/form-pas-2.html",
+      "text": "PAS-2 - Information Memorandum"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/complaint-form.html",
+      "text": "Complaint form - Investor complaint form"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/Refund.html",
+      "text": "Refund - Refund form"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices.html",
+      "text": "Compliance Services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/ADT-1.html",
+      "text": "ADT-1 - Appointment of auditor"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/ADT-3.html",
+      "text": "ADT-3 - Resignation by the auditor"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/ben2.html",
+      "text": "BEN-2 - Return to the Registrar in respect of declaration under section 90"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/CSR-1.html",
+      "text": "CSR-1 \u2013 Registration of Entities for Undertaking CSR Activities"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/INC-22A.html",
+      "text": "INC-22A - Active Company Tagging Identities and Verification"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/form-mgt-14.html",
+      "text": "MGT-14 - Resolutions and agreements u/s 117"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/MSC-3.html",
+      "text": "MSC-3 - Return of dormant companies"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/MSME.html",
+      "text": "MSME - Half yearly return of Micro or Small Enterprise"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/pas-3.html",
+      "text": "PAS-3 - Return of Allotment"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/PAS-6.html",
+      "text": "PAS-6 - Reconciliation of Share Capital Audit Report"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/SH-11.html",
+      "text": "SH-11 - Buy-back of securities"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/GNL-2.html",
+      "text": "GNL-2 - Submission of documents with the Registrar"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/GNL-3.html",
+      "text": "GNL-3 - Particulars of person(s) of clause 60 of section 2"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/Form-MGT-6.html",
+      "text": "MGT-6 - Declaration under section 89"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/SH-8.html",
+      "text": "SH-8 - Letter of Offer"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/SH-9.html",
+      "text": "SH-9 - Declaration of Solvency"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/leap-1.html",
+      "text": "LEAP - 1 Form for submission of Prospectus with the Registrar"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/PAS-7.html",
+      "text": "PAS-7 - Details of pending share warrants"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq.html",
+      "text": "Approval Services (ROC/RD/HQ)"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/INC-23.html",
+      "text": "INC-23 - Application to shift Registered Office"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-inc18.html",
+      "text": "INC-18 - Conversion of section 8 company"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/ADT-2.html",
+      "text": "ADT-2 - Removal of auditor(s)"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-rd-1.html",
+      "text": "RD-1 - Filing application to Regional Director"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-adj.html",
+      "text": "ADJ - Memorandum of Appeal"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/INC24.html",
+      "text": "INC-24 - Application for change of name"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-inc12.html",
+      "text": "INC-12 - Application for License to an existing company u/s 8"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/msc-1.html",
+      "text": "MSC-1 - Application for obtaining status of dormant company"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/msc-4.html",
+      "text": "Form MSC-4 \u2013 Application for obtaining active status"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/STK-2.html",
+      "text": "STK-2 - Removal of name from Register of Companies"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/GNL-1.html",
+      "text": "GNL-1 - Application with Registrar of Companies"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/MR-2.html",
+      "text": "MR-2 - CG Approval for Appointment/Reappointment of directors"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-adt4.html",
+      "text": "ADT-4 - Form ADT-4 to the Central Government"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-cra2.html",
+      "text": "CRA-2 - Appointment of cost auditor"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/change-request.html",
+      "text": "Change Request Form"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings.html",
+      "text": "Annual Filings"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-cra-4.html",
+      "text": "CRA-4 - Cost audit report"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4.html",
+      "text": "AOC-4 - Financial statement and other documents"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4-offline.html",
+      "text": "AOC-4 - Financial statement and other documents - OFFLINE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/CSR-2.html",
+      "text": "CSR-2 - Reporting on CSR"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4cfs.html",
+      "text": "AOC-4 CFS - Consolidated financial statements"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4cfs-offline.html",
+      "text": "AOC-4 CFS - Consolidated financial statements - OFFLINE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4nbfc.html",
+      "text": "AOC-4 NBFC - Financial statement for NBFCs"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4nbfc-offline.html",
+      "text": "AOC-4 NBFC - Financial statement for NBFCs - OFFLINE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/aoc-4-xbrl.html",
+      "text": "AOC-4 (XBRL) - Form for filing XBRL document in respect of financial statement and other documents with the Registrar"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/AOC-5.html",
+      "text": "AOC-5 - Notice of address at which books of account are maintained"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4cfsnbfc.html",
+      "text": "AOC-4 NBFC CFS - Consolidated financial statements for NBFCs"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4cfsnbfc-offline.html",
+      "text": "AOC-4 NBFC CFS - Consolidated financial statements for NBFCs - OFFLINE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-mgt7.html",
+      "text": "MGT-7 - Annual Return other than OPCs and Small Companies"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-mgt7-offline.html",
+      "text": "MGT-7 - Annual Return other than OPCs and Small Companies - OFFLINE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-mgt7a.html",
+      "text": "MGT-7A - Abridged Annual Return for OPCs and Small Companies"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-mgt7a-offline.html",
+      "text": "MGT-7A - Abridged Annual Return for OPCs and Small Companies - OFFLINE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-mgt15.html",
+      "text": "MGT-15 - Report on Annual General Meeting"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services.html",
+      "text": "Foreign company, Deposits &amp; Nidhi services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/DPT-3.html",
+      "text": "Form DPT 3 \u2013 Return of deposits"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/DPT-4.html",
+      "text": "Form DPT 4 \u2013 Statement regarding deposits existing on the commencement of the Act"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/form-ndh1.html",
+      "text": "NDH-1 \u2013 Return of Statutory Compliances"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/form-ndh2.html",
+      "text": "NDH-2 - Application for extension of time"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/form-ndh3.html",
+      "text": "NDH-3 - Return of Nidhi Company (Half year)"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/ndh-4-.html",
+      "text": "NDH-4 - Declaration as Nidhi Company"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/FormFC1.html",
+      "text": "FC-1 - Information by foreign company"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/FC-2-Alteration-in-the-documents-of-foreign-company.html",
+      "text": "FC-2 - Alteration in the documents of foreign company"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/FC-3.html",
+      "text": "FC-3 - Annual accounts by foreign company"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/FC-4.html",
+      "text": "FC-4 - Annual accounts by foreign company"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms.html",
+      "text": "Companies Act 1956 Forms"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-20b.html",
+      "text": "Form 20B - Filing annual return by a company having a share capital with the Registrar"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-21a.html",
+      "text": "Form 21A - Particulars of annual return for the company not having share capital"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-23ac.html",
+      "text": "23AC - Filing balance sheet"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-23ac-xbrl.html",
+      "text": "23AC XBRL - Filing XBRL document (Balance sheet)"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-23b.html",
+      "text": "Form 23B - Information by auditor to Registrar"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-23c.html",
+      "text": "Form 23C - Application for appointment of cost auditor"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-23d.html",
+      "text": "Form 23D - Information by cost auditor to Central Government"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-a-xbrl.html",
+      "text": "Form A-XBRL - Filing XBRL document in respect of compliance report and other documents with the Central Government"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-66.html",
+      "text": "Form 66 - Submission of compliance certificate with the Registrar"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-i-xbrl.html",
+      "text": "Form I-XBRL - Filing XBRL document in respect of cost audit report and other documents with the Central Government"
+    },
+    {
+      "href": "/content/mca/global/en/mca/complaints.html",
+      "text": "Complaints"
+    },
+    {
+      "href": "/content/mca/global/en/mca/complaints/create-service-related-complaint.html",
+      "text": "Create Service Related Complaint"
+    },
+    {
+      "href": "/content/mca/global/en/mca/complaints/track-service-related-complaint.html",
+      "text": "Track/Update Service Related Complaint"
+    },
+    {
+      "href": "/content/mca/global/en/mca/complaints/feedback-suggestions.html",
+      "text": "FeedBack/Suggestions"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services.html",
+      "text": "Document Related Services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services/view-public-documents-v3.html",
+      "text": "View Public Documents V3"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services/view-public-documents-v3/view-public-documents.html",
+      "text": "View Public Documents"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services/view-public-documents-v3/mycart.html",
+      "text": "My Cart"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services/view-public-documents-v3/workspace.html",
+      "text": "Workspace"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services/get-certified-copies-v3.html",
+      "text": "Get Certified Copies"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services/get-certified-copies-v3/my-cart-gcc.html",
+      "text": "My Cart GCC"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services/get-certified-copies-v3/my-workspace-gcc.html",
+      "text": "My Workspace GCC"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services/request-for-scanned-documents-v3.html",
+      "text": "Request For Scanned Documents"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fee-and-payment-services.html",
+      "text": "Fee And Payment Services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fee-and-payment-services/pay-miscellaneous-fee.html",
+      "text": "Pay Miscellaneous Fee"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fee-and-payment-services/pay-stamp-duty.html",
+      "text": "Pay Stamp Duty"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fee-and-payment-services/track-payment-status.html",
+      "text": "Track Payment Status"
+    },
+    {
+      "href": "/content/mca/global/en/mca/iepf-related-services.html",
+      "text": "IEPF related services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/iepf-related-services/IEPF-1.html",
+      "text": "IEPF-1 - Statement of amounts credited/Transfer of amounts"
+    },
+    {
+      "href": "/content/mca/global/en/mca/iepf-related-services/IEPF-1A.html",
+      "text": "IEPF-1A - Statement of amounts credited"
+    },
+    {
+      "href": "/content/mca/global/en/mca/iepf-related-services/IEPF-2.html",
+      "text": "IEPF-2 - Statement of unclaimed/unpaid amounts"
+    },
+    {
+      "href": "/content/mca/global/en/mca/iepf-related-services/IEPF-4.html",
+      "text": "IEPF-4 - Statement of shares and unclaimed/unpaid amounts"
+    },
+    {
+      "href": "/content/mca/global/en/mca/iepf-related-services/IEPF-5.html",
+      "text": "IEPF-5 Web form - Claiming unpaid amounts and shares"
+    },
+    {
+      "href": "/content/mca/global/en/mca/iepf-related-services/search-unclaimed-unpaid-amount-shares.html",
+      "text": "Search Unclaimed/ Unpaid Amount and Shares"
+    },
+    {
+      "href": "/content/mca/global/en/mca/iepf-related-services/details-of-nodal-officer-and-deputy-nodal-officer.html",
+      "text": "Details of Nodal Officer and Deputy Nodal officer"
+    },
+    {
+      "href": "/content/mca/global/en/mca/id-databank-services.html",
+      "text": "ID Databank services"
+    },
+    {
+      "href": "/content/mca/global/en/mca/id-databank-services/corporate-registration-v3-new.html",
+      "text": "Corporate Registration"
+    },
+    {
+      "href": "/content/mca/global/en/mca/id-databank-services/individual-registration-v3-new.html",
+      "text": "Individual Registration"
+    },
+    {
+      "href": "/content/mca/global/en/mca/address-for-sending-physical-copy-of-gar-33.html",
+      "text": "Address For Sending Physical Copy of G.A.R 33"
+    },
+    {
+      "href": "/content/mca/global/en/mca/public-search-of-trademark.html",
+      "text": "Public Search of Trademark"
+    },
+    {
+      "href": "/content/mca/global/en/mca/application-for-mha-security-clearance.html",
+      "text": "Application for MHA Security Clearance"
+    },
+    {
+      "href": "/content/mca/global/en/additional-services.html",
+      "text": "Additional Services"
+    },
+    {
+      "href": "/content/mca/global/en/additional-services/Enforcement.html",
+      "text": "Enforcement"
+    },
+    {
+      "href": "/content/mca/global/en/additional-services/E-adjudication.html",
+      "text": "E-adjudication"
+    },
+    {
+      "href": "/content/mca/global/en/additional-services/appeal.html",
+      "text": "Appeal"
+    },
+    {
+      "href": "/content/mca/global/en/additional-services/cms/advance%20notification.html",
+      "text": "Advance notification"
+    },
+    {
+      "href": "/content/mca/global/en/additional-services/cms/enotices.html",
+      "text": "e-notices"
+    },
+    {
+      "href": "/content/mca/global/en/additional-services/cms/historical-data.html",
+      "text": "Historical Data"
+    },
+    {
+      "href": "/content/mca/global/en/additional-services/econsultation.html",
+      "text": "E-Consultation"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports.html",
+      "text": "Data &amp; Reports"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports.html",
+      "text": "Reports"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/annual-reports.html",
+      "text": "Annual Reports"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/annual-reports/annual-report.html",
+      "text": "Annual Report"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/annual-reports/companies-2013.html",
+      "text": "Annual Reports on Working &amp; Administration of Companies Act, 2013"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/annual-reports/companies-1956.html",
+      "text": "Annual Reports on Working &amp; Administration of Companies Act, 1956"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/monthly-information-bulletin.html",
+      "text": "Monthly Information Bulletin"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/report-company-law.html",
+      "text": "Report Of The Expert Committee On Company Law"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/library.html",
+      "text": "Expert Committee Reports"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/miscellaneous.html",
+      "text": "Miscellaneous"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/miscellaneous/compendium-on-csr.html",
+      "text": "Compendium-on-CSR"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info.html",
+      "text": "Company/LLP Information"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/incorporated-closed-month.html",
+      "text": "Incorporated Or Closed During The Month"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/csr-data-summary.html",
+      "text": "CSR Data &amp; Summary"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/puc-range-wise.html",
+      "text": "PUC Range Wise"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert.html",
+      "text": "Companies Under Alert"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/mlm.html",
+      "text": "MLM Companies"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/vanishing-companies.html",
+      "text": "Vanishing Companies"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/disqualified-directors.html",
+      "text": "Disqualified Directors"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/defaulter-companies.html",
+      "text": "Defaulter Companies"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/defaulter-directors.html",
+      "text": "Defaulter Directors"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/defaulter-secretaries.html",
+      "text": "Defaulter Secretaries"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/dormant-companies.html",
+      "text": "Dormant Companies"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/companies-under-strike-off.html",
+      "text": "Companies under strike off"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/llps-under-strike-off.html",
+      "text": "LLPs under strike off"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/companies-nf-5inv.html",
+      "text": "Companies not filed 5INV"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info.html",
+      "text": "RD/ROC Information"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/companies-struck-roc.html",
+      "text": "List Of Companies Struck-Off By RoCs (STK-7) U/S 248(5) \u2013 CA,13"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/strike-off-notice-registrar.html",
+      "text": "Notice Of Strike-Off By Registrar(STK-7) As Per Sec. 248(1)-CA,13"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/public-notices.html",
+      "text": "Public Notices (STK-5) U/S 248(1)-CA,13"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/public-notices-stk6.html",
+      "text": "Public Notices (STK-6) U/S 248(2)-CA, 2013"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/directors-with-struckoff-companies.html",
+      "text": "List Of Directors Associated With Struck Off Companies U/S 248"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/proclaimed-offenders.html",
+      "text": "List Of Proclaimed Offenders U/S 82 Cr.PC."
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/disqualified-directors.html",
+      "text": "List Of Disqualified Directors U/S 164 (2)(A)"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/roc-adjudication-orders.html",
+      "text": "ROC Adjudication Orders"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/extension-agm.html",
+      "text": "Extension of AGM"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/strike-off-notice.html",
+      "text": "Notice Of Strike-Off Under LLP Rule 37"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/rd-adjudication-orders.html",
+      "text": "RD Adjudication Orders"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/rd-Compounding-orders.html",
+      "text": "RD Compounding orders"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq.html",
+      "text": "Help &amp; FAQs"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs.html",
+      "text": "FAQs"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/e-filing2.html",
+      "text": "E-Filing"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/e-filing2/steps-for-e-filing.html",
+      "text": "Steps for E-Filing"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/e-filing2/revised-filing-steps-faqs-of-form-3-llp.html",
+      "text": "Revised filing steps &amp; FAQs of Form 3 LLP"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/e-filing2/revised-filing-steps-faqs-of-form-11-llp.html",
+      "text": "Revised filing steps &amp; FAQs of Form 11 LLP"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/e-filing2/prerequisite-software-for-e-filing.html",
+      "text": "Prerequisite Software For E-Filing"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services.html",
+      "text": "Company Services"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/incorporation.html",
+      "text": "Incorporation &amp; Change services"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/incorporation/spiceplus-linked-filings.html",
+      "text": "SPICe+ &amp; linked filings"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/incorporation/one-person-company.html",
+      "text": "One Person Company"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/incorporation/agile-pro-s-form.html",
+      "text": "AGILE-PRO-S Form"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/incorporation/change-company-information.html",
+      "text": "Change Company Information"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/din-related.html",
+      "text": "DIN Related Forms"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/din-related/dir-3-kyc.html",
+      "text": "DIR-3 KYC"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/charge-management.html",
+      "text": "Charge Management"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/informational-services.html",
+      "text": "Informational &amp; Investor Services"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/compliance-filing.html",
+      "text": "Compliance Filing"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/approval-services.html",
+      "text": "Approval Services (ROC/RD/HQ)"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/others.html",
+      "text": "Others"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/user-registration2.html",
+      "text": "User Registration &amp; Login"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/payment2.html",
+      "text": "Payment"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/payment2/payment.html",
+      "text": "Payment"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/payment2/list-of-authorised-banks.html",
+      "text": "List Of Authorised Banks"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/payment2/refund.html",
+      "text": "Refund"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/payment2/cancel-srn-due-to-unsuccessful-payment.html",
+      "text": "Cancel SRN Due To Unsuccessful Payment"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/payment2/rates-of-stamp-duty.html",
+      "text": "Rates of Stamp Duty"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/payment2/estamp.html",
+      "text": "Estamp"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/offline-payment.html",
+      "text": "Offline Payment"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/offline-payment/faqs-offline-payment.html",
+      "text": "Offline payment"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/offline-payment/Steps-to-make-Offline-Payment.html",
+      "text": "Steps to make offline Payment"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/offline-payment/iepf-for-Pay-Miscellaneous-fee.html",
+      "text": "Offline payment process for IEPF-1 Form for Pay Miscellaneous Fee"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/dsc-services.html",
+      "text": "DSC Services"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/dsc-services/digital-signature-certificate.html",
+      "text": "DSC"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/dsc-services/associate-dsc.html",
+      "text": "V3 Associate DSC"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/dsc-services/dsc-registration.html",
+      "text": "Process for DSC Registration"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/dsc-services/dsc-requirements.html",
+      "text": "V2 DSC Requirements"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/xbrl1.html",
+      "text": "XBRL"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/mca-website.html",
+      "text": "MCA Website"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/mca-website/v3-website.html",
+      "text": "V3 Website"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/mca-website/e-book.html",
+      "text": "E-Book"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/mca-website/e-consultation.html",
+      "text": "E-Consultation"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/e-adjudication.html",
+      "text": "E-adjudication"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/iepf-website.html",
+      "text": "IEPF"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/iepf-website/iepf-5-Claimant.html",
+      "text": "FAQs for filing new IEPF-5 -Claimant"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/iepf-website/new-evr-company.html",
+      "text": "FAQs for filing new EVR -Company"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/crc.html",
+      "text": "Central Registration Center(CRC)"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/c-pace.html",
+      "text": "Centre For Processing Accelerated Corporate Exit (C-PACE)"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/system-requirements1.html",
+      "text": "System Requirements"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/system-requirements1/viewing-file-formats.html",
+      "text": "Viewing File Formats"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/important-documents.html",
+      "text": "Training Documents"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/annual-filing.html",
+      "text": "FAQs for Annual Filing"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/annual-filing/commonly-asked-questions.html",
+      "text": "Commonly Asked Questions on Annual Filing Forms"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/annual-filing/general.html",
+      "text": "General"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/annual-filing/adt-forms.html",
+      "text": "ADT forms"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/annual-filing/aoc-4-and-linked-filings.html",
+      "text": "AOC-4 and linked filings"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/annual-filing/cost-audit-forms.html",
+      "text": "Cost Audit forms"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/annual-filing/mgt-7-and-mgt-7a.html",
+      "text": "MGT-7 &amp; MGT-7A"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/annual-filing/offline-lilings-of-annual-forms.html",
+      "text": "Offline Filings of Annual Forms"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits.html",
+      "text": "e-filing Help Kits"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings.html",
+      "text": "Company e-filing"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/incorporation-services.html",
+      "text": "Incorporation Services"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/din-related-forms.html",
+      "text": "DIN Related Forms"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/charge-management.html",
+      "text": "Charge Management"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/Deposits.html",
+      "text": "Deposits"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/informational-services.html",
+      "text": "Informational Services"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/change-services.html",
+      "text": "Change Services"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/compliance-services.html",
+      "text": "Compliance Services"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/approval-services-regional-director.html",
+      "text": "Approval Services (Regional Director)"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/approval-services.html",
+      "text": "Approval Services (Registrar of Companies)"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/approval-services-headquarters.html",
+      "text": "Approval Services (Headquarters)"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/annual-filings.html",
+      "text": "Annual Filings"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/nidhi-services.html",
+      "text": "Nidhi Services"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/foreign-company-services.html",
+      "text": "Foreign Company Services"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/investor-services.html",
+      "text": "Investor Services"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/iepf-services.html",
+      "text": "IEPF Services"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/companies-act-1956-forms.html",
+      "text": "Companies Act 1956 Forms"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/llp-efilings.html",
+      "text": "LLP e-filing"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/penalties-and-Offences-under-companies-act-2013.html",
+      "text": "Penalties And Offences Under Companies&#39; Act, 2013"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us.html",
+      "text": "Contact Us"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/grievance-cell.html",
+      "text": "Grievance Cell"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/minister-corporate-affairs.html",
+      "text": "Minister of Corporate Affairs"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/minister-state-for-corporate-affairs.html",
+      "text": "Minister of State for Corporate Affairs"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/officials-at-head-quarters.html",
+      "text": "Officials at Head Quarters"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/DGCOA-Officers.html",
+      "text": "D G C O A Officers"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/rd.html",
+      "text": "Regional Directors"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/roc.html",
+      "text": "Registrar of Companies"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/official-liquidators.html",
+      "text": "Official Liquidators"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/cost-audit-branch.html",
+      "text": "Cost Audit Branch (CAB)"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/investor-grievance-management-cell.html",
+      "text": "Investor Grievance Management Cell"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/liasion-office.html",
+      "text": "Liasion Office for SC/ST/OBC"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/web-information-manager.html",
+      "text": "Web Information Manager"
+    },
+    {
+      "href": "/content/mca/global/en/external/pfmsviewdocument.html",
+      "text": "PFMS View Document"
+    },
+    {
+      "href": "https://amritmahotsav.nic.in/",
+      "text": ""
+    },
+    {
+      "href": "https://sfio.gov.in/",
+      "text": ""
+    },
+    {
+      "href": "http://www.iepf.gov.in",
+      "text": ""
+    },
+    {
+      "href": "http://iica.nic.in",
+      "text": ""
+    },
+    {
+      "href": "https://www.cci.gov.in",
+      "text": ""
+    },
+    {
+      "href": "https://ibbi.gov.in/en/",
+      "text": ""
+    },
+    {
+      "href": "http://nfra.gov.in",
+      "text": ""
+    },
+    {
+      "href": "http://nclat.nic.in",
+      "text": ""
+    },
+    {
+      "href": "http://nclt.gov.in",
+      "text": ""
+    },
+    {
+      "href": "https://csr.gov.in",
+      "text": ""
+    },
+    {
+      "href": "https://www.nfcg.in/",
+      "text": ""
+    },
+    {
+      "href": "https://www.india.gov.in/",
+      "text": ""
+    },
+    {
+      "href": "https://www.mcacdm.nic.in/",
+      "text": ""
+    },
+    {
+      "href": "/content/mca/global/en/about-us/aboutmca.html",
+      "text": "About"
+    },
+    {
+      "href": "/content/dam/mca/documents/Website_Policies.pdf",
+      "text": "Policies"
+    },
+    {
+      "href": "/content/mca/global/en/home/quick-links.html",
+      "text": "Links"
+    },
+    {
+      "href": "https://tmrsearch.ipindia.gov.in/tmrpublicsearch/",
+      "text": "Trademark&#39;s Portal"
+    },
+    {
+      "href": "/content/mca/global/en/home/disclaimer.html",
+      "text": "Disclaimer"
+    },
+    {
+      "href": "https://x.com/MCA21India",
+      "text": ""
+    },
+    {
+      "href": "https://www.facebook.com/MCA21India",
+      "text": ""
+    },
+    {
+      "href": "https://www.youtube.com/@MCA21India",
+      "text": ""
+    },
+    {
+      "href": "https://www.instagram.com/mca21india/",
+      "text": ""
+    },
+    {
+      "href": "https://www.linkedin.com/company/mca21india/",
+      "text": ""
+    }
+  ]
+}

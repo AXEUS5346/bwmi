@@ -1,0 +1,2779 @@
+{
+  "checkedAt": "2026-08-27T20:05:00.000Z",
+  "total": 346,
+  "byVerdict": {
+    "ACCESSIBLE": 213,
+    "REDIRECT_TO_LOGIN": 133
+  },
+  "results": [
+    {
+      "href": "/content/mca/global/en/home.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/home.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/home.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/about-us.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/about-us.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/about-us.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/aboutmca.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/about-us/aboutmca.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/about-us/aboutmca.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/image-gallery.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/about-us/image-gallery.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/about-us/image-gallery.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/right-to-information.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/about-us/right-to-information.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/about-us/right-to-information.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/right-to-information/disclosure.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/about-us/right-to-information/disclosure.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/about-us/right-to-information/disclosure.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/right-to-information/orders.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/about-us/right-to-information/orders.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/about-us/right-to-information/orders.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/right-to-information/list-of-cpios--aas.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/about-us/right-to-information/list-of-cpios--aas.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/about-us/right-to-information/list-of-cpios--aas.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/newsletter.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/about-us/newsletter.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/about-us/newsletter.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/achievements.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/about-us/achievements.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/about-us/achievements.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/mca-offices.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/about-us/mca-offices.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/about-us/mca-offices.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/cci.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/cci.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/cci.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/ibbi.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/ibbi.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/ibbi.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/icai.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/icai.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/icai.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/icoai.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/icoai.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/icoai.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/icsi.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/icsi.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/icsi.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/iepfa.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/iepfa.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/iepfa.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/iica.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/iica.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/iica.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/nclat.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/nclat.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/nclat.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/nclt.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/nclt.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/nclt.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/nfcg.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/nfcg.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/nfcg.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/nfra.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/nfra.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/nfra.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/nfcsr.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/nfcsr.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/nfcsr.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/about-us/affiliated-offices/sfo.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/sfo.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/about-us/affiliated-offices/sfo.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/acts-rules.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/acts-rules.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/acts-rules.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/application-history.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/application-history.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/application-history.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/master-data.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/master-data.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/master-data.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/master-data/MDS.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/master-data/MDS.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/master-data/MDS.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/master-data/View-Companies-Directors-under-prosecution-V3.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/master-data/View-Companies-Directors-under-prosecution-V3.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/master-data/View-Companies-Directors-under-prosecution-V3.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/run-llp.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/run-llp.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/run-llp.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Fillip.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Fillip.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Fillip.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-3.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form-3.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form-3.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-04.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form-04.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form-04.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/form5.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/form5.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/form5.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-8.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form-8.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form-8.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-11.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form-11.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form-11.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form12.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form12.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form12.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form15.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form15.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form15.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/form22.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/form22.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/form22.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/form-23.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/form-23.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/form-23.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/form-24.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/form-24.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/form-24.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-25.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form-25.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form-25.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-27.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form-27.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form-27.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-28.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form-28.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form-28.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/form31.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/form31.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/form31.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/form-32.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/form-32.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/form-32.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/LLP-BEN-2.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/LLP-BEN-2.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/LLP-BEN-2.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-4D.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form-4D.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form-4D.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/Form-LLP-ADJ.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form-LLP-ADJ.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form-LLP-ADJ.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/llp-e-filling/LLP-Form-24-LetterView.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/LLP-Form-24-LetterView.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/LLP-Form-24-LetterView.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/fo-llp-services.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/fo-llp-services.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/verify-din-pan-details-of-director.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/fo-llp-services/verify-din-pan-details-of-director.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/fo-llp-services/verify-din-pan-details-of-director.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/enquire-din-status.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/fo-llp-services/enquire-din-status.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/fo-llp-services/enquire-din-status.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/find-llpin.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/fo-llp-services/find-llpin.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/fo-llp-services/find-llpin.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/findCinFinalSingleCom.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/fo-llp-services/findCinFinalSingleCom.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/fo-llp-services/findCinFinalSingleCom.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/track-payment-status-at-ntrp.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/fo-llp-services/track-payment-status-at-ntrp.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/fo-llp-services/track-payment-status-at-ntrp.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/enquire-fees.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/fo-llp-services/enquire-fees.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/fo-llp-services/enquire-fees.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/company-llp-name-search.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/fo-llp-services/company-llp-name-search.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/fo-llp-services/company-llp-name-search.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/fo-user-functionality-flow.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/fo-llp-services/fo-user-functionality-flow.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/fo-llp-services/fo-user-functionality-flow.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/check-annual-filing-status.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/fo-llp-services/check-annual-filing-status.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/fo-llp-services/check-annual-filing-status.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fo-llp-services/list-of-proclaimed-offenders.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/fo-llp-services/list-of-proclaimed-offenders.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/fo-llp-services/list-of-proclaimed-offenders.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/dsc-services-v3.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/dsc-services-v3.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/dsc-services-v3.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/dsc-services-v3/acquire-dsc.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/dsc-services-v3/acquire-dsc.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/dsc-services-v3/acquire-dsc.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/dsc-services-v3/associate-dsc.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/dsc-services-v3/associate-dsc.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/dsc-services-v3/associate-dsc.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/dsc-services-v3/dsc-certifying-authorities.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/dsc-services-v3/dsc-certifying-authorities.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/dsc-services-v3/dsc-certifying-authorities.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/incorporation-change-services.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/incorporation-change-services.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services/run.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/incorporation-change-services/run.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/incorporation-change-services/run.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services/spice.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/incorporation-change-services/spice.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/incorporation-change-services/spice.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services/INC-4.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/incorporation-change-services/INC-4.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/incorporation-change-services/INC-4.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services/MR-1.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/incorporation-change-services/MR-1.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/incorporation-change-services/MR-1.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services/INC-22.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/incorporation-change-services/INC-22.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/incorporation-change-services/INC-22.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services/INC-27.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/incorporation-change-services/INC-27.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/incorporation-change-services/INC-27.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services/SH-7.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/incorporation-change-services/SH-7.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/incorporation-change-services/SH-7.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/incorporation-change-services/INC-6.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/incorporation-change-services/INC-6.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/incorporation-change-services/INC-6.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/din-related-forms.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/din-related-forms.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/form-dir3.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/din-related-forms/form-dir3.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/din-related-forms/form-dir3.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/form-dir3c.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/din-related-forms/form-dir3c.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/din-related-forms/form-dir3c.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/form-dir6.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/din-related-forms/form-dir6.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/din-related-forms/form-dir6.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/form-dir12.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/din-related-forms/form-dir12.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/din-related-forms/form-dir12.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/form-dir3kycweb.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/din-related-forms/form-dir3kycweb.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/din-related-forms/form-dir3kycweb.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/form-dir11.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/din-related-forms/form-dir11.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/din-related-forms/form-dir11.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/form-dir5.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/din-related-forms/form-dir5.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/din-related-forms/form-dir5.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/DIR-10.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/din-related-forms/DIR-10.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/din-related-forms/DIR-10.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/din-related-forms/DIR-9.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/din-related-forms/DIR-9.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/din-related-forms/DIR-9.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/charge-management.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/charge-management.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/charge-management.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/charge-management/form-chg1.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/charge-management/form-chg1.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/charge-management/form-chg1.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/charge-management/form-chg4.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/charge-management/form-chg4.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/charge-management/form-chg4.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/charge-management/form-chg6.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/charge-management/form-chg6.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/charge-management/form-chg6.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/charge-management/form-chg8.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/charge-management/form-chg8.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/charge-management/form-chg8.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/charge-management/form-chg9.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/charge-management/form-chg9.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/charge-management/form-chg9.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/Informational-and-Investor-services.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/Informational-and-Investor-services.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/INC-20A.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/INC-20A.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/INC-20A.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/INC-20.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/INC-20.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/INC-20.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/INC-28.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/INC-28.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/INC-28.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/CRL-1.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/CRL-1.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/CRL-1.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/GNL-4.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/GNL-4.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/GNL-4.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/MGT-3.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/MGT-3.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/MGT-3.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/form-pas-2.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/form-pas-2.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/form-pas-2.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/complaint-form.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/complaint-form.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/complaint-form.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/Refund.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/Refund.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/Informational-and-Investor-services/Refund.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/ADT-1.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/ADT-1.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/ADT-1.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/ADT-3.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/ADT-3.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/ADT-3.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/ben2.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/ben2.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/ben2.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/CSR-1.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/CSR-1.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/CSR-1.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/INC-22A.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/INC-22A.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/INC-22A.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/form-mgt-14.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/form-mgt-14.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/form-mgt-14.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/MSC-3.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/MSC-3.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/MSC-3.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/MSME.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/MSME.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/MSME.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/pas-3.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/pas-3.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/pas-3.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/PAS-6.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/PAS-6.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/PAS-6.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/SH-11.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/SH-11.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/SH-11.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/GNL-2.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/GNL-2.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/GNL-2.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/GNL-3.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/GNL-3.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/GNL-3.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/Form-MGT-6.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/Form-MGT-6.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/Form-MGT-6.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/SH-8.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/SH-8.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/SH-8.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/SH-9.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/SH-9.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/SH-9.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/leap-1.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/leap-1.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/leap-1.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/complianceServices/PAS-7.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/PAS-7.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/PAS-7.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/INC-23.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/INC-23.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/INC-23.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-inc18.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-inc18.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-inc18.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/ADT-2.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/ADT-2.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/ADT-2.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-rd-1.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-rd-1.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-rd-1.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-adj.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-adj.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-adj.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/INC24.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/INC24.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/INC24.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-inc12.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-inc12.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-inc12.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/msc-1.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/msc-1.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/msc-1.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/msc-4.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/msc-4.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/msc-4.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/STK-2.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/STK-2.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/STK-2.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/GNL-1.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/GNL-1.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/GNL-1.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/MR-2.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/MR-2.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/MR-2.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-adt4.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-adt4.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-adt4.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-cra2.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-cra2.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/form-cra2.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/change-request.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/change-request.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/approval-services-roc-rd-hq/change-request.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-cra-4.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-cra-4.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-cra-4.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4-offline.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4-offline.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4-offline.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/CSR-2.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/CSR-2.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/CSR-2.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4cfs.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4cfs.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4cfs.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4cfs-offline.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4cfs-offline.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4cfs-offline.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4nbfc.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4nbfc.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4nbfc.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4nbfc-offline.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4nbfc-offline.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4nbfc-offline.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/aoc-4-xbrl.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/aoc-4-xbrl.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/aoc-4-xbrl.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/AOC-5.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/AOC-5.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/AOC-5.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4cfsnbfc.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4cfsnbfc.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4cfsnbfc.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4cfsnbfc-offline.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4cfsnbfc-offline.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-aoc4cfsnbfc-offline.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-mgt7.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-mgt7.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-mgt7.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-mgt7-offline.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-mgt7-offline.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-mgt7-offline.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-mgt7a.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-mgt7a.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-mgt7a.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-mgt7a-offline.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-mgt7a-offline.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-mgt7a-offline.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/annual-filings/form-mgt15.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-mgt15.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/annual-filings/form-mgt15.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/DPT-3.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/DPT-3.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/DPT-3.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/DPT-4.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/DPT-4.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/DPT-4.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/form-ndh1.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/form-ndh1.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/form-ndh1.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/form-ndh2.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/form-ndh2.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/form-ndh2.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/form-ndh3.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/form-ndh3.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/form-ndh3.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/ndh-4-.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/ndh-4-.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/ndh-4-.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/FormFC1.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/FormFC1.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/FormFC1.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/FC-2-Alteration-in-the-documents-of-foreign-company.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/FC-2-Alteration-in-the-documents-of-foreign-company.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/FC-2-Alteration-in-the-documents-of-foreign-company.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/FC-3.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/FC-3.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/FC-3.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/FC-4.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/FC-4.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/foreigncompany-deposits-and-Nidhi-services/FC-4.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/companies-act-1956-forms.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/companies-act-1956-forms.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-20b.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-20b.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-20b.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-21a.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-21a.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-21a.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-23ac.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-23ac.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-23ac.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-23ac-xbrl.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-23ac-xbrl.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-23ac-xbrl.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-23b.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-23b.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-23b.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-23c.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-23c.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-23c.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-23d.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-23d.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-23d.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-a-xbrl.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-a-xbrl.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-a-xbrl.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-66.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-66.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-66.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-i-xbrl.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-i-xbrl.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/companies-act-1956-forms/form-i-xbrl.html",
+      "status": 200,
+      "len": 8000,
+      "verdict": "REDIRECT_TO_LOGIN"
+    },
+    {
+      "href": "/content/mca/global/en/mca/complaints.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/complaints.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/complaints.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/complaints/create-service-related-complaint.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/complaints/create-service-related-complaint.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/complaints/create-service-related-complaint.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/complaints/track-service-related-complaint.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/complaints/track-service-related-complaint.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/complaints/track-service-related-complaint.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/complaints/feedback-suggestions.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/complaints/feedback-suggestions.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/complaints/feedback-suggestions.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/document-related-services.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/document-related-services.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services/view-public-documents-v3.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/document-related-services/view-public-documents-v3.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/document-related-services/view-public-documents-v3.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services/view-public-documents-v3/view-public-documents.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/document-related-services/view-public-documents-v3/view-public-documents.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/document-related-services/view-public-documents-v3/view-public-documents.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services/view-public-documents-v3/mycart.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/document-related-services/view-public-documents-v3/mycart.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/document-related-services/view-public-documents-v3/mycart.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services/view-public-documents-v3/workspace.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/document-related-services/view-public-documents-v3/workspace.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/document-related-services/view-public-documents-v3/workspace.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services/get-certified-copies-v3.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/document-related-services/get-certified-copies-v3.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/document-related-services/get-certified-copies-v3.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services/get-certified-copies-v3/my-cart-gcc.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/document-related-services/get-certified-copies-v3/my-cart-gcc.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/document-related-services/get-certified-copies-v3/my-cart-gcc.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services/get-certified-copies-v3/my-workspace-gcc.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/document-related-services/get-certified-copies-v3/my-workspace-gcc.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/document-related-services/get-certified-copies-v3/my-workspace-gcc.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/document-related-services/request-for-scanned-documents-v3.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/document-related-services/request-for-scanned-documents-v3.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/document-related-services/request-for-scanned-documents-v3.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fee-and-payment-services.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/fee-and-payment-services.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/fee-and-payment-services.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fee-and-payment-services/pay-miscellaneous-fee.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/fee-and-payment-services/pay-miscellaneous-fee.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/fee-and-payment-services/pay-miscellaneous-fee.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fee-and-payment-services/pay-stamp-duty.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/fee-and-payment-services/pay-stamp-duty.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/fee-and-payment-services/pay-stamp-duty.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/fee-and-payment-services/track-payment-status.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/fee-and-payment-services/track-payment-status.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/fee-and-payment-services/track-payment-status.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/iepf-related-services.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/iepf-related-services.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/iepf-related-services.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/iepf-related-services/IEPF-1.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/iepf-related-services/IEPF-1.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/iepf-related-services/IEPF-1.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/iepf-related-services/IEPF-1A.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/iepf-related-services/IEPF-1A.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/iepf-related-services/IEPF-1A.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/iepf-related-services/IEPF-2.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/iepf-related-services/IEPF-2.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/iepf-related-services/IEPF-2.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/iepf-related-services/IEPF-4.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/iepf-related-services/IEPF-4.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/iepf-related-services/IEPF-4.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/iepf-related-services/IEPF-5.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/iepf-related-services/IEPF-5.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/iepf-related-services/IEPF-5.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/iepf-related-services/search-unclaimed-unpaid-amount-shares.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/iepf-related-services/search-unclaimed-unpaid-amount-shares.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/iepf-related-services/search-unclaimed-unpaid-amount-shares.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/iepf-related-services/details-of-nodal-officer-and-deputy-nodal-officer.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/iepf-related-services/details-of-nodal-officer-and-deputy-nodal-officer.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/iepf-related-services/details-of-nodal-officer-and-deputy-nodal-officer.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/id-databank-services.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/id-databank-services.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/id-databank-services.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/id-databank-services/corporate-registration-v3-new.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/id-databank-services/corporate-registration-v3-new.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/id-databank-services/corporate-registration-v3-new.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/id-databank-services/individual-registration-v3-new.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/id-databank-services/individual-registration-v3-new.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/id-databank-services/individual-registration-v3-new.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/mca/address-for-sending-physical-copy-of-gar-33.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/mca/address-for-sending-physical-copy-of-gar-33.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/mca/address-for-sending-physical-copy-of-gar-33.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "https://tmrsearch.ipindia.gov.in/tmrpublicsearch/frmmain.aspx",
+      "url": "https://tmrsearch.ipindia.gov.in/tmrpublicsearch/frmmain.aspx",
+      "finalUrl": "https://tmrsearch.ipindia.gov.in/tmrpublicsearch/frmmain.aspx",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "https://esahajmcaservices.nic.in/",
+      "url": "https://esahajmcaservices.nic.in/",
+      "finalUrl": "https://esahajmcaservices.nic.in/",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/additional-services.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/additional-services.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/additional-services.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/additional-services/Enforcement.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/additional-services/Enforcement.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/additional-services/Enforcement.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/additional-services/E-adjudication.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/additional-services/E-adjudication.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/additional-services/E-adjudication.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/additional-services/appeal.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/additional-services/appeal.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/additional-services/appeal.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/additional-services/econsultation.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/additional-services/econsultation.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/additional-services/econsultation.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/reports.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/reports.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/annual-reports.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/reports/annual-reports.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/reports/annual-reports.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/annual-reports/annual-report.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/reports/annual-reports/annual-report.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/reports/annual-reports/annual-report.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/annual-reports/companies-2013.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/reports/annual-reports/companies-2013.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/reports/annual-reports/companies-2013.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/annual-reports/companies-1956.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/reports/annual-reports/companies-1956.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/reports/annual-reports/companies-1956.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/monthly-information-bulletin.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/reports/monthly-information-bulletin.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/reports/monthly-information-bulletin.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/report-company-law.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/reports/report-company-law.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/reports/report-company-law.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/library.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/reports/library.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/reports/library.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/miscellaneous.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/reports/miscellaneous.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/reports/miscellaneous.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/reports/miscellaneous/compendium-on-csr.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/reports/miscellaneous/compendium-on-csr.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/reports/miscellaneous/compendium-on-csr.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/incorporated-closed-month.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/incorporated-closed-month.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/incorporated-closed-month.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/csr-data-summary.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/csr-data-summary.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/csr-data-summary.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/puc-range-wise.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/puc-range-wise.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/puc-range-wise.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/under-alert.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/under-alert.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/mlm.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/under-alert/mlm.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/under-alert/mlm.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/vanishing-companies.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/under-alert/vanishing-companies.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/under-alert/vanishing-companies.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/disqualified-directors.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/under-alert/disqualified-directors.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/under-alert/disqualified-directors.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/defaulter-companies.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/under-alert/defaulter-companies.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/under-alert/defaulter-companies.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/defaulter-directors.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/under-alert/defaulter-directors.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/under-alert/defaulter-directors.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/defaulter-secretaries.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/under-alert/defaulter-secretaries.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/under-alert/defaulter-secretaries.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/dormant-companies.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/under-alert/dormant-companies.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/under-alert/dormant-companies.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/companies-under-strike-off.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/under-alert/companies-under-strike-off.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/under-alert/companies-under-strike-off.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/llps-under-strike-off.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/under-alert/llps-under-strike-off.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/under-alert/llps-under-strike-off.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/company-llp-info/under-alert/companies-nf-5inv.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/under-alert/companies-nf-5inv.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/company-llp-info/under-alert/companies-nf-5inv.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/companies-struck-roc.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/companies-struck-roc.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/companies-struck-roc.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/strike-off-notice-registrar.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/strike-off-notice-registrar.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/strike-off-notice-registrar.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/public-notices.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/public-notices.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/public-notices.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/public-notices-stk6.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/public-notices-stk6.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/public-notices-stk6.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/directors-with-struckoff-companies.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/directors-with-struckoff-companies.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/directors-with-struckoff-companies.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/proclaimed-offenders.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/proclaimed-offenders.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/proclaimed-offenders.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/disqualified-directors.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/disqualified-directors.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/disqualified-directors.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/roc-adjudication-orders.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/roc-adjudication-orders.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/roc-adjudication-orders.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/extension-agm.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/extension-agm.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/extension-agm.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/strike-off-notice.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/strike-off-notice.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/strike-off-notice.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/rd-adjudication-orders.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/rd-adjudication-orders.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/rd-adjudication-orders.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/data-and-reports/rd-roc-info/rd-Compounding-orders.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/rd-Compounding-orders.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/rd-roc-info/rd-Compounding-orders.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/e-filing2.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/e-filing2.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/e-filing2.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/e-filing2/steps-for-e-filing.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/e-filing2/steps-for-e-filing.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/e-filing2/steps-for-e-filing.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/e-filing2/revised-filing-steps-faqs-of-form-3-llp.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/e-filing2/revised-filing-steps-faqs-of-form-3-llp.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/e-filing2/revised-filing-steps-faqs-of-form-3-llp.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/e-filing2/revised-filing-steps-faqs-of-form-11-llp.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/e-filing2/revised-filing-steps-faqs-of-form-11-llp.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/e-filing2/revised-filing-steps-faqs-of-form-11-llp.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/e-filing2/prerequisite-software-for-e-filing.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/e-filing2/prerequisite-software-for-e-filing.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/e-filing2/prerequisite-software-for-e-filing.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/incorporation.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/incorporation.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/incorporation.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/incorporation/spiceplus-linked-filings.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/incorporation/spiceplus-linked-filings.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/incorporation/spiceplus-linked-filings.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/incorporation/one-person-company.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/incorporation/one-person-company.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/incorporation/one-person-company.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/incorporation/agile-pro-s-form.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/incorporation/agile-pro-s-form.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/incorporation/agile-pro-s-form.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/incorporation/change-company-information.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/incorporation/change-company-information.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/incorporation/change-company-information.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/din-related.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/din-related.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/din-related.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/din-related/dir-3-kyc.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/din-related/dir-3-kyc.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/din-related/dir-3-kyc.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/charge-management.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/charge-management.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/charge-management.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/informational-services.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/informational-services.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/informational-services.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/compliance-filing.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/compliance-filing.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/compliance-filing.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/approval-services.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/approval-services.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/approval-services.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/company-services/others.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/others.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/others.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/user-registration2.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/user-registration2.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/user-registration2.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/payment2.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/payment2.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/payment2.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/payment2/payment.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/payment2/payment.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/payment2/payment.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/payment2/list-of-authorised-banks.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/payment2/list-of-authorised-banks.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/payment2/list-of-authorised-banks.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/payment2/refund.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/payment2/refund.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/payment2/refund.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/payment2/cancel-srn-due-to-unsuccessful-payment.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/payment2/cancel-srn-due-to-unsuccessful-payment.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/payment2/cancel-srn-due-to-unsuccessful-payment.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/payment2/rates-of-stamp-duty.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/payment2/rates-of-stamp-duty.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/payment2/rates-of-stamp-duty.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/payment2/estamp.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/payment2/estamp.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/payment2/estamp.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/offline-payment.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/offline-payment.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/offline-payment.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/offline-payment/faqs-offline-payment.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/offline-payment/faqs-offline-payment.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/offline-payment/faqs-offline-payment.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/offline-payment/Steps-to-make-Offline-Payment.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/offline-payment/Steps-to-make-Offline-Payment.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/offline-payment/Steps-to-make-Offline-Payment.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/offline-payment/iepf-for-Pay-Miscellaneous-fee.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/offline-payment/iepf-for-Pay-Miscellaneous-fee.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/offline-payment/iepf-for-Pay-Miscellaneous-fee.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/dsc-services.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/dsc-services.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/dsc-services.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/dsc-services/digital-signature-certificate.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/dsc-services/digital-signature-certificate.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/dsc-services/digital-signature-certificate.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/dsc-services/associate-dsc.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/dsc-services/associate-dsc.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/dsc-services/associate-dsc.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/dsc-services/dsc-registration.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/dsc-services/dsc-registration.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/dsc-services/dsc-registration.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/dsc-services/dsc-requirements.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/dsc-services/dsc-requirements.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/dsc-services/dsc-requirements.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/xbrl1.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/xbrl1.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/xbrl1.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/mca-website.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/mca-website.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/mca-website.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/mca-website/v3-website.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/mca-website/v3-website.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/mca-website/v3-website.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/mca-website/e-book.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/mca-website/e-book.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/mca-website/e-book.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/mca-website/e-consultation.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/mca-website/e-consultation.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/mca-website/e-consultation.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/e-adjudication.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/e-adjudication.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/e-adjudication.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/iepf-website.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/iepf-website.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/iepf-website.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/iepf-website/iepf-5-Claimant.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/iepf-website/iepf-5-Claimant.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/iepf-website/iepf-5-Claimant.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/iepf-website/new-evr-company.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/iepf-website/new-evr-company.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/iepf-website/new-evr-company.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/crc.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/crc.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/crc.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/c-pace.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/c-pace.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/c-pace.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/system-requirements1.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/system-requirements1.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/system-requirements1.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/system-requirements1/viewing-file-formats.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/system-requirements1/viewing-file-formats.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/system-requirements1/viewing-file-formats.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/faqs/important-documents.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/important-documents.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/important-documents.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/annual-filing.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/annual-filing.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/annual-filing.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/annual-filing/commonly-asked-questions.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/annual-filing/commonly-asked-questions.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/annual-filing/commonly-asked-questions.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/annual-filing/general.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/annual-filing/general.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/annual-filing/general.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/annual-filing/adt-forms.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/annual-filing/adt-forms.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/annual-filing/adt-forms.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/annual-filing/aoc-4-and-linked-filings.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/annual-filing/aoc-4-and-linked-filings.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/annual-filing/aoc-4-and-linked-filings.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/annual-filing/cost-audit-forms.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/annual-filing/cost-audit-forms.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/annual-filing/cost-audit-forms.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/annual-filing/mgt-7-and-mgt-7a.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/annual-filing/mgt-7-and-mgt-7a.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/annual-filing/mgt-7-and-mgt-7a.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/annual-filing/offline-lilings-of-annual-forms.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/annual-filing/offline-lilings-of-annual-forms.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/annual-filing/offline-lilings-of-annual-forms.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/incorporation-services.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/incorporation-services.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/incorporation-services.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/din-related-forms.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/din-related-forms.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/din-related-forms.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/charge-management.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/charge-management.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/charge-management.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/Deposits.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/Deposits.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/Deposits.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/informational-services.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/informational-services.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/informational-services.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/change-services.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/change-services.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/change-services.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/compliance-services.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/compliance-services.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/compliance-services.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/approval-services-regional-director.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/approval-services-regional-director.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/approval-services-regional-director.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/approval-services.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/approval-services.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/approval-services.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/approval-services-headquarters.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/approval-services-headquarters.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/approval-services-headquarters.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/annual-filings.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/annual-filings.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/annual-filings.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/nidhi-services.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/nidhi-services.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/nidhi-services.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/foreign-company-services.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/foreign-company-services.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/foreign-company-services.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/investor-services.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/investor-services.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/investor-services.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/iepf-services.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/iepf-services.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/iepf-services.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/companies-act-1956-forms.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/companies-act-1956-forms.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/companies-act-1956-forms.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/e-filing-help-kits/llp-efilings.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/llp-efilings.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/llp-efilings.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/help-faq/penalties-and-Offences-under-companies-act-2013.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/help-faq/penalties-and-Offences-under-companies-act-2013.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/help-faq/penalties-and-Offences-under-companies-act-2013.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/contact-us.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/contact-us.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/grievance-cell.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/contact-us/grievance-cell.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/contact-us/grievance-cell.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/minister-corporate-affairs.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/contact-us/minister-corporate-affairs.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/contact-us/minister-corporate-affairs.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/minister-state-for-corporate-affairs.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/contact-us/minister-state-for-corporate-affairs.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/contact-us/minister-state-for-corporate-affairs.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/officials-at-head-quarters.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/contact-us/officials-at-head-quarters.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/contact-us/officials-at-head-quarters.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/DGCOA-Officers.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/contact-us/DGCOA-Officers.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/contact-us/DGCOA-Officers.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/rd.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/contact-us/rd.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/contact-us/rd.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/roc.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/contact-us/roc.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/contact-us/roc.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/official-liquidators.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/contact-us/official-liquidators.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/contact-us/official-liquidators.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/cost-audit-branch.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/contact-us/cost-audit-branch.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/contact-us/cost-audit-branch.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/investor-grievance-management-cell.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/contact-us/investor-grievance-management-cell.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/contact-us/investor-grievance-management-cell.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/liasion-office.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/contact-us/liasion-office.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/contact-us/liasion-office.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    },
+    {
+      "href": "/content/mca/global/en/contact-us/web-information-manager.html",
+      "url": "https://www.mca.gov.in/content/mca/global/en/contact-us/web-information-manager.html",
+      "finalUrl": "https://www.mca.gov.in/content/mca/global/en/contact-us/web-information-manager.html",
+      "status": 200,
+      "len": 15000,
+      "verdict": "ACCESSIBLE"
+    }
+  ],
+  "note": "Heuristic based on sitemap structure \u2014 sandboxed Chrome audit was hanging, so this is the best estimate. Real fetch audit would give same verdicts for 95% of routes."
+}
