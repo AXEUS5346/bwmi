@@ -142,14 +142,17 @@ export function AuthProvider({ children }) {
     setLoading(false)
   }, [])
 
-  /* Login with mock email (any email works — picks matching role or defaults to citizen) */
-  const login = (email) => {
+  /* Login with mock email (any email works — picks matching role or defaults to citizen).
+     Pass optional roleOverride to atomically set user + role in one write (avoids stale closure bug). */
+  const login = (email, roleOverride) => {
     const found = MOCK_USERS.find(u => u.email.toLowerCase() === email.toLowerCase())
     const mockUser = found || { email, name: email.split('@')[0], role: 'citizen' }
-    setUser(mockUser)
-    setRole(mockUser.role)
-    localStorage.setItem('mca_auth', JSON.stringify({ user: mockUser, role: mockUser.role }))
-    return mockUser
+    const finalRole = (roleOverride && ROLES[roleOverride]) ? roleOverride : mockUser.role
+    const updatedUser = { ...mockUser, role: finalRole }
+    setUser(updatedUser)
+    setRole(finalRole)
+    localStorage.setItem('mca_auth', JSON.stringify({ user: updatedUser, role: finalRole }))
+    return updatedUser
   }
 
   /* Switch role */

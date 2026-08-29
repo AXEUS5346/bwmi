@@ -16,7 +16,7 @@ export default function Login() {
   const [email, setEmail] = useState('')
   const [step, setStep] = useState('email') // 'email' | 'role'
   const [submittedEmail, setSubmittedEmail] = useState('')
-  const { login, switchRole } = useAuth()
+  const { login } = useAuth()
   const nav = useNavigate()
 
   const handleEmailSubmit = (e) => {
@@ -27,14 +27,12 @@ export default function Login() {
   }
 
   const handleRoleSelect = (roleId) => {
-    login(submittedEmail)
-    switchRole(roleId)
+    login(submittedEmail, roleId)
     nav('/')
   }
 
   const handleGuestContinue = () => {
-    login('public@mca.gov.in')
-    switchRole('citizen')
+    login('public@mca.gov.in', 'citizen')
     nav('/')
   }
 
