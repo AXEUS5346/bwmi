@@ -173,13 +173,13 @@ export default function Header() {
                   <ul className="space-y-1">
                     {col.items.map((item) => (
                       <li key={item.id}>
-                        <Link to={item.href} onClick={() => setMegaId(null)} className="group flex flex-col px-3 py-2.5 hover:bg-white/5 transition-colors">
-                          <span className="text-sm font-medium text-white group-hover:text-nzCyan transition-colors">{item.label}</span>
+                        <Link to={item.href} onClick={() => setMegaId(null)} className="group flex flex-col px-3 py-2.5 hover:bg-white/10 transition-colors">
+                          <span className="text-sm font-medium text-white group-hover:text-white transition-colors">{item.label}</span>
                           {item.sub && <span className="text-xs text-nzMuted mt-0.5">{item.sub}</span>}
                           <span className="flex items-center gap-3 mt-1.5">
                             {item.fee && <span className="text-[11px] font-semibold text-nzMuted">{item.fee}</span>}
-                            <span className="text-nzCyan text-xs font-semibold group-hover:underline">Learn how &rarr;</span>
-                            <span className="text-nzPrimary text-xs font-semibold group-hover:underline">File now &rarr;</span>
+                            <span className="text-white/70 text-xs font-semibold group-hover:text-white group-hover:underline">Learn how &rarr;</span>
+                            <span className="text-white/70 text-xs font-semibold group-hover:text-white group-hover:underline">File now &rarr;</span>
                           </span>
                         </Link>
                       </li>
