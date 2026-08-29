@@ -1,0 +1,261 @@
+import { useState, useRef, useEffect } from 'react'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
+import { useAuth } from '../store/AuthContext'
+import { serviceTree } from '../data/serviceTree'
+
+const PRIMARY_NAV = [
+  { label: 'Home', href: '/' },
+  { label: 'Register a Company', treeId: 'start' },
+  { label: 'Maintain a Company', treeId: 'manage' },
+  { label: 'Online Services', treeId: 'file' },
+  { label: 'Help Centre', treeId: 'help' },
+]
+
+function getMegaCols(treeId) {
+  const node = serviceTree.find((s) => s.id === treeId)
+  return node?.cols || []
+}
+
+export default function Header() {
+  const [mobileOpen, setMobileOpen] = useState(false)
+  const [megaId, setMegaId] = useState(null)
+  const [searchOpen, setSearchOpen] = useState(false)
+  const [q, setQ] = useState('')
+  const [fontSize, setFontSize] = useState(16)
+  const nav = useNavigate()
+  const { user, logout } = useAuth()
+  const megaRef = useRef(null)
+  const megaTimer = useRef(null)
+
+  useEffect(() => {
+    const handler = (e) => {
+      if (megaRef.current && !megaRef.current.contains(e.target)) setMegaId(null)
+    }
+    document.addEventListener('mousedown', handler)
+    return () => document.removeEventListener('mousedown', handler)
+  }, [])
+
+  const location = useLocation()
+  useEffect(() => {
+    setMegaId(null)
+    setMobileOpen(false)
+  }, [location.pathname])
+
+  const megaEnter = (id) => { clearTimeout(megaTimer.current); setMegaId(id) }
+  const megaLeave = () => { megaTimer.current = setTimeout(() => setMegaId(null), 180) }
+
+  const doSearch = (e) => {
+    e.preventDefault()
+    if (!q.trim()) return
+    nav(`/search?q=${encodeURIComponent(q.trim())}`)
+    setQ('')
+    setSearchOpen(false)
+  }
+
+  return (
+    <header className="sticky top-0 z-50" style={{ fontSize: `${fontSize}px` }} role="banner">
+      {/* Tricolor Bar */}
+      <div className="tricolor-bar" aria-hidden="true">
+        <div className="bg-mcaSaffron" />
+        <div className="bg-white" />
+        <div className="bg-mcaGreen" />
+      </div>
+
+      {/* Utility Bar */}
+      <div className="bg-nzDarkTeal text-white text-xs">
+        <div className="max-w-[79rem] mx-auto px-4 sm:px-6 flex items-center justify-between h-10">
+          <div className="flex items-center gap-2">
+            <span className="text-mcaSaffron text-sm" aria-hidden="true">&#10022;</span>
+            <span className="font-medium tracking-wide">Government of India</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <button type="button" className="flex items-center gap-1 px-2 py-1 hover:bg-white/10 transition-colors">
+              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+              </svg>
+              <span>हिन्दी</span>
+            </button>
+            <span className="w-px h-4 bg-white/30" aria-hidden="true" />
+            <div className="flex items-center gap-1">
+              <span className="text-[10px] opacity-70">A</span>
+              <button type="button" onClick={() => setFontSize(s => Math.min(24, Math.max(12, s - 2)))} className="w-5 h-5 bg-white/15 hover:bg-white/25 flex items-center justify-center text-[11px] font-bold">A&minus;</button>
+              <button type="button" onClick={() => setFontSize(s => Math.min(24, Math.max(12, s + 2)))} className="w-5 h-5 bg-white/15 hover:bg-white/25 flex items-center justify-center text-[11px] font-bold">A+</button>
+            </div>
+            <span className="w-px h-4 bg-white/30" aria-hidden="true" />
+          </div>
+        </div>
+      </div>
+
+      {/* Brand Header */}
+      <div className="bg-white border-b border-nzDivider">
+        <div className="max-w-[79rem] mx-auto px-4 sm:px-6 flex items-center justify-between h-16 sm:h-20">
+          <Link to="/" className="flex items-center gap-3 shrink-0">
+            <span className="text-mcaSaffron text-2xl" aria-hidden="true">&#10022;</span>
+            <div className="flex flex-col justify-center">
+              <span className="text-sm sm:text-base font-semibold text-nzDarkTeal leading-tight">Ministry of Corporate Affairs</span>
+              
+            </div>
+          </Link>
+          <div className="flex items-center gap-3">
+            {user ? (
+              <>
+                <Link to="/dashboard" className="hidden sm:flex items-center gap-2 text-sm font-medium text-nzDarkTeal hover:text-nzPrimary transition-colors px-2 py-1">Dashboard</Link>
+                <span className="hidden sm:inline text-slate-300">|</span>
+                <span className="hidden sm:flex items-center gap-1.5 text-sm text-nzDarkTeal font-medium">Hello {user.name || user.email}</span>
+                <button type="button" onClick={logout} className="text-xs border border-nzDarkTeal text-nzDarkTeal px-3 py-1.5 hover:bg-nzDarkTeal hover:text-white transition-colors">Logout</button>
+              </>
+            ) : (
+              <Link to="/login" className="flex items-center gap-2 bg-nzPrimary text-white px-5 py-2 text-sm font-semibold hover:bg-[#005f8a] transition-colors" style={{ borderRadius: 0 }}>
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" /></svg>
+                Access your account
+              </Link>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* Nav Bar */}
+      <nav id="primary-nav" className="bg-nzMediumTeal text-white relative" aria-label="Primary navigation">
+        <div className="max-w-[79rem] mx-auto px-4 sm:px-6 flex items-center">
+          <ul className="hidden md:flex items-center w-full" role="menubar">
+            {PRIMARY_NAV.map((item) => (
+              <li key={item.label} className="relative" role="none">
+                {item.href ? (
+                  <Link to={item.href} role="menuitem" className="flex items-center gap-1 px-[36px] py-[28px] text-[16px] font-medium bg-white/15 border-b-[3px] border-white transition-colors">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0h4" /></svg>
+                    {item.label}
+                  </Link>
+                ) : (
+                  <button type="button" role="menuitem" aria-haspopup="true" aria-expanded={megaId === item.treeId} onMouseEnter={() => megaEnter(item.treeId)} onMouseLeave={megaLeave} onClick={() => setMegaId(prev => prev === item.treeId ? null : item.treeId)} className={`flex items-center gap-1.5 px-[36px] py-[28px] text-[16px] font-medium transition-colors ${megaId === item.treeId ? 'bg-white/10' : 'hover:bg-white/10'}`}>
+                    {item.label}
+                    <svg className={`w-3 h-3 text-nzCyan transition-transform ${megaId === item.treeId ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+                  </button>
+                )}
+              </li>
+            ))}
+            <li className="ml-auto" role="none">
+              <button type="button" onClick={() => setSearchOpen(o => !o)} className="flex items-center gap-2 px-3 py-2 text-[16px] font-medium hover:bg-white/10 transition-colors" aria-label="Search">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" /></svg>
+                <span className="hidden lg:inline">Search</span>
+              </button>
+            </li>
+          </ul>
+
+          {/* Mobile hamburger */}
+          <div className="md:hidden flex items-center ml-auto">
+            <button type="button" onClick={() => setMobileOpen(o => !o)} className="p-2 hover:bg-white/10 transition-colors" aria-label="Menu">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={mobileOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} /></svg>
+            </button>
+          </div>
+        </div>
+
+        {/* Search slide-down */}
+        {searchOpen && (
+          <div className="bg-nzDarkTeal/95 border-t border-white/10">
+            <form onSubmit={doSearch} className="max-w-[79rem] mx-auto px-4 sm:px-6 py-4" role="search">
+              <div className="relative max-w-2xl mx-auto">
+                <input type="search" value={q} onChange={e => setQ(e.target.value)} placeholder="Search companies, directors, forms..." className="w-full bg-white px-5 py-3 pr-12 text-sm text-nzDarkTeal placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-nzCyan" style={{ borderRadius: 0 }} autoFocus />
+                <button type="submit" className="absolute right-3 top-1/2 -translate-y-1/2 p-1.5 text-nzDarkTeal/60 hover:text-nzDarkTeal" aria-label="Submit search">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" /></svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        )}
+      </nav>
+
+      {/* Mega Menu */}
+      {megaId && (
+        <div ref={megaRef} className="hidden md:block absolute left-0 right-0 z-40 bg-nzDarkTeal border-b border-white/10 shadow-xl" onMouseEnter={() => megaEnter(megaId)} onMouseLeave={megaLeave}>
+          <div className="max-w-[79rem] mx-auto px-6 py-6">
+            <div className="grid grid-cols-3 gap-8">
+              {getMegaCols(megaId).map((col) => (
+                <div key={col.title}>
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-[#96B5C4] mb-3 pb-2 border-b border-white/10">{col.title}</h3>
+                  <ul className="space-y-1">
+                    {col.items.map((item) => (
+                      <li key={item.id}>
+                        <Link to={item.href} onClick={() => setMegaId(null)} className="group flex flex-col px-3 py-2.5 hover:bg-white/5 transition-colors">
+                          <span className="text-sm font-medium text-white group-hover:text-nzCyan transition-colors">{item.label}</span>
+                          {item.sub && <span className="text-xs text-nzMuted mt-0.5">{item.sub}</span>}
+                          <span className="flex items-center gap-3 mt-1.5">
+                            {item.fee && <span className="text-[11px] font-semibold text-nzMuted">{item.fee}</span>}
+                            <span className="text-nzCyan text-xs font-semibold group-hover:underline">Learn how &rarr;</span>
+                            <span className="text-nzPrimary text-xs font-semibold group-hover:underline">File now &rarr;</span>
+                          </span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Mobile Drawer */}
+      {mobileOpen && (
+        <div className="md:hidden fixed inset-0 z-50 flex" role="dialog" aria-modal="true">
+          <div className="absolute inset-0 bg-black/50" onClick={() => setMobileOpen(false)} />
+          <div className="relative w-80 max-w-[85vw] bg-white h-full overflow-y-auto shadow-2xl">
+            <div className="flex items-center justify-between bg-nzDarkTeal text-white px-4 py-3">
+              <span className="font-semibold text-sm">Menu</span>
+              <button type="button" onClick={() => setMobileOpen(false)} className="p-1 hover:bg-white/10" aria-label="Close">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+              </button>
+            </div>
+            <nav aria-label="Mobile navigation">
+              <ul>
+                {PRIMARY_NAV.map((item) => (
+                  <li key={item.label} className="border-b border-slate-100">
+                    {item.href ? (
+                      <Link to={item.href} onClick={() => setMobileOpen(false)} className="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-nzDarkTeal bg-nzLightBg/60 hover:bg-nzLightBg transition-colors">
+                        {item.label}
+                      </Link>
+                    ) : (
+                      <MobileNavItem item={item} onNavigate={() => setMobileOpen(false)} />
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
+        </div>
+      )}
+    </header>
+  )
+}
+
+function MobileNavItem({ item, onNavigate }) {
+  const [open, setOpen] = useState(false)
+  const cols = getMegaCols(item.treeId)
+
+  return (
+    <>
+      <button type="button" onClick={() => setOpen(o => !o)} className="w-full flex items-center justify-between px-4 py-3.5 text-sm font-medium text-slate-700 hover:bg-slate-50 transition-colors" aria-expanded={open}>
+        <span>{item.label}</span>
+        <svg className={`w-4 h-4 text-slate-400 transition-transform ${open ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+      </button>
+      {open && (
+        <div className="bg-slate-50 px-4 pb-3">
+          {cols.map((col) => (
+            <div key={col.title} className="mb-3 last:mb-0">
+              <h4 className="text-[11px] font-bold uppercase tracking-wider text-nzDarkTeal/70 mb-1.5">{col.title}</h4>
+              <ul className="space-y-0.5">
+                {col.items.map((sub) => (
+                  <li key={sub.id}>
+                    <Link to={sub.href} onClick={onNavigate} className="block px-3 py-2 text-sm text-slate-700 hover:bg-white hover:text-nzPrimary transition-colors">
+                      <span className="font-medium">{sub.label}</span>
+                      {sub.sub && <span className="ml-2 text-xs text-slate-400">{sub.sub}</span>}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      )}
+    </>
+  )
+}

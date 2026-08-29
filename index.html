@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCA — Ministry of Corporate Affairs | Government of India</title>
+    <meta name="description" content="Official portal of the Ministry of Corporate Affairs, Government of India. Access company registration, compliance filing, master data, e-forms, and corporate governance services." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- NZ Companies Register font stack: Gustan for headings, FiraSans for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="icon" type="image/svg+xml" href="images/ashoka_emblem.svg" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Fira Sans"', 'Inter', 'Helvetica', 'Arial', 'sans-serif'],
+              heading: ['"Fira Sans"', 'Inter', 'Helvetica', 'Arial', 'sans-serif'],
+              mono: ['"Courier New"', 'Courier', 'monospace'],
+            },
+            colors: {
+              /* ── NZ Companies Register exact palette ── */
+              nzDarkTeal:    '#033247',   /* Hero bg, utility bar */
+              nzMediumTeal:  '#004B6B',   /* Nav bar bg, company header */
+              nzPrimary:     '#0077AA',   /* CTA buttons, primary actions */
+              nzCyan:        '#00B5E2',   /* Search button, accent */
+              nzDarkBlue:    '#004C6B',   /* Modal headers */
+              nzMegaStep:    '#1D475A',   /* Mega menu step bg */
+              nzBorder:      '#96B5C4',   /* Nav borders, register links */
+              /* ── NZ Neutrals ── */
+              nzBlack:       '#0B0B0B',   /* Titles, strong text */
+              nzDarkGrey:    '#272727',   /* Labels, accordion text */
+              nzBody:        '#424242',   /* Body text, footer bg */
+              nzMuted:       '#808080',   /* Disabled/muted text */
+              nzDivider:     '#DCDDDE',   /* Dividers */
+              nzLightBg:     '#F5F5F5',   /* Page background */
+              nzSpinner:     '#F1F1F1',   /* Loading track */
+              /* ── App domain (functional pages) ── */
+              appPrimary:    '#008BC8',   /* Headings, links on app pages */
+              appDarkBg:     '#233342',   /* Search bar bg, footer */
+              appFooter:     '#2E88B3',   /* Enterprise footer */
+              appBorder:     '#646D80',   /* Borders on dark bg */
+              /* ── Status colors ── */
+              nzRed:         '#E61A10',   /* Errors, deactivation */
+              nzGreen:       '#749F34',   /* Success, registered */
+              nzYellow:      '#FCD358',   /* Liquidation tag */
+              nzYellowBg:    '#FEF2CD',   /* Liquidation bg */
+              /* ── MCA Indian identity ── */
+              mcaSaffron:    '#FF9933',
+              mcaGreen:      '#138808',
+              mcaRed:        '#DC2626',
+              /* ── Legacy aliases (map old names to NZ palette) ── */
+              mcaNavy:       '#004B6B',   /* Was #0B2C5C — now NZ medium teal */
+              mcaTeal:       '#00B5E2',   /* Was #0E7C7B — now NZ cyan */
+              mcaLight:      '#F5F5F5',   /* Was #F8FAFC — now NZ light bg */
+              mcaDark:       '#033247',   /* Was #0A1E2D — now NZ dark teal */
+              mcaGray:       '#808080',   /* Was #64748B — now NZ muted */
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      * { font-family: 'Fira Sans', 'Inter', Helvetica, Arial, sans-serif; }
+      h1, h2, h3, h4, h5, h6 { font-family: 'Fira Sans', 'Inter', Helvetica, Arial, sans-serif; }
+
+      /* Accessibility — screen-reader-only utility */
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      /* Skip-to-content links (3, matching NZ pattern) */
+      .skip-link {
+        position: absolute;
+        top: -100%;
+        left: 16px;
+        z-index: 9999;
+        padding: 12px 24px;
+        background: #424242;
+        color: #fff;
+        font-weight: 600;
+        border-radius: 3px;
+        text-decoration: none;
+        transition: top 0.2s ease;
+      }
+      .skip-link:focus {
+        top: 0;
+      }
+
+      /* Tricolour accent bar — 4mm total (Saffron/White/Green) */
+      .tricolor-bar { height: 4mm; display: flex; }
+      .tricolor-bar div { flex: 1; }
+
+      /* Scrollbar */
+      ::-webkit-scrollbar { width: 6px; height: 6px; }
+      ::-webkit-scrollbar-thumb { background: #DCDDDE; border-radius: 3px; }
+
+      /* Smooth scrolling */
+      body { scroll-behavior: smooth; background: #F5F5F5; }
+
+      /* NZ sharp corners — override all border-radius to 0 by default */
+      /* Components that need radius will add it explicitly */
+    </style>
+  </head>
+  <body class="bg-nzLightBg text-nzBody">
+
+    <!-- Skip links (3, matching NZ accessibility pattern) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#search-section" class="skip-link" style="left:200px">Skip to search</a>
+    <a href="#primary-nav" class="skip-link" style="left:380px">Skip to navigation</a>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
