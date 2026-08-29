@@ -64,6 +64,11 @@ export default function Header() {
           <div className="flex items-center gap-2">
             <span className="text-mcaSaffron text-sm" aria-hidden="true">&#10022;</span>
             <span className="font-medium tracking-wide">Government of India</span>
+            <span className="w-px h-4 bg-white/30 mx-1" aria-hidden="true" />
+            <Link to="/sitemap" className="flex items-center gap-1 px-2 py-0.5 bg-mcaSaffron text-white text-[11px] font-semibold hover:bg-[#E88A2E] transition-colors">
+              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" /></svg>
+              Site map
+            </Link>
           </div>
           <div className="flex items-center gap-3">
             <button type="button" className="flex items-center gap-1 px-2 py-1 hover:bg-white/10 transition-colors">
