@@ -19,7 +19,6 @@ function getMegaCols(treeId) {
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [megaId, setMegaId] = useState(null)
-  const [searchOpen, setSearchOpen] = useState(false)
   const [q, setQ] = useState('')
   const [fontSize, setFontSize] = useState(16)
   const nav = useNavigate()
@@ -48,7 +47,6 @@ export default function Header() {
     if (!q.trim()) return
     nav(`/search?q=${encodeURIComponent(q.trim())}`)
     setQ('')
-    setSearchOpen(false)
   }
 
   return (
@@ -85,16 +83,37 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Brand Header */}
+      {/* Brand Header — Logo + Title + Search + Account */}
       <div className="bg-white border-b border-nzDivider">
-        <div className="max-w-[79rem] mx-auto px-4 sm:px-6 flex items-center justify-between h-16 sm:h-20">
+        <div className="max-w-[79rem] mx-auto px-4 sm:px-6 flex items-center justify-between h-16 sm:h-20 gap-4">
+          {/* Left: Logo + Title */}
           <Link to="/" className="flex items-center gap-3 shrink-0">
-            <span className="text-mcaSaffron text-2xl" aria-hidden="true">&#10022;</span>
+            <img src="/images/mca_logo.svg" alt="MCA Logo" className="h-10 w-10 sm:h-12 sm:w-12" />
             <div className="flex flex-col justify-center">
               <span className="text-sm sm:text-base font-semibold text-nzDarkTeal leading-tight">Ministry of Corporate Affairs</span>
+              <span className="text-[10px] sm:text-xs text-nzMuted leading-tight">Companies Register of India</span>
             </div>
           </Link>
-          <div className="flex items-center gap-3">
+
+          {/* Center: Search Bar */}
+          <form onSubmit={doSearch} className="hidden md:flex flex-1 max-w-xl items-center" role="search">
+            <div className="relative w-full">
+              <input
+                type="search"
+                value={q}
+                onChange={e => setQ(e.target.value)}
+                placeholder="Search companies, directors, forms..."
+                className="w-full border border-nzDivider bg-nzLightBg px-4 py-2.5 pr-12 text-sm text-nzDarkTeal placeholder-nzMuted focus:border-nzPrimary focus:outline-none transition-colors"
+                style={{ borderRadius: 0 }}
+              />
+              <button type="submit" className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 text-nzMuted hover:text-nzPrimary transition-colors" aria-label="Search">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" /></svg>
+              </button>
+            </div>
+          </form>
+
+          {/* Right: Account */}
+          <div className="flex items-center gap-3 shrink-0">
             {user ? (
               <>
                 <span className="hidden sm:flex items-center gap-1.5 text-sm text-nzDarkTeal font-medium">Hello {user.name || user.email}</span>
@@ -110,7 +129,7 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Nav Bar */}
+      {/* Nav Bar — 5 items, no search button */}
       <nav id="primary-nav" className="bg-nzMediumTeal text-white relative" aria-label="Primary navigation">
         <div className="max-w-[79rem] mx-auto px-4 sm:px-6 flex items-center">
           <ul className="hidden md:flex items-center w-full" role="menubar">
@@ -129,35 +148,18 @@ export default function Header() {
                 )}
               </li>
             ))}
-            <li className="ml-auto" role="none">
-              <button type="button" onClick={() => setSearchOpen(o => !o)} className="flex items-center gap-2 px-3 py-2 text-[16px] font-medium hover:bg-white/10 transition-colors" aria-label="Search">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" /></svg>
-                <span className="hidden lg:inline">Search</span>
-              </button>
-            </li>
           </ul>
 
-          {/* Mobile hamburger */}
-          <div className="md:hidden flex items-center ml-auto">
+          {/* Mobile hamburger + mobile search */}
+          <div className="md:hidden flex items-center ml-auto gap-2">
+            <button type="button" onClick={() => nav('/search')} className="p-2 hover:bg-white/10 transition-colors" aria-label="Search">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" /></svg>
+            </button>
             <button type="button" onClick={() => setMobileOpen(o => !o)} className="p-2 hover:bg-white/10 transition-colors" aria-label="Menu">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={mobileOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} /></svg>
             </button>
           </div>
         </div>
-
-        {/* Search slide-down */}
-        {searchOpen && (
-          <div className="bg-nzDarkTeal/95 border-t border-white/10">
-            <form onSubmit={doSearch} className="max-w-[79rem] mx-auto px-4 sm:px-6 py-4" role="search">
-              <div className="relative max-w-2xl mx-auto">
-                <input type="search" value={q} onChange={e => setQ(e.target.value)} placeholder="Search companies, directors, forms..." className="w-full bg-white px-5 py-3 pr-12 text-sm text-nzDarkTeal placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-nzCyan" style={{ borderRadius: 0 }} autoFocus />
-                <button type="submit" className="absolute right-3 top-1/2 -translate-y-1/2 p-1.5 text-nzDarkTeal/60 hover:text-nzDarkTeal" aria-label="Submit search">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" /></svg>
-                </button>
-              </div>
-            </form>
-          </div>
-        )}
       </nav>
 
       {/* Mega Menu */}
