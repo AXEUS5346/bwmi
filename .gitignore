@@ -1,0 +1,80 @@
+node_modules/
+dist/
+.DS_Store
+*.bak
+.env
+.env.local
+.env.*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+--full-page
+node_modules/
+dist/
+.DS_Store
+*.bak
+.env
+.env.local
+.env.*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+--full-page
+
+# Research & docs
+*.md
+*.pdf
+*.csv
+*.json
+!package.json
+!package-lock.json
+!vite.config.js
+
+# Python scripts
+generate_*.py
+
+# Screenshots & recordings
+screenshots/
+*.mov
+
+# Tool directories
+.agents/
+.claude/
+.codex/
+.grok/
+.impeccable/
+bwmi-main/
+skills-lock.json
+node_modules/
+dist/
+.DS_Store
+*.bak
+.env
+.env.local
+.env.*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Research docs & scripts (local only)
+*.md
+*.pdf
+*.csv
+*.xlsx
+generate_*.py
+screenshots/
+*.mov
+--full-page
+
+# Agent/tool directories
+.agents/
+.claude/
+.codex/
+.grok/
+.impeccable/
+bwmi-main/
+skills-lock.json
+ nz-companies-register-design-analysis.md
