@@ -27,7 +27,6 @@ pnpm-debug.log*
 *.md
 *.pdf
 *.csv
-*.json
 !package.json
 !package-lock.json
 !vite.config.js
