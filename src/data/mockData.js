@@ -110,11 +110,11 @@ export const filings = [
 ]
 
 export const circulars = [
-  { id:" CIR/09/2024", date:"15-Feb-2026", title:"ROC bifurcation: Delhi split into Delhi I/II, Haryana", category:"Notification", important:true },
-  { id:" CIR/01/2026", date:"15-Apr-2026", title:"Companies Compliance Facilitation Scheme CCFS-2026 till 15 Jul 2026", category:"Circular", important:true },
-  { id:" G.S.R.943(E)", date:"31-Dec-2025", title:"DIR-3 KYC triennial (every 3 FY) by 30 Jun — effective 31 Mar 2026", category:"Amendment", important:true },
-  { id:" V3_FAQ", date:"18-Aug-2026", title:"Beta MCA Chatbot live (bottom-right)", category:"Update" },
-  { id:" NOTIF/2025", date:"23-Oct-2025", title:"New RDs/ROCs effective 16 Feb 2026 — DR site switchover", category:"Notification" },
+  { id:"CIR/09/2024", date:"15-Feb-2026", title:"ROC bifurcation: Delhi split into Delhi I/II, Haryana", category:"Notification", important:true },
+  { id:"CIR/01/2026", date:"15-Apr-2026", title:"Companies Compliance Facilitation Scheme CCFS-2026 till 15 Jul 2026", category:"Circular", important:true },
+  { id:"G.S.R.943(E)", date:"31-Dec-2025", title:"DIR-3 KYC triennial (every 3 FY) by 30 Jun — effective 31 Mar 2026", category:"Amendment", important:true },
+  { id:"V3_FAQ", date:"18-Aug-2026", title:"Beta MCA Chatbot live (bottom-right)", category:"Update" },
+  { id:"NOTIF/2025", date:"23-Oct-2025", title:"New RDs/ROCs effective 16 Feb 2026 — DR site switchover", category:"Notification" },
 ]
 
 export const notices = [

@@ -1,6 +1,7 @@
 import { Routes, Route, Link } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import ErrorBoundary from './components/ErrorBoundary'
 import Home from './pages/Home'
 import Search from './pages/Search'
 import CompanyDetail from './pages/CompanyDetail'
@@ -41,41 +42,43 @@ export default function App() {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-1">
-        <Routes>
-          <Route path="/" element={<Home />} />
+        <ErrorBoundary>
+          <Routes>
+            <Route path="/" element={<Home />} />
 
-          {/* Search */}
-          <Route path="/search" element={<Search />} />
-          <Route path="/search/company/:cin" element={<CompanyDetail />} />
-          <Route path="/search/director/:din" element={<Search />} />
+            {/* Search */}
+            <Route path="/search" element={<Search />} />
+            <Route path="/search/company/:cin" element={<CompanyDetail />} />
+            <Route path="/search/director/:din" element={<Search />} />
 
-          {/* Services / Catalog */}
-          <Route path="/services" element={<Catalog />} />
-          <Route path="/services/online" element={<Catalog />} />
-          <Route path="/services/view-docs" element={<ViewDocs />} />
-          <Route path="/services/fee-calculator" element={<FeeCalculator />} />
-          <Route path="/services/:formId" element={<FormDetail />} />
+            {/* Services / Catalog */}
+            <Route path="/services" element={<Catalog />} />
+            <Route path="/services/online" element={<Catalog />} />
+            <Route path="/services/view-docs" element={<ViewDocs />} />
+            <Route path="/services/fee-calculator" element={<FeeCalculator />} />
+            <Route path="/services/:formId" element={<FormDetail />} />
 
-          {/* eFiling (aliases) */}
-          <Route path="/efiling" element={<Catalog />} />
-          <Route path="/efiling/:formId" element={<FormDetail />} />
+            {/* eFiling (aliases) */}
+            <Route path="/efiling" element={<Catalog />} />
+            <Route path="/efiling/:formId" element={<FormDetail />} />
 
-          {/* Auth */}
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Login />} />
+            {/* Auth */}
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Login />} />
 
-          {/* Information */}
-          <Route path="/sitemap" element={<SiteMap />} />
-          <Route path="/help" element={<Help />} />
-          <Route path="/help/:id" element={<Help />} />
-          <Route path="/about" element={<AboutMCA />} />
-          <Route path="/acts-rules" element={<ActsRules />} />
-          <Route path="/additional-services" element={<AdditionalServices />} />
-          <Route path="/data-reports" element={<DataReports />} />
-          <Route path="/contact" element={<ContactUs />} />
+            {/* Information */}
+            <Route path="/sitemap" element={<SiteMap />} />
+            <Route path="/help" element={<Help />} />
+            <Route path="/help/:id" element={<Help />} />
+            <Route path="/about" element={<AboutMCA />} />
+            <Route path="/acts-rules" element={<ActsRules />} />
+            <Route path="/additional-services" element={<AdditionalServices />} />
+            <Route path="/data-reports" element={<DataReports />} />
+            <Route path="/contact" element={<ContactUs />} />
 
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </ErrorBoundary>
       </main>
       <Footer />
     </div>
