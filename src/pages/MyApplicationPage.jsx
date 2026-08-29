@@ -7,7 +7,7 @@ export default function MyApplicationPage() {
   useEffect(() => {
     // Redirect to dashboard after a brief moment
     const timer = setTimeout(() => {
-      navigate('/dashboard', { replace: true })
+      navigate('/', { replace: true })
     }, 2000)
     return () => clearTimeout(timer)
   }, [navigate])
@@ -44,14 +44,14 @@ export default function MyApplicationPage() {
               My Applications has moved
             </h1>
             <p className="text-sm text-slate-600 leading-relaxed mb-6">
-              This page has been consolidated into the Dashboard. You will be
+              This page has been consolidated. You will be
               redirected automatically in a few seconds.
             </p>
             <Link
-              to="/dashboard"
-              className="inline-flex items-center gap-2 bg-[#0B2C5C] text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-[#0B2C5C]/90 transition-colors"
+              to="/"
+              className="inline-flex items-center gap-2 bg-nzPrimary text-white px-6 py-2.5 text-sm font-medium hover:bg-nzMediumTeal transition-colors"
             >
-              Go to Dashboard <span aria-hidden="true">→</span>
+              Go to Home <span aria-hidden="true">→</span>
             </Link>
           </div>
         </div>

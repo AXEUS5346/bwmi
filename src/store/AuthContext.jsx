@@ -2,7 +2,7 @@ import { createContext, useContext, useState, useEffect } from 'react'
 
 /**
  * Role-based mock auth context.
- * After login, user picks a role → homepage/dashboard shows role-specific content.
+ * After login, user picks a role → homepage shows role-specific content.
  * No backend — all state in localStorage.
  */
 
@@ -20,7 +20,7 @@ export const ROLES = {
       { label: 'Incorporate (SPICe+)', icon: 'fa-building', href: '/efiling/SPICe+', formId: 'SPICe+' },
       { label: 'Commencement (INC-20A)', icon: 'fa-flag-checkered', href: '/efiling/INC-20A', formId: 'INC-20A' },
       { label: 'Fee Calculator', icon: 'fa-calculator', href: '/services/fee-calculator' },
-      { label: 'Track Application', icon: 'fa-clock-rotate-left', href: '/dashboard' },
+      { label: 'Track Application', icon: 'fa-clock-rotate-left', href: '/search?type=company' },
     ],
     notifications: [
       'File INC-20A within 180 days of incorporation',
@@ -37,7 +37,7 @@ export const ROLES = {
       { label: 'Annual Return (MGT-7)', icon: 'fa-file-circle-check', href: '/efiling/MGT-7', formId: 'MGT-7' },
       { label: 'Director KYC (DIR-3)', icon: 'fa-id-card', href: '/efiling/DIR-3-KYC', formId: 'DIR-3-KYC' },
       { label: 'Create Charge (CHG-1)', icon: 'fa-landmark', href: '/efiling/CHG-1', formId: 'CHG-1' },
-      { label: 'My Applications', icon: 'fa-folder-open', href: '/dashboard' },
+      { label: 'My Applications', icon: 'fa-folder-open', href: '/search?type=company' },
     ],
     notifications: [
       'AOC-4 due for 12 clients by 30 Sep',
@@ -53,7 +53,7 @@ export const ROLES = {
     quickActions: [
       { label: 'Company Search', icon: 'fa-magnifying-glass', href: '/search?type=company' },
       { label: 'View Public Documents', icon: 'fa-file-lines', href: '/services/view-docs' },
-      { label: 'Track SRN Status', icon: 'fa-timeline', href: '/dashboard' },
+      { label: 'Track SRN Status', icon: 'fa-timeline', href: '/search?type=company' },
       { label: 'File MGT-14 (Resolutions)', icon: 'fa-file-contract', href: '/efiling/MGT-14', formId: 'MGT-14' },
       { label: 'Acts & Rules', icon: 'fa-scale-balanced', href: '/help/acts' },
     ],
@@ -72,7 +72,7 @@ export const ROLES = {
       { label: 'My Companies', icon: 'fa-building', href: '/search?type=company' },
       { label: 'DSC Management', icon: 'fa-key', href: '/efiling/DSC' },
       { label: 'File AOC-4', icon: 'fa-file-invoice-dollar', href: '/efiling/AOC-4', formId: 'AOC-4' },
-      { label: 'Resubmission', icon: 'fa-rotate', href: '/dashboard' },
+      { label: 'Resubmission', icon: 'fa-rotate', href: '/search?type=company' },
     ],
     notifications: [
       'DIN 003067 KYC due by 30 Jun 2028',

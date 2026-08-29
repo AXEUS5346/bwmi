@@ -2,14 +2,6 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth, ROLES } from '../store/AuthContext'
 
-const DEMO_EMAILS = [
-  { email: 'bmwi@aeos.com', label: 'Entrepreneur' },
-  { email: 'rahul@cafirm.com', label: 'CA/CS' },
-  { email: 'priya@legal.co', label: 'Attorney' },
-  { email: 'neha@corp.co', label: 'Director' },
-  { email: 'suresh@bank.in', label: 'Investor' },
-  { email: 'public@mca.gov.in', label: 'Guest' },
-]
 
 const ROLE_CARDS = [
   { id: 'entrepreneur', label: 'Entrepreneur / Founder', icon: 'fa-rocket', tagline: 'Start and grow your business' },
@@ -37,13 +29,13 @@ export default function Login() {
   const handleRoleSelect = (roleId) => {
     login(submittedEmail)
     switchRole(roleId)
-    nav('/dashboard')
+    nav('/')
   }
 
   const handleGuestContinue = () => {
     login('public@mca.gov.in')
     switchRole('citizen')
-    nav('/dashboard')
+    nav('/')
   }
 
   return (
@@ -106,23 +98,6 @@ export default function Login() {
               </button>
             </form>
 
-            {/* ── Helper text ── */}
-            <div className="mt-6 pt-5 border-t border-nzDivider">
-              <p className="text-sm text-nzMuted leading-relaxed mb-3">
-                For this demo, any email works. Pre-configured emails show role-specific dashboards.
-              </p>
-              <p className="text-xs text-nzMuted leading-relaxed">
-                Pre-configured emails:
-              </p>
-              <ul className="mt-2 space-y-1">
-                {DEMO_EMAILS.map((d) => (
-                  <li key={d.email} className="text-xs text-nzBody">
-                    <span className="font-medium">{d.email}</span>
-                    <span className="text-nzMuted"> &rarr; {d.label}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
         )}
 

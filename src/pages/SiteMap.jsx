@@ -109,9 +109,8 @@ const SECTIONS = [
     title: 'Your Account',
     links: [
       { label: 'Login / Register', to: '/login' },
-      { label: 'Dashboard', to: '/dashboard' },
-      { label: 'My Applications', to: '/dashboard' },
-      { label: 'Saved Drafts', to: '/dashboard' },
+      { label: 'My Applications', to: '/search?type=company' },
+      { label: 'Company Search', to: '/search?type=company' },
     ],
   },
 ]

@@ -6,7 +6,6 @@ import Search from './pages/Search'
 import CompanyDetail from './pages/CompanyDetail'
 import Catalog from './pages/Catalog'
 import FormDetail from './pages/FormDetail'
-import Dashboard from './pages/Dashboard'
 import Login from './pages/Login'
 import Help from './pages/Help'
 import AboutMCA from './pages/AboutMCA'
@@ -61,8 +60,7 @@ export default function App() {
           <Route path="/efiling" element={<Catalog />} />
           <Route path="/efiling/:formId" element={<FormDetail />} />
 
-          {/* Dashboard / Auth */}
-          <Route path="/dashboard" element={<Dashboard />} />
+          {/* Auth */}
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Login />} />
 

@@ -92,14 +92,11 @@ export default function Header() {
             <span className="text-mcaSaffron text-2xl" aria-hidden="true">&#10022;</span>
             <div className="flex flex-col justify-center">
               <span className="text-sm sm:text-base font-semibold text-nzDarkTeal leading-tight">Ministry of Corporate Affairs</span>
-              <span className="text-[10px] sm:text-xs text-nzMuted leading-tight">Empowering Business, Protecting Investors</span>
             </div>
           </Link>
           <div className="flex items-center gap-3">
             {user ? (
               <>
-                <Link to="/dashboard" className="hidden sm:flex items-center gap-2 text-sm font-medium text-nzDarkTeal hover:text-nzPrimary transition-colors px-2 py-1">Dashboard</Link>
-                <span className="hidden sm:inline text-slate-300">|</span>
                 <span className="hidden sm:flex items-center gap-1.5 text-sm text-nzDarkTeal font-medium">Hello {user.name || user.email}</span>
                 <button type="button" onClick={logout} className="text-xs border border-nzDarkTeal text-nzDarkTeal px-3 py-1.5 hover:bg-nzDarkTeal hover:text-white transition-colors">Logout</button>
               </>

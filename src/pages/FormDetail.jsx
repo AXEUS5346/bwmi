@@ -233,10 +233,10 @@ export default function FormDetail() {
           {/* actions */}
           <div className="flex flex-col sm:flex-row justify-center gap-3 mt-8">
             <Link
-              to="/dashboard"
-              className="bg-mcaNavy text-white px-7 py-2.5 rounded-lg font-semibold hover:opacity-90 transition text-center"
+              to="/"
+              className="bg-nzPrimary text-white px-7 py-2.5 font-semibold hover:bg-nzMediumTeal transition text-center"
             >
-              View in Dashboard
+              Back to Home
             </Link>
             <button
               onClick={() => {
