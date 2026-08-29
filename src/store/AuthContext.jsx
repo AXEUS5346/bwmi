@@ -116,7 +116,7 @@ export const ROLES = {
 
 /* ── Mock user accounts ── */
 const MOCK_USERS = [
-  { email: 'amit@startup.in', name: 'Amit Sharma', role: 'entrepreneur' },
+  { email: 'bmwi@aeos.com', name: 'BMW Aeos', role: 'entrepreneur' },
   { email: 'rahul@cafirm.com', name: 'Rahul Mehta, CA', role: 'ca_cs' },
   { email: 'priya@legal.co', name: 'Priya Verma, Advocate', role: 'attorney' },
   { email: 'neha@corp.co', name: 'Neha Kapoor', role: 'director' },

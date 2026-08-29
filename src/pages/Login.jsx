@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useAuth, ROLES } from '../store/AuthContext'
 
 const DEMO_EMAILS = [
-  { email: 'amit@startup.in', label: 'Entrepreneur' },
+  { email: 'bmwi@aeos.com', label: 'Entrepreneur' },
   { email: 'rahul@cafirm.com', label: 'CA/CS' },
   { email: 'priya@legal.co', label: 'Attorney' },
   { email: 'neha@corp.co', label: 'Director' },
