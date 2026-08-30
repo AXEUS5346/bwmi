@@ -98,7 +98,16 @@ export const formsCatalog = [
   { id:"INC-22", title:"INC-22 — Registered Office", category:"Manage", fee:"₹300", desc:"Change office", steps:["CIN","New Address + Proof","NOC","Pay"] },
   { id:"INC-23", title:"INC-23 — Shifting (RD)", category:"Manage", fee:"₹1000", desc:"Inter-state shifting", steps:["CIN","New State","RD Approval","Pay"] },
   { id:"RUN-LLP", title:"RUN-LLP — LLP Name", category:"Start", fee:"₹200", desc:"Reserve LLP name", steps:["Proposed Names","Significance","Pay"] },
-  { id:"Form-3", title:"Form 3 — LLP Agreement", category:"Manage", fee:"₹50", desc:"Agreement & changes", steps:["LLPIN","Agreement Details","Pay"] },
+  { id:"Form-3", title:"Form 3 — LLP Agreement", category:"Manage", fee:"₹50", desc:"File LLP Agreement within 30 days of incorporation. Also file when amending the agreement.", steps:["LLPIN","Agreement Details","Partner Consent","Attach Agreement","Pay"] },
+  { id:"Form-4", title:"Form 4 — Change in Partners", category:"Manage", fee:"₹300", desc:"Intimation of change in partners, designated partners, or their particulars (cessation, admission, change in contribution)", steps:["LLPIN","Existing Partners","New/Changed Partner Details","Effective Date","Partner Consent","Pay"] },
+  { id:"Form-5", title:"Form 5 — Change of Name", category:"Manage", fee:"₹200", desc:"Application for conversion of LLP name or change of LLP name after RUN-LLP approval", steps:["LLPIN","RUN-LLP SRN","New Name Approval","Resolution/Consent","Pay"] },
+  { id:"Form-12", title:"Form 12 — Intimation of Address", category:"File & Comply", fee:"₹50", desc:"Intimation of change in situation of registered office of LLP within the same ROC jurisdiction", steps:["LLPIN","New Address","Proof of Address","Effective Date","Pay"] },
+  { id:"Form-15", title:"Form 15 — Change of Registered Office", category:"Manage", fee:"₹300", desc:"Notice of change in the situation of registered office from one ROC to another (inter-state)", steps:["LLPIN","Current Office","New Office (Different State)","NOC from Partners","RD Approval","Pay"] },
+  { id:"Form-22", title:"Form 22 — Intimation of Order", category:"File & Comply", fee:"₹0", desc:"Intimation of order passed by Court, Tribunal, or Appellate Tribunal affecting the LLP", steps:["LLPIN","Court/Tribunal Details","Order Date & Copy","Effect on LLP","Pay"] },
+  { id:"Form-23", title:"Form 23 — Application for Name Change", category:"Manage", fee:"₹200", desc:"Application to the Registrar for approval of new name or reservation of name for LLP under Section 17", steps:["LLPIN","Proposed New Name (2 options)","Name Significance","RUN-LLP SRN","Pay"] },
+  { id:"Form-25", title:"Form 25 — Reservation of Name", category:"Start", fee:"₹200", desc:"Application for reservation of name by a limited liability partnership or proposed LLP", steps:["Proposed Names (2)","Name Significance","Entity Type","Pay"] },
+  { id:"Form-27", title:"Form 27 — Registration by Foreign LLP", category:"Start", fee:"₹500", desc:"Application for registration of a Foreign Limited Liability Partnership (FLLP) established outside India", steps:["FLLP Details","Country of Incorporation","Registered Address Abroad","Authorized Representative in India","MOA/Agreement","Pay"] },
+  { id:"Form-24", title:"Form 24 — LLP Strike-off", category:"Close & Claim", fee:"₹0", desc:"Application for striking off the name of LLP from the Register under Section 55", steps:["LLPIN","Grounds for Strike-off","Consent of Partners","Affidavit & Indemnity","Pay"] },
 ]
 
 export const filings = [

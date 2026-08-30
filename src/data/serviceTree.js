@@ -50,6 +50,7 @@ export const serviceTree = [
         items: [
           { id: "run", label: "RUN — Reserve Unique Name", form: "RUN", href: "/efiling/RUN", fee: "₹1000", complexity: "medium" },
           { id: "run-llp", label: "RUN-LLP", form: "RUN-LLP", href: "/efiling/RUN-LLP", fee: "₹200", complexity: "medium" },
+          { id: "form25", label: "Form 25 — LLP Name Reservation", sub: "New LLP or name change", href: "/efiling/Form-25", fee: "₹200", complexity: "medium" },
         ]
       },
       {
@@ -57,6 +58,7 @@ export const serviceTree = [
         items: [
           { id: "spice", label: "SPICe+ (INC-32)", sub: "Company + PAN/TAN/EPFO/ESIC/GST/Bank", form: "SPICe+", href: "/efiling/SPICe+", badge: "7-in-1", fee: "₹1313 + Stamp", complexity: "complex" },
           { id: "fillip", label: "FiLLiP — LLP Incorporation", form: "FiLLiP", href: "/efiling/FiLLiP", fee: "₹500", complexity: "complex" },
+          { id: "form27", label: "Form 27 — Foreign LLP Registration", sub: "FLLP registered in India", href: "/efiling/Form-27", fee: "₹500", complexity: "complex" },
         ]
       },
       {
@@ -98,6 +100,9 @@ export const serviceTree = [
           { id: "inc24", label: "INC-24 — Name Change", href: "/efiling/INC-24", fee: "₹300", complexity: "medium" },
           { id: "mgt14", label: "MGT-14 — Resolutions", href: "/efiling/MGT-14", fee: "₹300", complexity: "medium" },
           { id: "adt1", label: "ADT-1 — Auditor", href: "/efiling/ADT-1", fee: "₹300", complexity: "medium" },
+          { id: "form5", label: "Form 5 — LLP Name Change", sub: "After RUN-LLP approval", href: "/efiling/Form-5", fee: "₹200", complexity: "medium" },
+          { id: "form15", label: "Form 15 — LLP Office Change", sub: "Inter-state (RD)", href: "/efiling/Form-15", fee: "₹300", complexity: "complex" },
+          { id: "form23", label: "Form 23 — LLP Name Application", sub: "Under Section 17", href: "/efiling/Form-23", fee: "₹200", complexity: "medium" },
         ]
       },
       {
@@ -135,8 +140,10 @@ export const serviceTree = [
         items: [
           { id: "form11", label: "Form 11 — LLP Return", sub: "Due 30 May", href: "/efiling/Form-11", fee: "₹0", complexity: "medium" },
           { id: "form8", label: "Form 8 — Solvency", sub: "Due 30 Oct", href: "/efiling/Form-8", fee: "₹0", complexity: "medium" },
-          { id: "form3", label: "Form 3 — LLP Agreement", href: "/efiling/Form-3", fee: "₹50", complexity: "simple" },
-          { id: "form4", label: "Form 4 — Partner Change", href: "/efiling/Form-4", fee: "₹300", complexity: "medium" },
+          { id: "form3", label: "Form 3 — LLP Agreement", sub: "Within 30 days", href: "/efiling/Form-3", fee: "₹50", complexity: "simple" },
+          { id: "form4", label: "Form 4 — Partner Change", sub: "Admission/Cessation", href: "/efiling/Form-4", fee: "₹300", complexity: "medium" },
+          { id: "form12", label: "Form 12 — Intimation of Address", sub: "Same ROC", href: "/efiling/Form-12", fee: "₹50", complexity: "simple" },
+          { id: "form22", label: "Form 22 — Intimation of Order", sub: "Court/Tribunal", href: "/efiling/Form-22", fee: "₹0", complexity: "simple" },
         ]
       },
       {
