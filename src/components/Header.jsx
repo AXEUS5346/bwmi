@@ -63,6 +63,10 @@ function getMegaCols(treeId) {
     const t = TRANSLATIONS[lang]
 
     useEffect(() => {
+      document.documentElement.style.fontSize = `${fontSize}px`
+    }, [fontSize])
+
+    useEffect(() => {
       const handler = (e) => {
         if (megaRef.current && !megaRef.current.contains(e.target)) setMegaId(null)
       }
@@ -105,7 +109,7 @@ function getMegaCols(treeId) {
 
     return (
     <LanguageContext.Provider value={{ lang, t, fontSize }}>
-    <header className="sticky top-0 z-50" role="banner" style={{ fontSize: `${fontSize}px` }}>
+    <header className="sticky top-0 z-50" role="banner">
       {/* Tricolor Bar */}
       <div className="tricolor-bar" aria-hidden="true">
         <div className="bg-mcaSaffron" />
