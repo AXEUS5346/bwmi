@@ -152,7 +152,7 @@ function getMegaCols(treeId) {
         <div className="max-w-[79rem] mx-auto px-4 sm:px-6 flex items-center justify-between h-16 sm:h-20 gap-4">
           {/* Left: Logo + Title */}
           <Link to="/" className="flex items-center gap-3 shrink-0">
-            <span className="text-sm sm:text-base font-semibold text-nzDarkTeal">MCA</span>
+            <span className="text-sm sm:text-base font-semibold text-nzDarkTeal">Ministry of Corporate Affairs</span>
           </Link>
 
           {/* Center: Search Bar */}
