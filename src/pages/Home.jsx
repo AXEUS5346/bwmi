@@ -56,22 +56,6 @@ export default function Home() {
     <div className="bg-nzLightBg min-h-screen">
 
       {/* ═══════════════════════════════════════════════════════════════════
-          1. HERO SECTION — nzDarkTeal background
-         ═══════════════════════════════════════════════════════════════════ */}
-      <section className="bg-nzDarkTeal py-16 md:py-20" aria-label="MCA Register">
-      <div className="max-w-4xl mx-auto px-4 text-center">
-        {!isAuthenticated && (
-            <Link
-              to="/login"
-              className="inline-block bg-nzCyan text-nzDarkTeal font-semibold text-sm px-8 py-3 hover:bg-white transition-colors"
-            >
-              Access your account
-            </Link>
-          )}
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════════════
           2. LOGGED-IN: PERSONALISED DASHBOARD  |  LOGGED-OUT: TOPIC PANELS
          ═══════════════════════════════════════════════════════════════════ */}
       {isAuthenticated && roleConfig ? (
