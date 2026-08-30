@@ -329,7 +329,7 @@ export default function Search() {
                   {visibleForms.map((f, i) => (
                     <tr key={f.id} className={`border-t border-slate-100 hover:bg-slate-50 transition-colors ${i % 2 === 0 ? 'bg-white' : 'bg-slate-50/50'}`}>
                       <td className="px-4 py-3">
-                        <div className="font-medium text-nzDarkTeal">{f.id}</div>
+                        <Link to={`/efiling/${f.id}`} className="font-medium text-nzDarkTeal hover:underline focus:outline-none focus:ring-2 focus:ring-nzCyan/40">{f.id}</Link>
                         <div className="text-xs text-slate-400 mt-0.5">{f.title}</div>
                       </td>
                       <td className="px-4 py-3">
@@ -356,7 +356,7 @@ export default function Search() {
                 <div key={f.id} className="bg-white border border-nzDivider p-4 shadow-sm">
                   <div className="flex items-start justify-between gap-2">
                     <div className="min-w-0">
-                      <h3 className="font-semibold text-nzDarkTeal text-sm leading-snug">{f.id}</h3>
+                      <Link to={`/efiling/${f.id}`} className="font-semibold text-nzDarkTeal text-sm leading-snug hover:underline focus:outline-none focus:ring-2 focus:ring-nzCyan/40">{f.id}</Link>
                       <p className="text-xs text-slate-500 mt-0.5">{f.title}</p>
                     </div>
                     <span className="inline-block px-2 py-0.5 rounded-full text-[10px] font-semibold uppercase tracking-wider bg-nzCyan/10 text-nzCyan shrink-0">
