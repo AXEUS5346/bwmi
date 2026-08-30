@@ -229,31 +229,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════════════
-          4. STATISTICS BAR
-         ═══════════════════════════════════════════════════════════════════ */}
-      <section className="py-12 bg-nzDarkTeal text-white" aria-label="Key statistics">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-3xl md:text-4xl font-bold tracking-tight">{stats.totalCompanies}</div>
-              <div className="text-sm text-white/70 mt-2 font-light">Active Companies</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold tracking-tight">{stats.llps}</div>
-              <div className="text-sm text-white/70 mt-2 font-light">Active LLPs</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold tracking-tight">{stats.filings2024}</div>
-              <div className="text-sm text-white/70 mt-2 font-light">Filings 2024</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold tracking-tight">{stats.companiesRegistered}</div>
-              <div className="text-sm text-white/70 mt-2 font-light">New Registrations</div>
-            </div>
-          </div>
-        </div>
-      </section>
 
     </div>
   )
