@@ -57,69 +57,15 @@ const faqs = [
 
 /* ── Category definitions ──────────────────────────────────────────────── */
 const categories = [
-  {
-    title: 'Getting Started',
-    icon: 'fa-rocket',
-    desc: 'Account setup, first filing, understanding CIN',
-    color: 'bg-blue-50 text-blue-600 border-blue-200',
-    iconBg: 'bg-blue-100',
-  },
-  {
-    title: 'Annual Filing',
-    icon: 'fa-calendar',
-    desc: 'AOC-4, MGT-7, deadlines, penalties',
-    color: 'bg-emerald-50 text-emerald-600 border-emerald-200',
-    iconBg: 'bg-emerald-100',
-  },
-  {
-    title: 'Director Services',
-    icon: 'fa-user',
-    desc: 'DIN, KYC, appointment, resignation',
-    color: 'bg-violet-50 text-violet-600 border-violet-200',
-    iconBg: 'bg-violet-100',
-  },
-  {
-    title: 'Charges & Securities',
-    icon: 'fa-building-columns',
-    desc: 'CHG forms, CERSAI',
-    color: 'bg-amber-50 text-amber-600 border-amber-200',
-    iconBg: 'bg-amber-100',
-  },
-  {
-    title: 'Company Changes',
-    icon: 'fa-pen',
-    desc: 'Name change, address, capital, conversion',
-    color: 'bg-pink-50 text-pink-600 border-pink-200',
-    iconBg: 'bg-pink-100',
-  },
-  {
-    title: 'Closure & Exit',
-    icon: 'fa-door-open',
-    desc: 'Strike-off, liquidation, IEPF',
-    color: 'bg-red-50 text-red-600 border-red-200',
-    iconBg: 'bg-red-100',
-  },
-  {
-    title: 'Fees & Payments',
-    icon: 'fa-credit-card',
-    desc: 'Fee calculator, payment methods, refunds',
-    color: 'bg-teal-50 text-teal-600 border-teal-200',
-    iconBg: 'bg-teal-100',
-  },
-  {
-    title: 'Technical Help',
-    icon: 'fa-laptop',
-    desc: 'DSC setup, browser requirements, common errors',
-    color: 'bg-slate-50 text-slate-600 border-slate-200',
-    iconBg: 'bg-slate-100',
-  },
-  {
-    title: 'Legal & Compliance',
-    icon: 'fa-scale-balanced',
-    desc: 'Acts, rules, circulars, penalties',
-    color: 'bg-indigo-50 text-indigo-600 border-indigo-200',
-    iconBg: 'bg-indigo-100',
-  },
+  { title: 'Getting Started', icon: 'fa-rocket', desc: 'Account setup, first filing, understanding CIN' },
+  { title: 'Annual Filing', icon: 'fa-calendar', desc: 'AOC-4, MGT-7, deadlines, penalties' },
+  { title: 'Director Services', icon: 'fa-user', desc: 'DIN, KYC, appointment, resignation' },
+  { title: 'Charges & Securities', icon: 'fa-building-columns', desc: 'CHG forms, CERSAI' },
+  { title: 'Company Changes', icon: 'fa-pen', desc: 'Name change, address, capital, conversion' },
+  { title: 'Closure & Exit', icon: 'fa-door-open', desc: 'Strike-off, liquidation, IEPF' },
+  { title: 'Fees & Payments', icon: 'fa-credit-card', desc: 'Fee calculator, payment methods, refunds' },
+  { title: 'Technical Help', icon: 'fa-laptop', desc: 'DSC setup, browser requirements, common errors' },
+  { title: 'Legal & Compliance', icon: 'fa-scale-balanced', desc: 'Acts, rules, circulars, penalties' },
 ]
 
 /* ── Component ─────────────────────────────────────────────────────────── */
@@ -169,39 +115,22 @@ export default function Help() {
   }
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC]">
+    <div className="min-h-screen bg-nzLightBg">
       {/* Skip link */}
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:border focus:border-[#0B2C5C] focus:rounded-lg focus:px-4 focus:py-2 focus:text-sm focus:font-semibold"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:border focus:border-nzPrimary focus:px-4 focus:py-2 focus:text-sm focus:font-semibold"
       >
         Skip to main content
       </a>
 
-      <main id="main-content" className="max-w-[1280px] mx-auto px-4 py-6">
-        {/* ── Breadcrumb ────────────────────────────────────────────── */}
-        <nav aria-label="Breadcrumb" className="mb-4">
-          <ol className="flex items-center gap-1.5 text-xs text-slate-500">
-            <li>
-              <Link to="/" className="hover:text-[#0E7C7B] transition-colors">
-                Home
-              </Link>
-            </li>
-            <li aria-hidden="true" className="text-slate-300">
-              ›
-            </li>
-            <li className="font-medium text-[#0B2C5C]" aria-current="page">
-              Help Centre
-            </li>
-          </ol>
-        </nav>
-
-        {/* ── Hero search ───────────────────────────────────────────── */}
-        <section className="bg-[#0B2C5C] rounded-xl p-6 sm:p-10 text-center">
-          <h1 className="text-2xl sm:text-3xl font-bold text-white mb-2">
+      {/* ── Hero search ───────────────────────────────────────────── */}
+      <section className="bg-nzDarkTeal py-14 px-4 text-center">
+        <div className="max-w-3xl mx-auto">
+          <h1 className="text-4xl md:text-[42px] font-[200] text-white mb-3 tracking-tight">
             Help Centre
           </h1>
-          <p className="text-sm text-slate-300 mb-6 max-w-xl mx-auto">
+          <p className="text-sm text-white/70 mb-8 max-w-xl mx-auto">
             Find answers to your questions about company registration, annual
             filings, director services, and more.
           </p>
@@ -210,7 +139,7 @@ export default function Help() {
             <label htmlFor="help-search" className="sr-only">
               Search help articles
             </label>
-            <i className="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-sm" />
+            <i className="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-nzMuted text-sm" />
             <input
               id="help-search"
               type="search"
@@ -221,7 +150,7 @@ export default function Help() {
                 if (e.target.value) setActiveCategory(null)
               }}
               placeholder="Search help articles, forms, and guides"
-              className="w-full pl-11 pr-4 py-3.5 rounded-xl text-sm text-slate-800 bg-white border border-slate-200 shadow-lg focus:outline-none focus:ring-2 focus:ring-[#0E7C7B] focus:border-[#0E7C7B] transition-shadow"
+              className="w-full pl-11 pr-10 py-3.5 text-sm text-nzBlack bg-white border border-nzDivider focus:outline-none focus:ring-2 focus:ring-nzPrimary transition-shadow"
               aria-label="Search help articles, forms, and guides"
             />
             {searchQuery && (
@@ -230,7 +159,7 @@ export default function Help() {
                   setSearchQuery('')
                   setExpandedFaq(null)
                 }}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-1"
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-nzMuted hover:text-nzDarkGrey p-1"
                 aria-label="Clear search"
               >
                 <i className="fa-solid fa-xmark text-sm" />
@@ -239,7 +168,7 @@ export default function Help() {
           </div>
 
           {(searchQuery || activeCategory) && (
-            <p className="mt-3 text-xs text-slate-300">
+            <p className="mt-4 text-xs text-white/70">
               {filteredFaqs.length} result{filteredFaqs.length !== 1 ? 's' : ''}{' '}
               found
               {activeCategory && (
@@ -251,7 +180,7 @@ export default function Help() {
                   </span>
                   <button
                     onClick={() => setActiveCategory(null)}
-                    className="ml-1.5 underline hover:text-[#FF9933] transition-colors"
+                    className="ml-1.5 underline text-mcaSaffron hover:text-white transition-colors"
                   >
                     (clear filter)
                   </button>
@@ -259,11 +188,14 @@ export default function Help() {
               )}
             </p>
           )}
-        </section>
+        </div>
+      </section>
+
+      <main id="main-content" className="max-w-7xl mx-auto px-4 py-10">
 
         {/* ── Category grid ─────────────────────────────────────────── */}
-        <section className="mt-8" aria-label="Help categories">
-          <h2 className="text-lg font-bold text-[#0B2C5C] mb-4">
+        <section className="mb-10" aria-label="Help categories">
+          <h2 className="text-[36px] font-[200] text-nzBlack tracking-tight mb-6">
             Browse by Topic
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -274,38 +206,50 @@ export default function Help() {
                 <button
                   key={cat.title}
                   onClick={() => handleCategoryClick(cat.title)}
-                  className={`group text-left border rounded-xl p-4 transition-all duration-150 ${
+                  className={`group text-left border-b-2 p-5 transition-colors ${
                     isActive
-                      ? 'border-[#0B2C5C] bg-white shadow-md ring-1 ring-[#0B2C5C]/20'
-                      : 'border-slate-200 bg-white hover:border-[#0B2C5C]/40 hover:shadow-sm'
+                      ? 'bg-nzPrimary text-white border-nzPrimary'
+                      : 'bg-white border-nzDivider hover:border-nzPrimary'
                   }`}
                   aria-pressed={isActive}
                 >
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-4">
                     <span
-                      className={`flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center ${cat.iconBg}`}
+                      className={`flex-shrink-0 w-10 h-10 flex items-center justify-center ${
+                        isActive ? 'bg-white/20 text-white' : 'bg-nzMediumTeal text-white'
+                      }`}
                     >
-                      <i
-                        className={`fa-solid ${cat.icon} text-sm ${
-                          cat.color.split(' ')[1]
-                        }`}
-                      />
+                      <i className={`fa-solid ${cat.icon} text-sm`} />
                     </span>
-                    <div className="min-w-0">
+                    <div className="min-w-0 flex-1">
                       <div className="flex items-center gap-2">
-                        <h3 className="text-sm font-semibold text-[#0B2C5C] group-hover:text-[#0E7C7B] transition-colors">
+                        <h3
+                          className={`text-sm font-semibold ${
+                            isActive ? 'text-white' : 'text-nzDarkGrey group-hover:text-nzPrimary'
+                          } transition-colors`}
+                        >
                           {cat.title}
                         </h3>
-                        <span className="text-[10px] font-medium text-slate-400 bg-slate-100 rounded-full px-1.5 py-0.5">
+                        <span
+                          className={`text-[10px] font-medium px-2 py-0.5 ${
+                            isActive
+                              ? 'text-white/80 bg-white/15'
+                              : 'text-nzMuted bg-nzLightBg'
+                          }`}
+                        >
                           {count}
                         </span>
                       </div>
-                      <p className="text-xs text-slate-500 mt-0.5">
+                      <p
+                        className={`text-xs mt-1 ${
+                          isActive ? 'text-white/80' : 'text-nzMuted'
+                        }`}
+                      >
                         {cat.desc}
                       </p>
                     </div>
                     {isActive && (
-                      <i className="fa-solid fa-check-circle text-[#138808] text-sm mt-0.5 flex-shrink-0" />
+                      <i className="fa-solid fa-check-circle text-white text-sm mt-0.5 flex-shrink-0" />
                     )}
                   </div>
                 </button>
@@ -314,11 +258,11 @@ export default function Help() {
           </div>
         </section>
 
-        <div className="mt-8 grid lg:grid-cols-3 gap-6">
+        <div className="grid lg:grid-cols-3 gap-8">
           {/* ── Left: Popular articles / search results ─────────────── */}
           <div className="lg:col-span-2">
             <section aria-label="Help articles">
-              <h2 className="text-lg font-bold text-[#0B2C5C] mb-4">
+              <h2 className="text-[36px] font-[200] text-nzBlack tracking-tight mb-6">
                 {searchQuery
                   ? 'Search Results'
                   : activeCategory
@@ -328,12 +272,12 @@ export default function Help() {
 
               {filteredFaqs.length === 0 ? (
                 /* Empty state */
-                <div className="bg-white border border-slate-200 rounded-xl p-8 text-center">
-                  <i className="fa-solid fa-circle-question text-3xl text-slate-300 mb-3" />
-                  <h3 className="text-sm font-semibold text-slate-600 mb-1">
+                <div className="bg-white border-b-2 border-nzDivider p-10 text-center">
+                  <i className="fa-solid fa-circle-question text-3xl text-nzMuted mb-3" />
+                  <h3 className="text-sm font-semibold text-nzDarkGrey mb-1">
                     We couldn't find any results
                   </h3>
-                  <p className="text-xs text-slate-400 max-w-sm mx-auto">
+                  <p className="text-xs text-nzMuted max-w-sm mx-auto">
                     Try different keywords or browse the categories above. If you
                     need more help, contact our helpdesk.
                   </p>
@@ -342,27 +286,27 @@ export default function Help() {
                       setSearchQuery('')
                       setActiveCategory(null)
                     }}
-                    className="mt-4 text-xs font-medium text-[#0E7C7B] hover:underline"
+                    className="mt-4 text-sm font-medium text-nzPrimary underline underline-offset-2 hover:text-nzMediumTeal"
                   >
                     View all articles
                   </button>
                 </div>
               ) : (
-                <div className="space-y-2.5">
+                <div>
                   {filteredFaqs.map((faq, i) => {
                     const isOpen = expandedFaq === i
                     return (
                       <details
                         key={`${faq.q}-${i}`}
                         open={isOpen}
-                        className="bg-white border border-slate-200 rounded-xl overflow-hidden group"
+                        className="bg-white border-b-2 border-nzDivider group"
                       >
                         <summary
                           onClick={(e) => {
                             e.preventDefault()
                             toggleFaq(i)
                           }}
-                          className="px-4 py-3.5 cursor-pointer flex items-center justify-between gap-3 hover:bg-slate-50 transition-colors"
+                          className="px-5 py-4 cursor-pointer flex items-center justify-between gap-3 hover:bg-nzLightBg transition-colors"
                         >
                           <div className="flex items-center gap-3 min-w-0">
                             <i
@@ -370,20 +314,20 @@ export default function Help() {
                                 isOpen
                                   ? 'fa-chevron-down'
                                   : 'fa-chevron-right'
-                              } text-[10px] text-slate-400 flex-shrink-0 transition-transform`}
+                              } text-[10px] text-nzMuted flex-shrink-0 transition-transform`}
                             />
-                            <span className="text-sm font-medium text-[#0B2C5C] leading-snug">
+                            <span className="text-sm font-medium text-nzDarkGrey leading-snug">
                               {faq.q}
                             </span>
                           </div>
-                          <span className="flex-shrink-0 text-[10px] font-medium text-slate-400 bg-slate-100 rounded-full px-2 py-0.5 hidden sm:block">
+                          <span className="flex-shrink-0 text-[10px] font-medium text-nzMuted bg-nzLightBg px-2.5 py-0.5 hidden sm:block">
                             {faq.category}
                           </span>
                         </summary>
-                        <div className="px-4 pb-4 pl-11 text-sm text-slate-700 leading-relaxed border-t border-slate-100 bg-[#F8FAFC] pt-3">
+                        <div className="px-5 pb-5 pl-11 text-sm text-nzBody leading-relaxed bg-nzLightBg pt-3">
                           {faq.a}
                           <div className="mt-3 flex items-center gap-3 text-xs">
-                            <span className="text-slate-400">
+                            <span className="text-nzMuted">
                               Was this helpful?
                             </span>
                             <button className="text-[#138808] hover:underline font-medium">
@@ -405,11 +349,11 @@ export default function Help() {
           </div>
 
           {/* ── Right sidebar ───────────────────────────────────────── */}
-          <div className="space-y-4">
+          <div className="space-y-5">
             {/* Quick Guides */}
-            <div className="bg-white border border-slate-200 rounded-xl p-4">
-              <h3 className="font-semibold text-[#0B2C5C] mb-3 flex items-center gap-2">
-                <i className="fa-solid fa-book-open text-xs text-[#0E7C7B]" />
+            <div className="bg-white border-b-2 border-nzDivider p-5">
+              <h3 className="text-lg font-semibold text-nzDarkGrey mb-3 flex items-center gap-2">
+                <i className="fa-solid fa-book-open text-xs text-nzMediumTeal" />
                 Quick Guides
               </h3>
               <ul className="space-y-2">
@@ -423,13 +367,13 @@ export default function Help() {
                   <li key={g.label}>
                     <Link
                       to={g.to}
-                      className="flex items-center gap-2 text-xs text-[#0E7C7B] hover:text-[#0B2C5C] transition-colors group"
+                      className="flex items-center gap-2 text-sm font-medium text-nzPrimary underline underline-offset-2 hover:text-nzMediumTeal transition-colors group"
                     >
                       <i
-                        className={`fa-solid ${g.icon} text-[10px] text-slate-400 group-hover:text-[#0E7C7B]`}
+                        className={`fa-solid ${g.icon} text-[10px] text-nzMuted group-hover:text-nzMediumTeal`}
                       />
                       {g.label}
-                      <i className="fa-solid fa-arrow-right text-[8px] text-slate-300 group-hover:text-[#0E7C7B] ml-auto" />
+                      <i className="fa-solid fa-arrow-right text-[8px] text-nzMuted group-hover:text-nzMediumTeal ml-auto" />
                     </Link>
                   </li>
                 ))}
@@ -437,9 +381,9 @@ export default function Help() {
             </div>
 
             {/* Information Corner */}
-            <div className="bg-white border border-slate-200 rounded-xl p-4">
-              <h3 className="font-semibold text-[#0B2C5C] mb-3 flex items-center gap-2">
-                <i className="fa-solid fa-gavel text-xs text-[#0E7C7B]" />
+            <div className="bg-white border-b-2 border-nzDivider p-5">
+              <h3 className="text-lg font-semibold text-nzDarkGrey mb-3 flex items-center gap-2">
+                <i className="fa-solid fa-gavel text-xs text-nzMediumTeal" />
                 Information Corner
               </h3>
               <ul className="space-y-2">
@@ -452,9 +396,9 @@ export default function Help() {
                   <li key={link.to}>
                     <Link
                       to={link.to}
-                      className="flex items-center gap-2 text-xs text-slate-600 hover:text-[#0E7C7B] transition-colors group"
+                      className="flex items-center gap-2 text-sm font-medium text-nzPrimary underline underline-offset-2 hover:text-nzMediumTeal transition-colors group"
                     >
-                      <i className="fa-solid fa-chevron-right text-[8px] text-slate-300 group-hover:text-[#0E7C7B]" />
+                      <i className="fa-solid fa-chevron-right text-[8px] text-nzMuted group-hover:text-nzMediumTeal" />
                       {link.label}
                     </Link>
                   </li>
@@ -463,33 +407,33 @@ export default function Help() {
             </div>
 
             {/* Contact Support */}
-            <div className="bg-[#0B2C5C] text-white rounded-xl p-4">
-              <h3 className="font-semibold mb-3 flex items-center gap-2">
-                <i className="fa-solid fa-headset text-sm text-[#FF9933]" />
+            <div className="bg-nzDarkTeal text-white p-5">
+              <h3 className="text-lg font-semibold mb-3 flex items-center gap-2">
+                <i className="fa-solid fa-headset text-sm text-mcaSaffron" />
                 Contact Support
               </h3>
               <ul className="space-y-3 text-xs leading-relaxed">
                 <li className="flex items-start gap-2.5">
-                  <i className="fa-solid fa-phone text-[#FF9933] mt-0.5" />
+                  <i className="fa-solid fa-phone text-mcaSaffron mt-0.5" />
                   <div>
                     <p className="font-semibold">Helpdesk (Toll-Free)</p>
-                    <p className="text-slate-300">1800-XXX-XXXX</p>
+                    <p className="text-white/70">1800-XXX-XXXX</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <i className="fa-solid fa-envelope text-[#FF9933] mt-0.5" />
+                  <i className="fa-solid fa-envelope text-mcaSaffron mt-0.5" />
                   <div>
                     <p className="font-semibold">Email</p>
-                    <p className="text-slate-300">helpdesk@mca.gov.in</p>
+                    <p className="text-white/70">helpdesk@mca.gov.in</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <i className="fa-solid fa-ticket text-[#FF9933] mt-0.5" />
+                  <i className="fa-solid fa-ticket text-mcaSaffron mt-0.5" />
                   <div>
                     <p className="font-semibold">Raise a Ticket</p>
                     <Link
                       to="/contact"
-                      className="text-[#FF9933] hover:underline transition-colors"
+                      className="text-mcaSaffron hover:underline transition-colors"
                     >
                       Open support ticket →
                     </Link>
@@ -500,14 +444,14 @@ export default function Help() {
               <div className="mt-4 pt-3 border-t border-white/10 flex flex-wrap gap-2">
                 <Link
                   to="/contact"
-                  className="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white text-[11px] font-medium rounded-lg px-3 py-1.5 transition-colors"
+                  className="inline-flex items-center gap-1.5 bg-nzPrimary hover:bg-nzMediumTeal text-white text-[11px] font-medium px-3 py-1.5 transition-colors"
                 >
                   <i className="fa-solid fa-comment-dots" />
                   Live Chat (Beta)
                 </Link>
                 <Link
                   to="/contact"
-                  className="inline-flex items-center gap-1.5 border border-white/20 hover:bg-white/10 text-white text-[11px] font-medium rounded-lg px-3 py-1.5 transition-colors"
+                  className="inline-flex items-center gap-1.5 border border-white/30 hover:bg-white/10 text-white text-[11px] font-medium px-3 py-1.5 transition-colors"
                 >
                   <i className="fa-solid fa-flag" />
                   Grievance
@@ -516,9 +460,9 @@ export default function Help() {
             </div>
 
             {/* Video Demos */}
-            <div className="bg-white border border-slate-200 rounded-xl p-4">
-              <h3 className="font-semibold text-[#0B2C5C] mb-3 flex items-center gap-2">
-                <i className="fa-solid fa-play-circle text-xs text-[#FF9933]" />
+            <div className="bg-white border-b-2 border-nzDivider p-5">
+              <h3 className="text-lg font-semibold text-nzDarkGrey mb-3 flex items-center gap-2">
+                <i className="fa-solid fa-play-circle text-xs text-mcaSaffron" />
                 Video Demos & Webinars
               </h3>
               <ul className="space-y-2">
@@ -531,9 +475,9 @@ export default function Help() {
                   <li key={v}>
                     <a
                       href="#"
-                      className="flex items-center gap-2 text-xs text-slate-600 hover:text-[#0E7C7B] transition-colors group"
+                      className="flex items-center gap-2 text-sm text-nzBody hover:text-nzPrimary transition-colors group"
                     >
-                      <i className="fa-solid fa-play text-[8px] text-[#DC2626] group-hover:text-[#0E7C7B]" />
+                      <i className="fa-solid fa-play text-[8px] text-[#DC2626] group-hover:text-nzPrimary" />
                       {v}
                     </a>
                   </li>
@@ -542,7 +486,7 @@ export default function Help() {
             </div>
 
             {/* Last updated */}
-            <p className="text-[11px] text-slate-400 text-center">
+            <p className="text-[11px] text-nzMuted text-center">
               Last updated: 29 Aug 2026
             </p>
           </div>

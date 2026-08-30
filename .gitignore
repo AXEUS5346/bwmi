@@ -60,6 +60,8 @@ pnpm-debug.log*
 
 # Research docs & scripts (local only)
 *.md
+# ...but keep real project documentation in docs/ tracked
+!docs/*.md
 *.pdf
 *.csv
 *.xlsx
@@ -77,3 +79,4 @@ screenshots/
 bwmi-main/
 skills-lock.json
  nz-companies-register-design-analysis.md
+.vercel

@@ -47,84 +47,67 @@ const serviceCategories = [
 
 export default function MCAServices() {
   return (
-    <div className="min-h-screen bg-slate-50">
-      {/* Breadcrumb */}
-      <nav aria-label="Breadcrumb" className="bg-white border-b">
-        <div className="max-w-7xl mx-auto px-4 py-3">
-          <ol className="flex items-center gap-2 text-sm text-slate-500">
-            <li>
-              <Link to="/" className="hover:text-[#0B2C5C] transition-colors">
-                Home
-              </Link>
-            </li>
-            <li aria-hidden="true" className="text-slate-300">
-              ›
-            </li>
-            <li aria-current="page" className="text-slate-800 font-medium">
-              Online Services
-            </li>
-          </ol>
-        </div>
-      </nav>
-
-      <main className="max-w-7xl mx-auto px-4 py-8">
-        {/* Page title */}
-        <h1 className="text-2xl font-bold text-[#0B2C5C] border-b-2 border-[#FF9933] inline-block pb-2 mb-8">
+    <div className="min-h-screen bg-nzLightBg">
+      <main className="max-w-7xl mx-auto px-4 py-12">
+        {/* Page title — centered, thin weight, matching Home */}
+        <h1 className="text-4xl md:text-[42px] font-[200] text-nzDarkGrey mb-4 text-center tracking-tight">
           Browse All Online Services
         </h1>
 
-        {/* Redirect notice */}
-        <div className="bg-white border border-slate-200 rounded-lg p-6 mb-8">
+        {/* Redirect notice — bottom-bordered card, no rounded corners */}
+        <div className="bg-white border-b-2 border-nzDivider p-6 mb-10">
           <div className="flex items-start gap-4">
-            <div className="w-10 h-10 bg-[#0E7C7B] text-white rounded-lg flex items-center justify-center flex-shrink-0">
-              <i className="fa-solid fa-arrow-right-from-bracket text-sm" aria-hidden="true"></i>
-            </div>
+            <span className="flex h-12 w-12 shrink-0 items-center justify-center bg-nzMediumTeal text-white text-lg">
+              <i className="fa-solid fa-arrow-right-from-bracket" aria-hidden="true" />
+            </span>
             <div>
-              <p className="text-sm text-slate-600 leading-relaxed">
+              <p className="text-base text-nzBody leading-relaxed">
                 All MCA online services are available through our e-Filing portal. Browse the categories
                 below or visit the full catalogue directly.
               </p>
               <Link
                 to="/efiling"
-                className="inline-flex items-center gap-2 mt-3 text-sm font-medium text-[#0E7C7B] hover:text-[#0B2C5C] hover:underline transition-colors"
+                className="inline-block mt-3 text-sm font-medium text-nzPrimary underline underline-offset-2 hover:text-nzMediumTeal transition-colors"
               >
-                Go to e-Filing Portal <span aria-hidden="true">→</span>
+                Go to e-Filing Portal &rarr;
               </Link>
             </div>
           </div>
         </div>
 
-        {/* Service category cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Service category cards — bottom-bordered, no rounded, teal icons */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {serviceCategories.map((cat) => (
             <Link
               key={cat.title}
               to={cat.link}
-              className="bg-white border border-slate-200 rounded-lg p-6 hover:shadow-md hover:border-[#0E7C7B] transition-all group"
+              className="flex flex-col bg-white border-b-2 border-nzDivider p-8 transition-colors hover:border-nzPrimary group"
             >
-              <div className="flex items-start justify-between mb-4">
-                <div className="w-10 h-10 bg-[#0B2C5C] text-white rounded-lg flex items-center justify-center group-hover:bg-[#0E7C7B] transition-colors">
-                  <i className={`fa-solid ${cat.icon} text-sm`} aria-hidden="true"></i>
-                </div>
-                <span className="text-xs text-slate-400 bg-slate-50 px-2 py-1 rounded">
-                  {cat.fee}
+              <div className="flex items-center gap-5 mb-5">
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center bg-nzMediumTeal text-white text-lg">
+                  <i className={`fa-solid ${cat.icon}`} aria-hidden="true" />
+                </span>
+                <h2 className="text-xl md:text-[22px] font-[200] text-nzBlack leading-snug">
+                  {cat.title}
+                </h2>
+              </div>
+              <p className="text-base text-nzBody mb-6 leading-relaxed">
+                {cat.description}
+              </p>
+              <div className="mt-auto flex flex-wrap items-center gap-5">
+                <span className="text-sm text-nzMuted">{cat.fee}</span>
+                <span className="text-sm font-medium text-nzPrimary underline underline-offset-2 group-hover:text-nzMediumTeal transition-colors">
+                  Browse services &rarr;
                 </span>
               </div>
-              <h2 className="text-sm font-bold text-[#0B2C5C] mb-2 group-hover:text-[#0E7C7B] transition-colors">
-                {cat.title}
-              </h2>
-              <p className="text-xs text-slate-500 leading-relaxed mb-4">{cat.description}</p>
-              <span className="text-[#0E7C7B] text-xs font-medium inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                Browse services <span aria-hidden="true">→</span>
-              </span>
             </Link>
           ))}
         </div>
 
-        {/* Quick links */}
-        <div className="mt-10 bg-white border border-slate-200 rounded-lg p-6">
-          <h2 className="font-bold text-[#0B2C5C] mb-4">Quick Links</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+        {/* Quick links — same bottom-bordered card style */}
+        <div className="mt-10 bg-white border-b-2 border-nzDivider p-8">
+          <h2 className="text-[36px] font-[200] text-nzBlack mb-6 tracking-tight">Quick Links</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { label: 'Fee Calculator', link: '/services/fee-calculator', icon: 'fa-calculator' },
               { label: 'View Documents', link: '/services/view-docs', icon: 'fa-file-lines' },
@@ -134,9 +117,11 @@ export default function MCAServices() {
               <Link
                 key={item.label}
                 to={item.link}
-                className="flex items-center gap-3 px-4 py-3 border border-slate-200 rounded-lg hover:border-[#0E7C7B] hover:bg-slate-50 transition-all text-sm text-slate-700"
+                className="flex items-center gap-3 px-4 py-3 border-b border-nzDivider hover:border-nzPrimary transition-colors text-sm text-nzBody"
               >
-                <i className={`fa-solid ${item.icon} text-[#0E7C7B] text-xs`} aria-hidden="true"></i>
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center bg-nzMediumTeal text-white text-sm">
+                  <i className={`fa-solid ${item.icon}`} aria-hidden="true" />
+                </span>
                 {item.label}
               </Link>
             ))}
