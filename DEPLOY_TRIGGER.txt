@@ -1,0 +1,1 @@
+Force Vercel redeployment — fixes white page navigation bug
