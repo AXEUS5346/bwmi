@@ -23,7 +23,7 @@ const serviceCategories = [
     fee: 'Free – ₹500',
   },
   {
-    title: 'Charges & Charges',
+    title: 'Charges & Borrowings',
     icon: 'fa-link',
     description: 'Create, modify, or satisfaction of charges (CHG-1, CHG-9).',
     link: '/efiling',
@@ -33,7 +33,7 @@ const serviceCategories = [
     title: 'Document Services',
     icon: 'fa-file-lines',
     description: 'View public documents, get certified copies, and download filings.',
-    link: '/view-docs',
+    link: '/services/view-docs',
     fee: 'Free',
   },
   {
@@ -126,8 +126,8 @@ export default function MCAServices() {
           <h2 className="font-bold text-[#0B2C5C] mb-4">Quick Links</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
             {[
-              { label: 'Fee Calculator', link: '/fee-calculator', icon: 'fa-calculator' },
-              { label: 'View Documents', link: '/view-docs', icon: 'fa-file-lines' },
+              { label: 'Fee Calculator', link: '/services/fee-calculator', icon: 'fa-calculator' },
+              { label: 'View Documents', link: '/services/view-docs', icon: 'fa-file-lines' },
               { label: 'Company Search', link: '/search', icon: 'fa-magnifying-glass' },
               { label: 'Contact Support', link: '/contact', icon: 'fa-phone' },
             ].map((item) => (

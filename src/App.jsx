@@ -1,4 +1,5 @@
-import { Routes, Route, Link } from 'react-router-dom'
+import { useEffect } from 'react'
+import { Routes, Route, Link, useLocation } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import ErrorBoundary from './components/ErrorBoundary'
@@ -18,6 +19,17 @@ import ViewDocs from './pages/ViewDocs'
 import FeeCalculator from './pages/FeeCalculator'
 import MCAServices from './pages/MCAServices'
 import SiteMap from './pages/SiteMap'
+import Dashboard from './pages/Dashboard'
+
+// BrowserRouter never resets scroll on navigation (<ScrollRestoration />
+// requires a data router), so short pages render out of view after a click.
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+  return null
+}
 
 function NotFound() {
   return (
@@ -40,6 +52,7 @@ function NotFound() {
 export default function App() {
   return (
     <div className="min-h-screen flex flex-col">
+      <ScrollToTop />
       <Header />
       <main className="flex-1">
         <ErrorBoundary>
@@ -65,6 +78,10 @@ export default function App() {
             {/* Auth */}
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Login />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+
+            {/* Online Services */}
+            <Route path="/online-services" element={<MCAServices />} />
 
             {/* Information */}
             <Route path="/sitemap" element={<SiteMap />} />

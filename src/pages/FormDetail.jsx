@@ -24,7 +24,28 @@ export default function FormDetail() {
   const [draftSaved, setDraftSaved] = useState(false)
 
   /* step-2 dynamic fields */
-  const [formData, setFormData]   = useState({ fy: '', agmDate: '', notes: '', din: '' })
+  const [formData, setFormData]   = useState({ fy: '', agmDate: '', notes: '', din: '',
+    // Form-3 fields
+    agreementType: '', agreementDate: '', partnerCount: '',
+    // Form-4 fields
+    changeType: '', partnerDin: '', changeDate: '', contribution: '',
+    // Form-5 fields
+    runLlpSrn: '', newName: '', resolutionDate: '',
+    // Form-12 fields
+    newAddress: '', effectiveDate: '', addressProof: '',
+    // Form-15 fields
+    currentState: '', rdRef: '',
+    // Form-22 fields
+    courtType: '', orderDate: '', caseNumber: '', orderEffect: '',
+    // Form-23 fields
+    proposedName1: '', proposedName2: '', nameSignificance: '',
+    // Form-25 fields
+    namePurpose: '',
+    // Form-27 fields
+    country: '', foreignAddress: '', indiaAddress: '', authRep: '', incorporationDate: '',
+    // Form-24 fields
+    grounds: '', lastActivityDate: '', partnerConsent: '',
+  })
 
   /* step-3 files */
   const [files, setFiles]         = useState([])
@@ -88,7 +109,12 @@ export default function FormDetail() {
       else if (company.status !== 'Active')  e.cin = `Company is "${company.status}" — cannot file`
     }
     if (step === 2) {
-      if (!formData.fy) e.fy = 'Please select a Financial Year'
+      // Form-25 (Name Reservation) doesn't need FY
+      if (form.id !== 'Form-25' && !formData.fy) e.fy = 'Please select a Financial Year'
+      // Form-specific required fields
+      if (form.id === 'Form-4' && !formData.changeType) e.changeType = 'Please select the type of change'
+      if (form.id === 'Form-22' && !formData.courtType) e.courtType = 'Please select the court/tribunal'
+      if ((form.id === 'Form-23' || form.id === 'Form-25') && !formData.proposedName1) e.proposedName1 = 'Please enter a proposed name'
     }
     setErrors(e)
     return Object.keys(e).length === 0
@@ -241,7 +267,18 @@ export default function FormDetail() {
             <button
               onClick={() => {
                 setShowSuccess(false); setStep(1); setCompany(null); setCin('')
-                setFormData({ fy:'', agmDate:'', notes:'', din:'' }); setFiles([]); setSrn('')
+                setFormData({ fy:'', agmDate:'', notes:'', din:'',
+                  agreementType:'', agreementDate:'', partnerCount:'',
+                  changeType:'', partnerDin:'', changeDate:'', contribution:'',
+                  runLlpSrn:'', newName:'', resolutionDate:'',
+                  newAddress:'', effectiveDate:'', addressProof:'',
+                  currentState:'', rdRef:'',
+                  courtType:'', orderDate:'', caseNumber:'', orderEffect:'',
+                  proposedName1:'', proposedName2:'', nameSignificance:'',
+                  namePurpose:'',
+                  country:'', foreignAddress:'', indiaAddress:'', authRep:'', incorporationDate:'',
+                  grounds:'', lastActivityDate:'', partnerConsent:'',
+                }); setFiles([]); setSrn('')
               }}
               className="border border-mcaNavy text-mcaNavy bg-white px-7 py-2.5 rounded-lg font-semibold hover:bg-slate-50 transition"
             >
@@ -608,6 +645,511 @@ export default function FormDetail() {
               </div>
             )}
 
+            {/* ── Form-3: LLP Agreement ─── */}
+            {form.id === 'Form-3' && (
+              <div className="space-y-4">
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-xs leading-relaxed">
+                  <div className="font-bold text-blue-900 mb-1 flex items-center gap-1.5">
+                    <i className="fa-solid fa-circle-info text-blue-600" aria-hidden="true" />
+                    LLP Agreement Filing
+                  </div>
+                  <p className="text-blue-800">
+                    File within <strong>30 days</strong> of incorporation. If amending, file the amended agreement with Form 3.
+                    Late filing attracts penalty of <strong>₹100 per day</strong>.
+                  </p>
+                </div>
+                <div>
+                  <label className="text-sm font-medium text-slate-700">
+                    Agreement Type <span className="text-mcaRed">*</span>
+                  </label>
+                  <select
+                    value={formData.agreementType || ''}
+                    onChange={e => setField('agreementType', e.target.value)}
+                    className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                      focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal"
+                  >
+                    <option value="">Select type</option>
+                    <option>Original LLP Agreement</option>
+                    <option>Amendment to LLP Agreement</option>
+                  </select>
+                </div>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="text-sm font-medium text-slate-700">Date of Agreement</label>
+                    <input type="date" value={formData.agreementDate || ''} onChange={e => setField('agreementDate', e.target.value)}
+                      className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium text-slate-700">Number of Partners</label>
+                    <input type="number" min="2" placeholder="e.g. 2" value={formData.partnerCount || ''} onChange={e => setField('partnerCount', e.target.value)}
+                      className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                  </div>
+                </div>
+                <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 text-xs text-amber-800">
+                  <i className="fa-solid fa-triangle-exclamation mr-1" aria-hidden="true" />
+                  The LLP Agreement must be stamped as per the Indian Stamp Act. Upload the stamped agreement in Step 3.
+                </div>
+              </div>
+            )}
+
+            {/* ── Form-4: Change in Partners ─── */}
+            {form.id === 'Form-4' && (
+              <div className="space-y-4">
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-xs leading-relaxed">
+                  <div className="font-bold text-blue-900 mb-1 flex items-center gap-1.5">
+                    <i className="fa-solid fa-circle-info text-blue-600" aria-hidden="true" />
+                    Partner Change Intimation
+                  </div>
+                  <p className="text-blue-800">
+                    File within <strong>30 days</strong> of the change. Covers admission, cessation, or change in contribution of partners.
+                  </p>
+                </div>
+                <div>
+                  <label className="text-sm font-medium text-slate-700">
+                    Type of Change <span className="text-mcaRed">*</span>
+                  </label>
+                  <select
+                    value={formData.changeType || ''}
+                    onChange={e => setField('changeType', e.target.value)}
+                    className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                      focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal"
+                  >
+                    <option value="">Select change type</option>
+                    <option>Admission of New Partner</option>
+                    <option>Cessation of Partner</option>
+                    <option>Change in Contribution</option>
+                    <option>Change in Designated Partner</option>
+                  </select>
+                </div>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="text-sm font-medium text-slate-700">
+                      DIN/DPIN of Partner <span className="text-mcaRed">*</span>
+                    </label>
+                    <input placeholder="e.g. 08423410" value={formData.partnerDin || ''} onChange={e => setField('partnerDin', e.target.value)}
+                      className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm font-mono
+                        focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium text-slate-700">
+                      Effective Date of Change <span className="text-mcaRed">*</span>
+                    </label>
+                    <input type="date" value={formData.changeDate || ''} onChange={e => setField('changeDate', e.target.value)}
+                      className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                        focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                  </div>
+                </div>
+                <div>
+                  <label className="text-sm font-medium text-slate-700">Contribution (₹)</label>
+                  <input placeholder="e.g. 50000" value={formData.contribution || ''} onChange={e => setField('contribution', e.target.value)}
+                    className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm font-mono
+                      focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                </div>
+              </div>
+            )}
+
+            {/* ── Form-5: Change of Name ─── */}
+            {form.id === 'Form-5' && (
+              <div className="space-y-4">
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-xs leading-relaxed">
+                  <div className="font-bold text-blue-900 mb-1 flex items-center gap-1.5">
+                    <i className="fa-solid fa-circle-info text-blue-600" aria-hidden="true" />
+                    LLP Name Change
+                  </div>
+                  <p className="text-blue-800">
+                    File after obtaining name approval via <strong>RUN-LLP</strong>. The new name takes effect from the date of approval by the Registrar.
+                  </p>
+                </div>
+                <div>
+                  <label className="text-sm font-medium text-slate-700">
+                    RUN-LLP SRN (Name Approval) <span className="text-mcaRed">*</span>
+                  </label>
+                  <input placeholder="e.g. T98765432" value={formData.runLlpSrn || ''} onChange={e => setField('runLlpSrn', e.target.value)}
+                    className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm font-mono
+                      focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                </div>
+                <div>
+                  <label className="text-sm font-medium text-slate-700">
+                    New LLP Name <span className="text-mcaRed">*</span>
+                  </label>
+                  <input placeholder="e.g. Spark Analytics LLP" value={formData.newName || ''} onChange={e => setField('newName', e.target.value)}
+                    className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                      focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                  <p className="text-[11px] text-slate-500 mt-1">Must end with "LLP" or "Limited Liability Partnership"</p>
+                </div>
+                <div>
+                  <label className="text-sm font-medium text-slate-700">Date of Partner Resolution</label>
+                  <input type="date" value={formData.resolutionDate || ''} onChange={e => setField('resolutionDate', e.target.value)}
+                    className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                      focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                </div>
+              </div>
+            )}
+
+            {/* ── Form-12: Intimation of Address ─── */}
+            {form.id === 'Form-12' && (
+              <div className="space-y-4">
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-xs leading-relaxed">
+                  <div className="font-bold text-blue-900 mb-1 flex items-center gap-1.5">
+                    <i className="fa-solid fa-circle-info text-blue-600" aria-hidden="true" />
+                    Change of Registered Office (Same ROC)
+                  </div>
+                  <p className="text-blue-800">
+                    Use Form 12 when the registered office moves <strong>within the same ROC jurisdiction</strong>.
+                    For inter-state changes, use <strong>Form 15</strong> instead.
+                  </p>
+                </div>
+                <div>
+                  <label className="text-sm font-medium text-slate-700">
+                    New Registered Office Address <span className="text-mcaRed">*</span>
+                  </label>
+                  <textarea rows={3} placeholder="Complete new address with PIN code" value={formData.newAddress || ''} onChange={e => setField('newAddress', e.target.value)}
+                    className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                      focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                </div>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="text-sm font-medium text-slate-700">Effective Date</label>
+                    <input type="date" value={formData.effectiveDate || ''} onChange={e => setField('effectiveDate', e.target.value)}
+                      className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                        focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium text-slate-700">Address Proof</label>
+                    <select value={formData.addressProof || ''} onChange={e => setField('addressProof', e.target.value)}
+                      className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                        focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal">
+                      <option value="">Select proof type</option>
+                      <option>Electricity Bill</option>
+                      <option>Property Tax Receipt</option>
+                      <option>Rent Agreement</option>
+                      <option>NOC from Owner</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* ── Form-15: Change of Registered Office (Inter-state) ─── */}
+            {form.id === 'Form-15' && (
+              <div className="space-y-4">
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-xs leading-relaxed">
+                  <div className="font-bold text-blue-900 mb-1 flex items-center gap-1.5">
+                    <i className="fa-solid fa-circle-info text-blue-600" aria-hidden="true" />
+                    Inter-State Office Change (Requires RD Approval)
+                  </div>
+                  <p className="text-blue-800">
+                    Use Form 15 when the registered office moves from <strong>one ROC jurisdiction to another</strong> (different state).
+                    Requires approval of the <strong>Regional Director (RD)</strong>.
+                  </p>
+                </div>
+                <div>
+                  <label className="text-sm font-medium text-slate-700">
+                    Current Registered Office State <span className="text-mcaRed">*</span>
+                  </label>
+                  <input placeholder="e.g. Maharashtra" value={formData.currentState || ''} onChange={e => setField('currentState', e.target.value)}
+                    className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                      focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                </div>
+                <div>
+                  <label className="text-sm font-medium text-slate-700">
+                    New Registered Office Address (with State) <span className="text-mcaRed">*</span>
+                  </label>
+                  <textarea rows={3} placeholder="Complete new address including state and PIN code" value={formData.newAddress || ''} onChange={e => setField('newAddress', e.target.value)}
+                    className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                      focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                </div>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="text-sm font-medium text-slate-700">Effective Date</label>
+                    <input type="date" value={formData.effectiveDate || ''} onChange={e => setField('effectiveDate', e.target.value)}
+                      className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                        focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium text-slate-700">RD Order Reference</label>
+                    <input placeholder="If RD approval obtained" value={formData.rdRef || ''} onChange={e => setField('rdRef', e.target.value)}
+                      className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm font-mono
+                        focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* ── Form-22: Intimation of Order ─── */}
+            {form.id === 'Form-22' && (
+              <div className="space-y-4">
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-xs leading-relaxed">
+                  <div className="font-bold text-blue-900 mb-1 flex items-center gap-1.5">
+                    <i className="fa-solid fa-circle-info text-blue-600" aria-hidden="true" />
+                    Intimation of Court/Tribunal Order
+                  </div>
+                  <p className="text-blue-800">
+                    File within <strong>30 days</strong> of the order. This covers orders from NCLT, NCLAT, High Courts, or other tribunals affecting the LLP.
+                  </p>
+                </div>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="text-sm font-medium text-slate-700">
+                      Court / Tribunal <span className="text-mcaRed">*</span>
+                    </label>
+                    <select value={formData.courtType || ''} onChange={e => setField('courtType', e.target.value)}
+                      className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                        focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal">
+                      <option value="">Select court/tribunal</option>
+                      <option>NCLT</option>
+                      <option>NCLAT</option>
+                      <option>High Court</option>
+                      <option>Supreme Court</option>
+                      <option>Other Tribunal</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium text-slate-700">
+                      Order Date <span className="text-mcaRed">*</span>
+                    </label>
+                    <input type="date" value={formData.orderDate || ''} onChange={e => setField('orderDate', e.target.value)}
+                      className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                        focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                  </div>
+                </div>
+                <div>
+                  <label className="text-sm font-medium text-slate-700">Case / Petition Number</label>
+                  <input placeholder="e.g. CP/2024/1234" value={formData.caseNumber || ''} onChange={e => setField('caseNumber', e.target.value)}
+                    className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm font-mono
+                      focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                </div>
+                <div>
+                  <label className="text-sm font-medium text-slate-700">
+                    Effect on LLP <span className="text-mcaRed">*</span>
+                  </label>
+                  <select value={formData.orderEffect || ''} onChange={e => setField('orderEffect', e.target.value)}
+                    className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                      focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal">
+                    <option value="">Select effect</option>
+                    <option>Winding Up Order</option>
+                    <option>Revocation of Winding Up</option>
+                    <option>Change in Partner/Director</option>
+                    <option>Amalgamation/Merger</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+            )}
+
+            {/* ── Form-23: Application for Name Change ─── */}
+            {form.id === 'Form-23' && (
+              <div className="space-y-4">
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-xs leading-relaxed">
+                  <div className="font-bold text-blue-900 mb-1 flex items-center gap-1.5">
+                    <i className="fa-solid fa-circle-info text-blue-600" aria-hidden="true" />
+                    LLP Name Change Application
+                  </div>
+                  <p className="text-blue-800">
+                    Apply under <strong>Section 17 of LLP Act, 2008</strong> for approval of a new name.
+                    After approval, file <strong>Form 5</strong> to complete the name change.
+                  </p>
+                </div>
+                <div>
+                  <label className="text-sm font-medium text-slate-700">
+                    Proposed New Name (Option 1) <span className="text-mcaRed">*</span>
+                  </label>
+                  <input placeholder="e.g. Spark Analytics LLP" value={formData.proposedName1 || ''} onChange={e => setField('proposedName1', e.target.value)}
+                    className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                      focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                </div>
+                <div>
+                  <label className="text-sm font-medium text-slate-700">Proposed New Name (Option 2)</label>
+                  <input placeholder="Alternative name (optional)" value={formData.proposedName2 || ''} onChange={e => setField('proposedName2', e.target.value)}
+                    className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                      focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                </div>
+                <div>
+                  <label className="text-sm font-medium text-slate-700">
+                    Name Significance / Object <span className="text-mcaRed">*</span>
+                  </label>
+                  <textarea rows={2} placeholder="Describe the significance or meaning of the proposed name" value={formData.nameSignificance || ''} onChange={e => setField('nameSignificance', e.target.value)}
+                    className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                      focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                </div>
+              </div>
+            )}
+
+            {/* ── Form-25: Reservation of Name ─── */}
+            {form.id === 'Form-25' && (
+              <div className="space-y-4">
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-xs leading-relaxed">
+                  <div className="font-bold text-blue-900 mb-1 flex items-center gap-1.5">
+                    <i className="fa-solid fa-circle-info text-blue-600" aria-hidden="true" />
+                    LLP Name Reservation
+                  </div>
+                  <p className="text-blue-800">
+                    Reserve a name for a <strong>new LLP</strong> or for <strong>changing an existing LLP's name</strong>.
+                    The reserved name is valid for <strong>90 days</strong> from the date of approval.
+                  </p>
+                </div>
+                <div>
+                  <label className="text-sm font-medium text-slate-700">
+                    Proposed Name (Option 1) <span className="text-mcaRed">*</span>
+                  </label>
+                  <input placeholder="e.g. Spark Analytics LLP" value={formData.proposedName1 || ''} onChange={e => setField('proposedName1', e.target.value)}
+                    className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                      focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                </div>
+                <div>
+                  <label className="text-sm font-medium text-slate-700">Proposed Name (Option 2)</label>
+                  <input placeholder="Alternative name (optional)" value={formData.proposedName2 || ''} onChange={e => setField('proposedName2', e.target.value)}
+                    className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                      focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                </div>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="text-sm font-medium text-slate-700">
+                      Purpose <span className="text-mcaRed">*</span>
+                    </label>
+                    <select value={formData.namePurpose || ''} onChange={e => setField('namePurpose', e.target.value)}
+                      className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                        focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal">
+                      <option value="">Select purpose</option>
+                      <option>New LLP Incorporation</option>
+                      <option>Change of Name of Existing LLP</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium text-slate-700">
+                      Name Significance <span className="text-mcaRed">*</span>
+                    </label>
+                    <input placeholder="e.g. Based on business activity" value={formData.nameSignificance || ''} onChange={e => setField('nameSignificance', e.target.value)}
+                      className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                        focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                  </div>
+                </div>
+                <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 text-xs text-amber-800">
+                  <i className="fa-solid fa-triangle-exclamation mr-1" aria-hidden="true" />
+                  Name must end with "LLP" or "Limited Liability Partnership". MCA will check against existing names and restricted words.
+                </div>
+              </div>
+            )}
+
+            {/* ── Form-27: Registration by Foreign LLP ─── */}
+            {form.id === 'Form-27' && (
+              <div className="space-y-4">
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-xs leading-relaxed">
+                  <div className="font-bold text-blue-900 mb-1 flex items-center gap-1.5">
+                    <i className="fa-solid fa-circle-info text-blue-600" aria-hidden="true" />
+                    Foreign LLP Registration in India
+                  </div>
+                  <p className="text-blue-800">
+                    A <strong>Foreign LLP (FLLP)</strong> established outside India but having a place of business in India must register with the Registrar.
+                    Requires certificate of incorporation from the home country.
+                  </p>
+                </div>
+                <div>
+                  <label className="text-sm font-medium text-slate-700">
+                    Country of Incorporation <span className="text-mcaRed">*</span>
+                  </label>
+                  <select value={formData.country || ''} onChange={e => setField('country', e.target.value)}
+                    className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                      focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal">
+                    <option value="">Select country</option>
+                    <option>United Kingdom</option>
+                    <option>United States</option>
+                    <option>Singapore</option>
+                    <option>UAE</option>
+                    <option>Australia</option>
+                    <option>Germany</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="text-sm font-medium text-slate-700">
+                    Registered Office Address (Abroad) <span className="text-mcaRed">*</span>
+                  </label>
+                  <textarea rows={2} placeholder="Full address of the LLP in the country of incorporation" value={formData.foreignAddress || ''} onChange={e => setField('foreignAddress', e.target.value)}
+                    className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                      focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                </div>
+                <div>
+                  <label className="text-sm font-medium text-slate-700">
+                    Address of Place of Business in India <span className="text-mcaRed">*</span>
+                  </label>
+                  <textarea rows={2} placeholder="Indian address where business is carried on" value={formData.indiaAddress || ''} onChange={e => setField('indiaAddress', e.target.value)}
+                    className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                      focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                </div>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="text-sm font-medium text-slate-700">
+                      Authorized Representative in India <span className="text-mcaRed">*</span>
+                    </label>
+                    <input placeholder="Name of resident representative" value={formData.authRep || ''} onChange={e => setField('authRep', e.target.value)}
+                      className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                        focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium text-slate-700">
+                      Date of Incorporation (Abroad) <span className="text-mcaRed">*</span>
+                    </label>
+                    <input type="date" value={formData.incorporationDate || ''} onChange={e => setField('incorporationDate', e.target.value)}
+                      className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                        focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* ── Form-24: LLP Strike-off ─── */}
+            {form.id === 'Form-24' && (
+              <div className="space-y-4">
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-xs leading-relaxed">
+                  <div className="font-bold text-blue-900 mb-1 flex items-center gap-1.5">
+                    <i className="fa-solid fa-circle-info text-blue-600" aria-hidden="true" />
+                    LLP Strike-off Application
+                  </div>
+                  <p className="text-blue-800">
+                    Apply under <strong>Section 55 of LLP Act, 2008</strong> to strike off the LLP name from the Register.
+                    The LLP must not have any assets or liabilities and must have closed all bank accounts.
+                  </p>
+                </div>
+                <div>
+                  <label className="text-sm font-medium text-slate-700">
+                    Grounds for Strike-off <span className="text-mcaRed">*</span>
+                  </label>
+                  <select value={formData.grounds || ''} onChange={e => setField('grounds', e.target.value)}
+                    className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                      focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal">
+                    <option value="">Select grounds</option>
+                    <option>LLP is not carrying on any business or operation</option>
+                    <option>LLP wants to voluntarily close</option>
+                    <option>LLP was formed for a specific purpose that is completed</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="text-sm font-medium text-slate-700">
+                      Date of Last Activity <span className="text-mcaRed">*</span>
+                    </label>
+                    <input type="date" value={formData.lastActivityDate || ''} onChange={e => setField('lastActivityDate', e.target.value)}
+                      className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                        focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium text-slate-700">
+                      Number of Partners Consenting <span className="text-mcaRed">*</span>
+                    </label>
+                    <input type="number" min="1" placeholder="All partners must consent" value={formData.partnerConsent || ''} onChange={e => setField('partnerConsent', e.target.value)}
+                      className="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 mt-1.5 text-sm
+                        focus:outline-none focus:ring-2 focus:ring-mcaTeal/30 focus:border-mcaTeal" />
+                  </div>
+                </div>
+                <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 text-xs text-amber-800">
+                  <i className="fa-solid fa-triangle-exclamation mr-1" aria-hidden="true" />
+                  All outstanding liabilities must be settled. Bank accounts must be closed before filing. Indemnity bond from all partners is required.
+                </div>
+              </div>
+            )}
+
             {/* generic notes */}
             <p className="text-xs text-slate-500 pt-1">
               <i className="fa-solid fa-circle-info mr-1 opacity-50" aria-hidden="true" />
@@ -784,6 +1326,138 @@ export default function FormDetail() {
                     <tr className="border-b border-slate-100">
                       <td className="bg-slate-50 px-4 py-2.5 text-slate-500 font-medium">GNL-1 SRN</td>
                       <td className="px-4 py-2.5 font-mono text-xs">{formData.notes}</td>
+                    </tr>
+                  )}
+
+                  {/* ── Form-3 review ── */}
+                  {form.id === 'Form-3' && formData.agreementType && (
+                    <>
+                      <tr className="border-b border-slate-100">
+                        <td className="bg-slate-50 px-4 py-2.5 text-slate-500 font-medium">Agreement Type</td>
+                        <td className="px-4 py-2.5">{formData.agreementType}</td>
+                      </tr>
+                      {formData.agreementDate && (
+                        <tr className="border-b border-slate-100">
+                          <td className="bg-slate-50 px-4 py-2.5 text-slate-500 font-medium">Agreement Date</td>
+                          <td className="px-4 py-2.5">{formData.agreementDate}</td>
+                        </tr>
+                      )}
+                    </>
+                  )}
+
+                  {/* ── Form-4 review ── */}
+                  {form.id === 'Form-4' && formData.changeType && (
+                    <>
+                      <tr className="border-b border-slate-100">
+                        <td className="bg-slate-50 px-4 py-2.5 text-slate-500 font-medium">Change Type</td>
+                        <td className="px-4 py-2.5">{formData.changeType}</td>
+                      </tr>
+                      {formData.partnerDin && (
+                        <tr className="border-b border-slate-100">
+                          <td className="bg-slate-50 px-4 py-2.5 text-slate-500 font-medium">Partner DIN</td>
+                          <td className="px-4 py-2.5 font-mono">{formData.partnerDin}</td>
+                        </tr>
+                      )}
+                      {formData.changeDate && (
+                        <tr className="border-b border-slate-100">
+                          <td className="bg-slate-50 px-4 py-2.5 text-slate-500 font-medium">Effective Date</td>
+                          <td className="px-4 py-2.5">{formData.changeDate}</td>
+                        </tr>
+                      )}
+                    </>
+                  )}
+
+                  {/* ── Form-5 review ── */}
+                  {form.id === 'Form-5' && formData.newName && (
+                    <>
+                      <tr className="border-b border-slate-100">
+                        <td className="bg-slate-50 px-4 py-2.5 text-slate-500 font-medium">New LLP Name</td>
+                        <td className="px-4 py-2.5 font-medium">{formData.newName}</td>
+                      </tr>
+                      {formData.runLlpSrn && (
+                        <tr className="border-b border-slate-100">
+                          <td className="bg-slate-50 px-4 py-2.5 text-slate-500 font-medium">RUN-LLP SRN</td>
+                          <td className="px-4 py-2.5 font-mono text-xs">{formData.runLlpSrn}</td>
+                        </tr>
+                      )}
+                    </>
+                  )}
+
+                  {/* ── Form-12 review ── */}
+                  {form.id === 'Form-12' && formData.newAddress && (
+                    <tr className="border-b border-slate-100">
+                      <td className="bg-slate-50 px-4 py-2.5 text-slate-500 font-medium">New Address</td>
+                      <td className="px-4 py-2.5 text-xs">{formData.newAddress}</td>
+                    </tr>
+                  )}
+
+                  {/* ── Form-15 review ── */}
+                  {form.id === 'Form-15' && formData.newAddress && (
+                    <>
+                      <tr className="border-b border-slate-100">
+                        <td className="bg-slate-50 px-4 py-2.5 text-slate-500 font-medium">Current State</td>
+                        <td className="px-4 py-2.5">{formData.currentState}</td>
+                      </tr>
+                      <tr className="border-b border-slate-100">
+                        <td className="bg-slate-50 px-4 py-2.5 text-slate-500 font-medium">New Address</td>
+                        <td className="px-4 py-2.5 text-xs">{formData.newAddress}</td>
+                      </tr>
+                    </>
+                  )}
+
+                  {/* ── Form-22 review ── */}
+                  {form.id === 'Form-22' && formData.courtType && (
+                    <>
+                      <tr className="border-b border-slate-100">
+                        <td className="bg-slate-50 px-4 py-2.5 text-slate-500 font-medium">Court / Tribunal</td>
+                        <td className="px-4 py-2.5">{formData.courtType}</td>
+                      </tr>
+                      {formData.caseNumber && (
+                        <tr className="border-b border-slate-100">
+                          <td className="bg-slate-50 px-4 py-2.5 text-slate-500 font-medium">Case Number</td>
+                          <td className="px-4 py-2.5 font-mono text-xs">{formData.caseNumber}</td>
+                        </tr>
+                      )}
+                    </>
+                  )}
+
+                  {/* ── Form-23/25 review ── */}
+                  {(form.id === 'Form-23' || form.id === 'Form-25') && formData.proposedName1 && (
+                    <>
+                      <tr className="border-b border-slate-100">
+                        <td className="bg-slate-50 px-4 py-2.5 text-slate-500 font-medium">Proposed Name</td>
+                        <td className="px-4 py-2.5 font-medium">{formData.proposedName1}</td>
+                      </tr>
+                      {formData.proposedName2 && (
+                        <tr className="border-b border-slate-100">
+                          <td className="bg-slate-50 px-4 py-2.5 text-slate-500 font-medium">Alternative Name</td>
+                          <td className="px-4 py-2.5">{formData.proposedName2}</td>
+                        </tr>
+                      )}
+                    </>
+                  )}
+
+                  {/* ── Form-27 review ── */}
+                  {form.id === 'Form-27' && formData.country && (
+                    <>
+                      <tr className="border-b border-slate-100">
+                        <td className="bg-slate-50 px-4 py-2.5 text-slate-500 font-medium">Country</td>
+                        <td className="px-4 py-2.5">{formData.country}</td>
+                      </tr>
+                      {formData.authRep && (
+                        <tr className="border-b border-slate-100">
+                          <td className="bg-slate-50 px-4 py-2.5 text-slate-500 font-medium">Auth. Representative</td>
+                          <td className="px-4 py-2.5">{formData.authRep}</td>
+                        </tr>
+                      )}
+                    </>
+                  )}
+
+                  {/* ── Form-24 review ── */}
+                  {form.id === 'Form-24' && formData.grounds && (
+                    <tr className="border-b border-slate-100">
+                      <td className="bg-slate-50 px-4 py-2.5 text-slate-500 font-medium">Grounds</td>
+                      <td className="px-4 py-2.5 text-xs">{formData.grounds}</td>
                     </tr>
                   )}
 

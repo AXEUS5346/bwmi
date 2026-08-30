@@ -414,15 +414,15 @@ export default function Help() {
               </h3>
               <ul className="space-y-2">
                 {[
-                  { label: 'System Requirements for MCA Portal', icon: 'fa-desktop' },
-                  { label: 'User Registration Flow', icon: 'fa-user-plus' },
-                  { label: 'DSC Procurement & Registration', icon: 'fa-key' },
-                  { label: 'Making a Payment on V3', icon: 'fa-indian-rupee-sign' },
-                  { label: 'Understanding Your SRN Status', icon: 'fa-file-lines' },
+                  { label: 'System Requirements for MCA Portal', icon: 'fa-desktop', to: '/help/faqs' },
+                  { label: 'User Registration Flow', icon: 'fa-user-plus', to: '/help/faqs' },
+                  { label: 'DSC Procurement & Registration', icon: 'fa-key', to: '/help/faqs' },
+                  { label: 'Making a Payment on V3', icon: 'fa-indian-rupee-sign', to: '/help/faqs' },
+                  { label: 'Understanding Your SRN Status', icon: 'fa-file-lines', to: '/help/faqs' },
                 ].map((g) => (
                   <li key={g.label}>
-                    <a
-                      href="#"
+                    <Link
+                      to={g.to}
                       className="flex items-center gap-2 text-xs text-[#0E7C7B] hover:text-[#0B2C5C] transition-colors group"
                     >
                       <i
@@ -430,7 +430,7 @@ export default function Help() {
                       />
                       {g.label}
                       <i className="fa-solid fa-arrow-right text-[8px] text-slate-300 group-hover:text-[#0E7C7B] ml-auto" />
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -473,7 +473,7 @@ export default function Help() {
                   <i className="fa-solid fa-phone text-[#FF9933] mt-0.5" />
                   <div>
                     <p className="font-semibold">Helpdesk (Toll-Free)</p>
-                    <p className="text-slate-300">1800-11-0030</p>
+                    <p className="text-slate-300">1800-XXX-XXXX</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-2.5">
@@ -487,31 +487,31 @@ export default function Help() {
                   <i className="fa-solid fa-ticket text-[#FF9933] mt-0.5" />
                   <div>
                     <p className="font-semibold">Raise a Ticket</p>
-                    <a
-                      href="#"
+                    <Link
+                      to="/contact"
                       className="text-[#FF9933] hover:underline transition-colors"
                     >
                       Open support ticket →
-                    </a>
+                    </Link>
                   </div>
                 </li>
               </ul>
 
               <div className="mt-4 pt-3 border-t border-white/10 flex flex-wrap gap-2">
-                <a
-                  href="#"
+                <Link
+                  to="/contact"
                   className="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white text-[11px] font-medium rounded-lg px-3 py-1.5 transition-colors"
                 >
                   <i className="fa-solid fa-comment-dots" />
                   Live Chat (Beta)
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  to="/contact"
                   className="inline-flex items-center gap-1.5 border border-white/20 hover:bg-white/10 text-white text-[11px] font-medium rounded-lg px-3 py-1.5 transition-colors"
                 >
                   <i className="fa-solid fa-flag" />
                   Grievance
-                </a>
+                </Link>
               </div>
             </div>
 

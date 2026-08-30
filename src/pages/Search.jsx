@@ -476,12 +476,12 @@ export default function Search() {
                           </td>
                           <td className="px-4 py-3 text-center">
                             {ch.cersai ? (
-                              <a
-                                href="#"
-                                className="text-[#0E7C7B] font-semibold text-xs hover:underline focus:outline-none focus:ring-2 focus:ring-mcaTeal/40 rounded"
+                              <span
+                                className="text-[#0E7C7B] font-semibold text-xs"
+                                title={ch.cersai}
                               >
-                                CERSAI →
-                              </a>
+                                {ch.cersai}
+                              </span>
                             ) : (
                               <span className="text-xs text-slate-400">—</span>
                             )}

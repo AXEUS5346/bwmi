@@ -5,8 +5,8 @@ const contactCards = [
     title: 'Helpdesk',
     icon: 'fa-headset',
     details: [
-      { label: 'Phone', value: '1800-11-0030 (Toll Free)', icon: 'fa-phone' },
-      { label: 'Phone', value: '0120-4832500', icon: 'fa-phone' },
+      { label: 'Phone', value: '1800-XXX-XXXX (Toll Free)', icon: 'fa-phone' },
+      { label: 'Phone', value: '0120-XXX-XXXX', icon: 'fa-phone' },
       { label: 'Email', value: 'appl.helpdesk@mca.gov.in', icon: 'fa-envelope' },
     ],
   },
@@ -14,8 +14,8 @@ const contactCards = [
     title: 'CRC (Company Relation Cell)',
     icon: 'fa-building-columns',
     details: [
-      { label: 'Phone', value: '0120-4832500', icon: 'fa-phone' },
-      { label: 'Phone', value: '1800 202 3454 (Toll Free)', icon: 'fa-phone' },
+      { label: 'Phone', value: '0120-XXX-XXXX', icon: 'fa-phone' },
+      { label: 'Phone', value: '1800-XXX-XXXX (Toll Free)', icon: 'fa-phone' },
       { label: 'Email', value: 'crc.escalation@mca.gov.in', icon: 'fa-envelope' },
     ],
   },
@@ -24,7 +24,7 @@ const contactCards = [
     icon: 'fa-laptop',
     details: [
       { label: 'Contact', value: 'Sh. Vivek, Deputy Director', icon: 'fa-user' },
-      { label: 'Phone', value: '011-23073017', icon: 'fa-phone' },
+      { label: 'Phone', value: '011-XXXX-XXXX', icon: 'fa-phone' },
       { label: 'Email', value: 'ddegov@mca.gov.in', icon: 'fa-envelope' },
     ],
   },

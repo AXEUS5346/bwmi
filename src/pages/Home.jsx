@@ -56,28 +56,6 @@ export default function Home() {
     <div className="bg-nzLightBg min-h-screen">
 
       {/* ═══════════════════════════════════════════════════════════════════
-          1. HERO SECTION — nzDarkTeal background
-         ═══════════════════════════════════════════════════════════════════ */}
-      <section className="bg-nzDarkTeal py-16 md:py-20" aria-label="MCA Register">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h1 className="text-white font-[200] text-4xl md:text-[52px] leading-tight mb-3 tracking-tight">
-            Ministry of Corporate Affairs
-          </h1>
-          <p className="text-white/80 text-lg mb-10 font-light">
-            Companies Register of India
-          </p>
-          {!isAuthenticated && (
-            <Link
-              to="/login"
-              className="inline-block bg-nzCyan text-nzDarkTeal font-semibold text-sm px-8 py-3 hover:bg-white transition-colors"
-            >
-              Access your account
-            </Link>
-          )}
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════════════
           2. LOGGED-IN: PERSONALISED DASHBOARD  |  LOGGED-OUT: TOPIC PANELS
          ═══════════════════════════════════════════════════════════════════ */}
       {isAuthenticated && roleConfig ? (
@@ -198,7 +176,7 @@ export default function Home() {
                 <span className="block text-xs text-nzMuted mb-1.5">{c.date}</span>
                 <h3 className="text-lg mb-2">
                   <Link
-                    to={`/notices/${c.id}`}
+                    to="/help/circulars"
                     className="text-nzPrimary underline underline-offset-2 hover:text-nzMediumTeal transition-colors"
                   >
                     {c.title}
@@ -209,7 +187,7 @@ export default function Home() {
                 </span>
                 <div className="mt-2">
                   <Link
-                    to={`/notices/${c.id}`}
+                    to="/help/circulars"
                     className="text-sm font-medium text-nzPrimary underline underline-offset-2 hover:text-nzMediumTeal transition-colors"
                   >
                     View this notice
@@ -229,31 +207,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════════════
-          4. STATISTICS BAR
-         ═══════════════════════════════════════════════════════════════════ */}
-      <section className="py-12 bg-nzDarkTeal text-white" aria-label="Key statistics">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-3xl md:text-4xl font-bold tracking-tight">{stats.totalCompanies}</div>
-              <div className="text-sm text-white/70 mt-2 font-light">Active Companies</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold tracking-tight">{stats.llps}</div>
-              <div className="text-sm text-white/70 mt-2 font-light">Active LLPs</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold tracking-tight">{stats.filings2024}</div>
-              <div className="text-sm text-white/70 mt-2 font-light">Filings 2024</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold tracking-tight">{stats.companiesRegistered}</div>
-              <div className="text-sm text-white/70 mt-2 font-light">New Registrations</div>
-            </div>
-          </div>
-        </div>
-      </section>
 
     </div>
   )
