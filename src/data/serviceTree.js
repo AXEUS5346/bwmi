@@ -10,14 +10,14 @@ export const serviceTree = [
     icon: "fa-magnifying-glass",
     color: "#0B2C5C",
     learnHow: "Find out how to search company records, check director status, and access public documents",
-    doItNow: "/search?type=company",
+    doItNow: "/search",
     cols: [
       {
         title: "Search Master Data",
         items: [
-          { id: "company-search", label: "Company / LLP Search", sub: "By CIN/LLPIN or Name", href: "/search?type=company", count: "5.5M views", fee: "₹0", complexity: "simple" },
-          { id: "director-search", label: "Director Search", sub: "By DIN/DPIN or Name", href: "/search?type=director", fee: "₹0", complexity: "simple" },
-          { id: "charge-search", label: "Charge Search", sub: "CERSAI-linked Index", href: "/search?type=charge", fee: "₹0", complexity: "simple" },
+          { id: "company-search", label: "Company / LLP Search", sub: "By CIN/LLPIN or Name", href: "/search", count: "5.5M views", fee: "₹0", complexity: "simple" },
+          { id: "director-search", label: "Director Search", sub: "By DIN/DPIN or Name", href: "/search", fee: "₹0", complexity: "simple" },
+          { id: "charge-search", label: "Charge Search", sub: "CERSAI-linked Index", href: "/search", fee: "₹0", complexity: "simple" },
         ]
       },
       {

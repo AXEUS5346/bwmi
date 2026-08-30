@@ -14,7 +14,7 @@ const TRANSLATIONS = {
     maintainCompany: 'Maintain a Company',
     onlineServices: 'Online Services',
     helpCentre: 'Help Centre',
-    search: 'Search companies, directors, forms...',
+    search: 'Search forms, pages, services…',
     accessAccount: 'Access your account',
     logout: 'Logout',
     siteMap: 'Site map',
@@ -155,7 +155,8 @@ function getMegaCols(treeId) {
             <span className="text-sm sm:text-base font-semibold text-nzDarkTeal">Ministry of Corporate Affairs</span>
           </Link>
 
-          {/* Center: Search Bar */}
+          {/* Center: Search Bar — hidden on /search page (has its own) */}
+          {!location.pathname.startsWith('/search') && (
           <form onSubmit={doSearch} className="hidden md:flex flex-1 max-w-xl items-center" role="search">
             <div className="relative w-full">
               <input
@@ -171,6 +172,7 @@ function getMegaCols(treeId) {
               </button>
             </div>
           </form>
+          )}
 
           {/* Right: Account */}
           <div className="flex items-center gap-3 shrink-0">

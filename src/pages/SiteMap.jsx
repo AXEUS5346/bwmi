@@ -9,10 +9,10 @@ const SECTIONS = [
   {
     title: 'Search & Discovery',
     links: [
-      { label: 'Company / LLP Search', to: '/search?type=company' },
-      { label: 'Director Search', to: '/search?type=director' },
-      { label: 'Charge Search', to: '/search?type=charge' },
-      { label: 'Advanced Search', to: '/search' },
+      { label: 'Search Portal Content', to: '/search' },
+      { label: 'Company / LLP Search', to: '/search' },
+      { label: 'Director Search', to: '/search' },
+      { label: 'Charge Search', to: '/search' },
       { label: 'Company Detail (Example)', to: '/search/company/L24239MH1981PLC002195' },
     ],
   },
@@ -128,8 +128,8 @@ const SECTIONS = [
     title: 'Your Account',
     links: [
       { label: 'Login / Register', to: '/login' },
-      { label: 'My Applications', to: '/search?type=company' },
-      { label: 'Company Search', to: '/search?type=company' },
+      { label: 'My Applications', to: '/dashboard' },
+      { label: 'Search Portal', to: '/search' },
     ],
   },
 ]
