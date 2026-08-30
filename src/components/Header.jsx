@@ -87,7 +87,7 @@ function getMegaCols(treeId) {
       const doSearch = (e) => {
       e.preventDefault()
       if (!q.trim()) return
-      nav(`/search?q=${encodeURIComponent(q.trim())}`)
+      nav(`/search?q=${encodeURIComponent(q.trim())}&type=forms`)
       setQ('')
     }
 

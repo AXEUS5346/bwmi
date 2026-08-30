@@ -119,19 +119,19 @@ export const filings = [
 ]
 
 export const circulars = [
-  { id:"CIR/09/2024", date:"15-Feb-2026", title:"ROC bifurcation: Delhi split into Delhi I/II, Haryana", category:"Notification", important:true },
-  { id:"CIR/01/2026", date:"15-Apr-2026", title:"Companies Compliance Facilitation Scheme CCFS-2026 till 15 Jul 2026", category:"Circular", important:true },
-  { id:"G.S.R.943(E)", date:"31-Dec-2025", title:"DIR-3 KYC triennial (every 3 FY) by 30 Jun — effective 31 Mar 2026", category:"Amendment", important:true },
-  { id:"V3_FAQ", date:"18-Aug-2026", title:"Beta MCA Chatbot live (bottom-right)", category:"Update" },
-  { id:"NOTIF/2025", date:"23-Oct-2025", title:"New RDs/ROCs effective 16 Feb 2026 — DR site switchover", category:"Notification" },
+  { id:"CIR/09/2024", date:"15-Feb-2026", title:"ROC bifurcation: Delhi split into Delhi I/II, Haryana", category:"Notification", _searchType:"Notification", important:true },
+  { id:"CIR/01/2026", date:"15-Apr-2026", title:"Companies Compliance Facilitation Scheme CCFS-2026 till 15 Jul 2026", category:"Circular", _searchType:"Circular", important:true },
+  { id:"G.S.R.943(E)", date:"31-Dec-2025", title:"DIR-3 KYC triennial (every 3 FY) by 30 Jun — effective 31 Mar 2026", category:"Amendment", _searchType:"Amendment", important:true },
+  { id:"V3_FAQ", date:"18-Aug-2026", title:"Beta MCA Chatbot live (bottom-right)", category:"Update", _searchType:"Update" },
+  { id:"NOTIF/2025", date:"23-Oct-2025", title:"New RDs/ROCs effective 16 Feb 2026 — DR site switchover", category:"Notification", _searchType:"Notification" },
 ]
 
 export const notices = [
-  { id:"NOT-2026-001", date:"25-Aug-2026", title:"Company removed from register — CIN L99999MH1994PLC081235 (Strike Ventures Pvt Ltd)", category:"Company Removal", status:"Published" },
-  { id:"NOT-2026-002", date:"18-Aug-2026", title:"Director convicted u/s 164 — DIN 00099991 disqualified for 5 years", category:"Director Disqualification", status:"Published" },
-  { id:"NOT-2026-003", date:"10-Aug-2026", title:"NCLT order revoking winding-up — U72900TG2022PTC165432 (Hyderabad BioLabs Pvt Ltd)", category:"Court Order", status:"Published" },
-  { id:"NOT-2026-004", date:"05-Aug-2026", title:"Annual filing default list — 2,340 companies failed to file AOC-4/MGT-7 by due date", category:"Compliance Default", status:"Published" },
-  { id:"NOT-2026-005", date:"01-Aug-2026", title:"Name reservation approved — SPICe+ SRN T12345682 (Mock Company 11)", category:"Name Approval", status:"Published" },
+  { id:"NOT-2026-001", date:"25-Aug-2026", title:"Company removed from register — CIN L99999MH1994PLC081235 (Strike Ventures Pvt Ltd)", category:"Company Removal", _searchType:"Notice", status:"Published" },
+  { id:"NOT-2026-002", date:"18-Aug-2026", title:"Director convicted u/s 164 — DIN 00099991 disqualified for 5 years", category:"Director Disqualification", _searchType:"Notice", status:"Published" },
+  { id:"NOT-2026-003", date:"10-Aug-2026", title:"NCLT order revoking winding-up — U72900TG2022PTC165432 (Hyderabad BioLabs Pvt Ltd)", category:"Court Order", _searchType:"Notice", status:"Published" },
+  { id:"NOT-2026-004", date:"05-Aug-2026", title:"Annual filing default list — 2,340 companies failed to file AOC-4/MGT-7 by due date", category:"Compliance Default", _searchType:"Notice", status:"Published" },
+  { id:"NOT-2026-005", date:"01-Aug-2026", title:"Name reservation approved — SPICe+ SRN T12345682 (Mock Company 11)", category:"Name Approval", _searchType:"Notice", status:"Published" },
 ]
 
 export const stats = {

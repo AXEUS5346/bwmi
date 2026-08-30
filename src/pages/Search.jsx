@@ -1,6 +1,10 @@
 import { useState, useMemo } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import SearchBar from '../components/SearchBar'
+import EmptyState from '../components/EmptyState'
+import QuickActions from '../components/QuickActions'
+import AdvancedSearchPanel from '../components/AdvancedSearchPanel'
+import { getCategoryByKey } from '../data/searchConfig'
 import { formsCatalog, circulars, notices } from '../data/mockData'
 
 /* ─── Portal pages index ─── */
@@ -28,115 +32,165 @@ const PAGES = [
 
 const MAX_RESULTS = 15
 
+/* ─── Relevance scoring ─── */
+function relevanceScore(item, query) {
+  if (!query) return 0
+  const ql = query.toLowerCase()
+  const idMatch = item.id?.toLowerCase().includes(ql) ? 3 : 0
+  const titleMatch = item.title?.toLowerCase().includes(ql) ? 2 : 0
+  const descMatch = item.desc?.toLowerCase().includes(ql) ? 1 : 0
+  return idMatch + titleMatch + descMatch
+}
+
+/* ─── Parse date for circulars sort ─── */
+function parseDate(dateStr) {
+  const p = dateStr.split('-')
+  return new Date(`${p[2]}-${p[1]}-${p[0]}`)
+}
+
 export default function Search() {
   const [params, setParams] = useSearchParams()
   const q = params.get('q') || ''
-  const type = params.get('type') || 'all'
+  const type = params.get('type') || 'forms'
 
   const [sort, setSort] = useState('relevance')
-  const [formCategory, setFormCategory] = useState('All')
-  const [pageSection, setPageSection] = useState('All')
-  const [circularType, setCircularType] = useState('All')
-  const [showAll, setShowAll] = useState(false)
+  const [showAllFlags, setShowAllFlags] = useState({ forms: false, pages: false, circulars: false })
+  const [advancedOpen, setAdvancedOpen] = useState(false)
+  const [advancedFilters, setAdvancedFilters] = useState({})
+
+  /* ── Active chip filters (from SearchBar inline chips) ── */
+  const [formChip, setFormChip] = useState('All')
+  const [pageChip, setPageChip] = useState('All')
+  const [circularChip, setCircularChip] = useState('All')
 
   /* ── Search handler for SearchBar ── */
   const handleSearch = (query, searchType, filters) => {
     setParams({ q: query, type: searchType })
-    setShowAll(false)
     setSort('relevance')
-    setFormCategory('All')
-    setPageSection('All')
-    setCircularType('All')
+    setShowAllFlags({ forms: false, pages: false, circulars: false })
+    setAdvancedOpen(false)
+    setAdvancedFilters({})
+    // Reset all chips
+    setFormChip('All')
+    setPageChip('All')
+    setCircularChip('All')
+    // Apply chip from SearchBar
     if (filters?.category) {
-      if (searchType === 'forms') setFormCategory(filters.category)
-      else if (searchType === 'pages') setPageSection(filters.category)
-      else if (searchType === 'circulars') setCircularType(filters.category)
+      if (searchType === 'forms') setFormChip(filters.category)
+      else if (searchType === 'pages') setPageChip(filters.category)
+      else if (searchType === 'circulars') setCircularChip(filters.category)
     }
   }
 
-  /* ── Filtered forms ── */
+  /* ── Filtered forms ─── */
   const filteredForms = useMemo(() => {
     let list = formsCatalog
     if (q) {
       const ql = q.toLowerCase()
-      list = list.filter(
-        (f) =>
-          f.id.toLowerCase().includes(ql) ||
-          f.title.toLowerCase().includes(ql) ||
-          f.desc.toLowerCase().includes(ql) ||
-          f.category.toLowerCase().includes(ql)
+      list = list.filter(f =>
+        f.id.toLowerCase().includes(ql) ||
+        f.title.toLowerCase().includes(ql) ||
+        f.desc.toLowerCase().includes(ql) ||
+        f.category.toLowerCase().includes(ql)
       )
     }
-    if (formCategory !== 'All') {
-      list = list.filter((f) => f.category === formCategory)
+    const chipFilter = formChip !== 'All' ? formChip : advancedFilters.category
+    if (chipFilter && chipFilter !== 'All') {
+      list = list.filter(f => f.category === chipFilter)
     }
-    if (sort === 'name') {
+    // Fee range filter from advanced panel
+    if (advancedFilters.feeRange && advancedFilters.feeRange !== 'All') {
+      list = list.filter(f => {
+        const feeNum = parseInt(f.fee.replace(/[^\d]/g, '')) || 0
+        switch (advancedFilters.feeRange) {
+          case 'Free': return feeNum === 0
+          case 'Under500': return feeNum > 0 && feeNum < 500
+          case '500-1000': return feeNum >= 500 && feeNum <= 1000
+          case 'Over1000': return feeNum > 1000
+          default: return true
+        }
+      })
+    }
+    // Sort
+    if (sort === 'relevance' && q) {
+      list = [...list].sort((a, b) => relevanceScore(b, q) - relevanceScore(a, q))
+    } else if (sort === 'name') {
       list = [...list].sort((a, b) => a.title.localeCompare(b.title))
     } else if (sort === 'category') {
       list = [...list].sort((a, b) => a.category.localeCompare(b.category))
     }
     return list
-  }, [q, formCategory, sort])
+  }, [q, formChip, sort, advancedFilters])
 
-  /* ── Filtered pages ── */
+  /* ── Filtered pages ─── */
   const filteredPages = useMemo(() => {
     let list = PAGES
     if (q) {
       const ql = q.toLowerCase()
-      list = list.filter(
-        (p) =>
-          p.title.toLowerCase().includes(ql) ||
-          p.desc.toLowerCase().includes(ql) ||
-          p.section.toLowerCase().includes(ql)
+      list = list.filter(p =>
+        p.title.toLowerCase().includes(ql) ||
+        p.desc.toLowerCase().includes(ql) ||
+        p.section.toLowerCase().includes(ql)
       )
     }
-    if (pageSection !== 'All') {
-      list = list.filter((p) => p.section === pageSection)
+    const chipFilter = pageChip !== 'All' ? pageChip : advancedFilters.section
+    if (chipFilter && chipFilter !== 'All') {
+      list = list.filter(p => p.section === chipFilter)
     }
-    if (sort === 'name') {
+    if (sort === 'relevance' && q) {
+      list = [...list].sort((a, b) => relevanceScore(b, q) - relevanceScore(a, q))
+    } else if (sort === 'name') {
       list = [...list].sort((a, b) => a.title.localeCompare(b.title))
     }
     return list
-  }, [q, pageSection, sort])
+  }, [q, pageChip, sort, advancedFilters])
 
-  /* ── Filtered circulars & notices ── */
+  /* ── Filtered circulars & notices ─── */
   const filteredCirculars = useMemo(() => {
     const allItems = [
-      ...circulars.map((c) => ({ ...c, _kind: 'circular' })),
-      ...notices.map((n) => ({ ...n, _kind: 'notice' })),
+      ...circulars.map(c => ({ ...c, _kind: 'circular' })),
+      ...notices.map(n => ({ ...n, _kind: 'notice' })),
     ]
     let list = allItems
     if (q) {
       const ql = q.toLowerCase()
-      list = list.filter(
-        (c) =>
-          c.title.toLowerCase().includes(ql) ||
-          c.category.toLowerCase().includes(ql) ||
-          c.id.toLowerCase().includes(ql)
+      list = list.filter(c =>
+        c.title.toLowerCase().includes(ql) ||
+        c.category.toLowerCase().includes(ql) ||
+        c.id.toLowerCase().includes(ql)
       )
     }
-    if (circularType !== 'All') {
-      list = list.filter((c) => c.category === circularType)
+    // Unified filter using _searchType
+    const chipFilter = circularChip !== 'All' ? circularChip : advancedFilters.type
+    if (chipFilter && chipFilter !== 'All') {
+      list = list.filter(c => c._searchType === chipFilter)
     }
-    if (sort === 'name') {
-      list = [...list].sort((a, b) => a.title.localeCompare(b.title))
+    // Date range from advanced panel
+    if (advancedFilters.dateFrom) {
+      const from = new Date(advancedFilters.dateFrom)
+      list = list.filter(c => parseDate(c.date) >= from)
+    }
+    if (advancedFilters.dateTo) {
+      const to = new Date(advancedFilters.dateTo)
+      list = list.filter(c => parseDate(c.date) <= to)
+    }
+    if (sort === 'relevance' && q) {
+      list = [...list].sort((a, b) => relevanceScore(b, q) - relevanceScore(a, q))
     } else if (sort === 'date') {
-      list = [...list].sort((a, b) => new Date(b.date) - new Date(a.date))
+      list = [...list].sort((a, b) => parseDate(b.date) - parseDate(a.date))
+    } else if (sort === 'name') {
+      list = [...list].sort((a, b) => a.title.localeCompare(b.title))
     }
     return list
-  }, [q, circularType, sort])
+  }, [q, circularChip, sort, advancedFilters])
 
-  /* ── Visible results (max 15 or all) ── */
-  const visibleForms = showAll ? filteredForms : filteredForms.slice(0, MAX_RESULTS)
-  const visiblePages = showAll ? filteredPages : filteredPages.slice(0, MAX_RESULTS)
-  const visibleCirculars = showAll ? filteredCirculars : filteredCirculars.slice(0, MAX_RESULTS)
+  /* ── Visible results (per-tab showAll) ─── */
+  const visibleForms = showAllFlags.forms ? filteredForms : filteredForms.slice(0, MAX_RESULTS)
+  const visiblePages = showAllFlags.pages ? filteredPages : filteredPages.slice(0, MAX_RESULTS)
+  const visibleCirculars = showAllFlags.circulars ? filteredCirculars : filteredCirculars.slice(0, MAX_RESULTS)
 
-  /* ── Sort options per tab ── */
+  /* ── Sort options per tab ─── */
   const sortOptions = {
-    all: [
-      { value: 'relevance', label: 'Relevance' },
-      { value: 'name', label: 'Name A–Z' },
-    ],
     forms: [
       { value: 'relevance', label: 'Relevance' },
       { value: 'name', label: 'Name A–Z' },
@@ -153,33 +207,72 @@ export default function Search() {
     ],
   }
 
-  /* ── Total results count ── */
+  /* ── Result count ─── */
   const resultCount =
-    type === 'forms'
-      ? filteredForms.length
-      : type === 'pages'
-        ? filteredPages.length
-        : type === 'circulars'
-          ? filteredCirculars.length
-          : filteredForms.length + filteredPages.length + filteredCirculars.length
+    type === 'forms' ? filteredForms.length
+    : type === 'pages' ? filteredPages.length
+    : type === 'circulars' ? filteredCirculars.length
+    : filteredForms.length + filteredPages.length + filteredCirculars.length
+
+  const activeCat = getCategoryByKey(type)
+  const hasQuery = q.trim().length > 0
+  const showForms = hasQuery && (type === 'all' || type === 'forms')
+  const showPages = hasQuery && (type === 'all' || type === 'pages')
+  const showCirculars = hasQuery && (type === 'all' || type === 'circulars')
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC]">
+    <div className="min-h-screen bg-nzLightBg">
       {/* ── Search Header ── */}
-      <div className="bg-white border-b">
-        <div className="max-w-7xl mx-auto px-4 py-4">
-          <SearchBar variant="compact" onSearch={handleSearch} initialType={type} />
+      <div className="bg-white border-b border-nzDivider">
+        <div className="max-w-7xl mx-auto px-4 py-5">
+          <SearchBar
+            onSearch={handleSearch}
+            onTabChange={tab => {
+              setParams({ q, type: tab })
+              setSort('relevance')
+              setShowAllFlags({ forms: false, pages: false, circulars: false })
+              setAdvancedOpen(false)
+              setAdvancedFilters({})
+              setFormChip('All')
+              setPageChip('All')
+              setCircularChip('All')
+            }}
+            onFilterChange={chip => {
+              if (type === 'forms') setFormChip(chip)
+              else if (type === 'pages') setPageChip(chip)
+              else if (type === 'circulars') setCircularChip(chip)
+              setShowAllFlags(f => ({ ...f, [type]: false }))
+            }}
+            initialType={type}
+            initialQuery={q}
+          />
+          {/* Advanced search toggle */}
+          <button
+            type="button"
+            onClick={() => setAdvancedOpen(o => !o)}
+            className="mt-3 inline-flex items-center gap-1.5 text-xs font-medium text-slate-500 hover:text-nzDarkTeal transition-colors focus:outline-none focus:ring-2 focus:ring-nzCyan/40 px-2 py-1"
+            aria-expanded={advancedOpen}
+          >
+            <i className={`fa-solid fa-sliders text-[10px] transition-transform ${advancedOpen ? 'rotate-0' : ''}`} aria-hidden="true" />
+            Advanced search options
+            <i className={`fa-solid fa-chevron-down text-[10px] transition-transform duration-200 ${advancedOpen ? 'rotate-180' : ''}`} aria-hidden="true" />
+          </button>
+          {/* Advanced search panel */}
+          <AdvancedSearchPanel
+            activeCategory={type}
+            filters={advancedFilters}
+            onChange={setAdvancedFilters}
+            isOpen={advancedOpen}
+          />
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 py-6">
         {/* ── Breadcrumb ── */}
         <nav className="text-sm text-slate-500 mb-4" aria-label="Breadcrumb">
-          <Link to="/" className="hover:text-mcaTeal transition-colors">
-            Home
-          </Link>
-          <span className="mx-1.5">›</span>
-          <span className="text-slate-700 font-medium">Search Results</span>
+          <Link to="/" className="hover:text-nzPrimary transition-colors">Home</Link>
+          <span className="mx-1.5 text-slate-400">&rsaquo;</span>
+          <span className="text-nzDarkGrey font-medium">Search Results</span>
         </nav>
 
         {/* ── Results header ── */}
@@ -189,34 +282,30 @@ export default function Search() {
               Showing{' '}
               <span className="font-semibold text-slate-700">{resultCount}</span>{' '}
               results for{' '}
-              <span className="font-semibold text-[#0B2C5C]">"{q}"</span>
+              <span className="font-semibold text-nzDarkTeal">&ldquo;{q}&rdquo;</span>
             </p>
             <div className="flex items-center gap-2">
-              <label htmlFor="sort-select" className="text-xs text-slate-500 whitespace-nowrap">
-                Sort by:
-              </label>
+              <label htmlFor="sort-select" className="text-xs text-slate-500 whitespace-nowrap">Sort by:</label>
               <select
                 id="sort-select"
                 value={sort}
-                onChange={(e) => setSort(e.target.value)}
-                className="text-sm border border-slate-300 rounded-md px-3 py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-mcaTeal/40 focus:border-mcaTeal"
+                onChange={e => setSort(e.target.value)}
+                className="text-sm border border-slate-300 px-3 py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-nzCyan/40 focus:border-nzPrimary"
               >
-                {(sortOptions[type] || sortOptions.all).map((opt) => (
-                  <option key={opt.value} value={opt.value}>
-                    {opt.label}
-                  </option>
+                {(sortOptions[type] || sortOptions.forms).map(opt => (
+                  <option key={opt.value} value={opt.value}>{opt.label}</option>
                 ))}
               </select>
             </div>
           </div>
         )}
 
-        {/* ═══════════════ ALL / FORMS RESULTS ═══════════════ */}
-        {(type === 'all' || type === 'forms') && filteredForms.length > 0 && (
+        {/* ═══════════════ FORMS RESULTS ═══════════════ */}
+        {showForms && filteredForms.length > 0 && (
           <section className="mb-8" aria-label="Forms and filing">
             {type === 'all' && (
-              <h2 className="text-sm font-bold text-[#0B2C5C] uppercase tracking-wider mb-3 flex items-center gap-2">
-                <i className="fa-solid fa-file-circle-check text-[#0E7C7B]" aria-hidden="true" />
+              <h2 className="text-sm font-bold text-nzDarkTeal uppercase tracking-wider mb-3 flex items-center gap-2">
+                <i className="fa-solid fa-file-circle-check text-nzCyan" aria-hidden="true" />
                 Forms &amp; Filing
                 <span className="text-slate-400 font-normal normal-case tracking-normal">
                   ({filteredForms.length} result{filteredForms.length !== 1 ? 's' : ''})
@@ -224,32 +313,10 @@ export default function Search() {
               </h2>
             )}
 
-            {/* Category chips (only in forms tab) */}
-            {type === 'forms' && (
-              <div className="flex flex-wrap gap-2 mb-5">
-                {['All', 'Start', 'Manage', 'File & Comply', 'Close & Claim'].map((s) => (
-                  <button
-                    key={s}
-                    onClick={() => {
-                      setFormCategory(s)
-                      setShowAll(false)
-                    }}
-                    className={`px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors focus:outline-none focus:ring-2 focus:ring-mcaTeal/40 ${
-                      formCategory === s
-                        ? 'bg-[#0B2C5C] text-white border-[#0B2C5C]'
-                        : 'bg-white text-slate-600 border-slate-300 hover:border-[#0B2C5C] hover:text-[#0B2C5C]'
-                    }`}
-                  >
-                    {s}
-                  </button>
-                ))}
-              </div>
-            )}
-
             {/* Desktop table */}
-            <div className="hidden md:block bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+            <div className="hidden md:block bg-white border border-nzDivider overflow-hidden shadow-sm">
               <table className="w-full text-sm" role="table">
-                <thead className="bg-[#0B2C5C] text-white text-xs uppercase tracking-wider">
+                <thead className="bg-nzDarkTeal text-white text-xs uppercase tracking-wider">
                   <tr>
                     <th className="px-4 py-3 text-left">Form</th>
                     <th className="px-4 py-3 text-left">Category</th>
@@ -260,29 +327,21 @@ export default function Search() {
                 </thead>
                 <tbody>
                   {visibleForms.map((f, i) => (
-                    <tr
-                      key={f.id}
-                      className={`border-t border-slate-100 hover:bg-slate-50 transition-colors ${
-                        i % 2 === 0 ? 'bg-white' : 'bg-slate-50/50'
-                      }`}
-                    >
+                    <tr key={f.id} className={`border-t border-slate-100 hover:bg-slate-50 transition-colors ${i % 2 === 0 ? 'bg-white' : 'bg-slate-50/50'}`}>
                       <td className="px-4 py-3">
-                        <div className="font-medium text-[#0B2C5C]">{f.id}</div>
+                        <div className="font-medium text-nzDarkTeal">{f.id}</div>
                         <div className="text-xs text-slate-400 mt-0.5">{f.title}</div>
                       </td>
                       <td className="px-4 py-3">
-                        <span className="inline-block px-2 py-0.5 rounded-full text-[10px] font-semibold uppercase tracking-wider bg-[#0E7C7B]/10 text-[#0E7C7B]">
+                        <span className="inline-block px-2 py-0.5 rounded-full text-[10px] font-semibold uppercase tracking-wider bg-nzCyan/10 text-nzCyan">
                           {f.category}
                         </span>
                       </td>
                       <td className="px-4 py-3 text-xs text-slate-600 max-w-xs truncate">{f.desc}</td>
                       <td className="px-4 py-3 text-right text-xs text-slate-700 font-medium whitespace-nowrap">{f.fee}</td>
                       <td className="px-4 py-3 text-center">
-                        <Link
-                          to={`/efiling/${f.id}`}
-                          className="text-[#0E7C7B] font-semibold text-xs hover:underline focus:outline-none focus:ring-2 focus:ring-mcaTeal/40 rounded"
-                        >
-                          File now →
+                        <Link to={`/efiling/${f.id}`} className="text-nzCyan font-semibold text-xs hover:underline focus:outline-none focus:ring-2 focus:ring-nzCyan/40">
+                          File now &rarr;
                         </Link>
                       </td>
                     </tr>
@@ -293,40 +352,34 @@ export default function Search() {
 
             {/* Mobile cards */}
             <div className="md:hidden space-y-3">
-              {visibleForms.map((f) => (
-                <div
-                  key={f.id}
-                  className="bg-white border border-slate-200 rounded-xl p-4 shadow-sm"
-                >
+              {visibleForms.map(f => (
+                <div key={f.id} className="bg-white border border-nzDivider p-4 shadow-sm">
                   <div className="flex items-start justify-between gap-2">
                     <div className="min-w-0">
-                      <h3 className="font-semibold text-[#0B2C5C] text-sm leading-snug">{f.id}</h3>
+                      <h3 className="font-semibold text-nzDarkTeal text-sm leading-snug">{f.id}</h3>
                       <p className="text-xs text-slate-500 mt-0.5">{f.title}</p>
                     </div>
-                    <span className="inline-block px-2 py-0.5 rounded-full text-[10px] font-semibold uppercase tracking-wider bg-[#0E7C7B]/10 text-[#0E7C7B] shrink-0">
+                    <span className="inline-block px-2 py-0.5 rounded-full text-[10px] font-semibold uppercase tracking-wider bg-nzCyan/10 text-nzCyan shrink-0">
                       {f.category}
                     </span>
                   </div>
                   <p className="text-xs text-slate-500 mt-2 leading-relaxed">{f.desc}</p>
                   <div className="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between">
                     <span className="text-xs text-slate-700 font-medium">{f.fee}</span>
-                    <Link
-                      to={`/efiling/${f.id}`}
-                      className="text-[#0E7C7B] font-semibold text-xs hover:underline"
-                    >
-                      File now →
+                    <Link to={`/efiling/${f.id}`} className="text-nzCyan font-semibold text-xs hover:underline">
+                      File now &rarr;
                     </Link>
                   </div>
                 </div>
               ))}
             </div>
 
-            {/* Show more */}
-            {!showAll && filteredForms.length > MAX_RESULTS && type === 'forms' && (
+            {/* Show more (per-tab) */}
+            {!showAllFlags.forms && filteredForms.length > MAX_RESULTS && (
               <div className="text-center mt-5">
                 <button
-                  onClick={() => setShowAll(true)}
-                  className="px-6 py-2.5 bg-white border border-[#0B2C5C] text-[#0B2C5C] text-sm font-semibold rounded-lg hover:bg-[#0B2C5C] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-mcaTeal/40"
+                  onClick={() => setShowAllFlags(f => ({ ...f, forms: true }))}
+                  className="px-6 py-2.5 bg-white border border-nzDarkTeal text-nzDarkTeal text-sm font-semibold hover:bg-nzDarkTeal hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-nzCyan/40"
                 >
                   Show more ({filteredForms.length - MAX_RESULTS} remaining)
                 </button>
@@ -335,12 +388,12 @@ export default function Search() {
           </section>
         )}
 
-        {/* ═══════════════ ALL / PAGES RESULTS ═══════════════ */}
-        {(type === 'all' || type === 'pages') && filteredPages.length > 0 && (
+        {/* ═══════════════ PAGES RESULTS ═══════════════ */}
+        {showPages && filteredPages.length > 0 && (
           <section className="mb-8" aria-label="Pages and services">
             {type === 'all' && (
-              <h2 className="text-sm font-bold text-[#0B2C5C] uppercase tracking-wider mb-3 flex items-center gap-2">
-                <i className="fa-solid fa-layer-group text-[#0E7C7B]" aria-hidden="true" />
+              <h2 className="text-sm font-bold text-nzDarkTeal uppercase tracking-wider mb-3 flex items-center gap-2">
+                <i className="fa-solid fa-layer-group text-nzCyan" aria-hidden="true" />
                 Pages &amp; Services
                 <span className="text-slate-400 font-normal normal-case tracking-normal">
                   ({filteredPages.length} result{filteredPages.length !== 1 ? 's' : ''})
@@ -348,65 +401,31 @@ export default function Search() {
               </h2>
             )}
 
-            {/* Section chips (only in pages tab) */}
-            {type === 'pages' && (
-              <div className="flex flex-wrap gap-2 mb-5">
-                {['All', 'Services', 'Information', 'Help'].map((s) => (
-                  <button
-                    key={s}
-                    onClick={() => {
-                      setPageSection(s)
-                      setShowAll(false)
-                    }}
-                    className={`px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors focus:outline-none focus:ring-2 focus:ring-mcaTeal/40 ${
-                      pageSection === s
-                        ? 'bg-[#0B2C5C] text-white border-[#0B2C5C]'
-                        : 'bg-white text-slate-600 border-slate-300 hover:border-[#0B2C5C] hover:text-[#0B2C5C]'
-                    }`}
-                  >
-                    {s}
-                  </button>
-                ))}
-              </div>
-            )}
-
-            <div className="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+            <div className="bg-white border border-nzDivider overflow-hidden shadow-sm">
               <div className="divide-y divide-slate-100">
-                {visiblePages.map((p) => (
-                  <Link
-                    key={p.href}
-                    to={p.href}
-                    className="flex items-start gap-4 px-5 py-4 hover:bg-slate-50 transition-colors group"
-                  >
-                    <div className="mt-0.5 w-9 h-9 rounded-full bg-[#0E7C7B]/10 flex items-center justify-center shrink-0 group-hover:bg-[#0E7C7B] transition-colors">
-                      <i
-                        className={`fa-solid ${p.icon} text-[#0E7C7B] text-xs group-hover:text-white transition-colors`}
-                        aria-hidden="true"
-                      />
+                {visiblePages.map(p => (
+                  <Link key={p.href} to={p.href} className="flex items-start gap-4 px-5 py-4 hover:bg-slate-50 transition-colors group">
+                    <div className="mt-0.5 w-9 h-9 bg-nzCyan/10 flex items-center justify-center shrink-0 group-hover:bg-nzCyan transition-colors">
+                      <i className={`fa-solid ${p.icon} text-nzCyan text-xs group-hover:text-white transition-colors`} aria-hidden="true" />
                     </div>
                     <div className="min-w-0 flex-1">
                       <div className="flex items-center gap-2">
-                        <h3 className="text-sm font-semibold text-[#0B2C5C] group-hover:text-[#0E7C7B] transition-colors">
-                          {p.title}
-                        </h3>
-                        <span className="inline-block text-[10px] font-semibold uppercase tracking-wider text-[#0E7C7B] bg-[#0E7C7B]/10 rounded px-2 py-0.5">
-                          {p.section}
-                        </span>
+                        <h3 className="text-sm font-semibold text-nzDarkTeal group-hover:text-nzCyan transition-colors">{p.title}</h3>
+                        <span className="inline-block text-[10px] font-semibold uppercase tracking-wider text-nzCyan bg-nzCyan/10 px-2 py-0.5">{p.section}</span>
                       </div>
                       <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">{p.desc}</p>
                     </div>
-                    <i className="fa-solid fa-arrow-right text-slate-300 text-xs mt-2 group-hover:text-[#0E7C7B] transition-colors" aria-hidden="true" />
+                    <i className="fa-solid fa-arrow-right text-slate-300 text-xs mt-2 group-hover:text-nzCyan transition-colors" aria-hidden="true" />
                   </Link>
                 ))}
               </div>
             </div>
 
-            {/* Show more */}
-            {!showAll && filteredPages.length > MAX_RESULTS && type === 'pages' && (
+            {!showAllFlags.pages && filteredPages.length > MAX_RESULTS && (
               <div className="text-center mt-5">
                 <button
-                  onClick={() => setShowAll(true)}
-                  className="px-6 py-2.5 bg-white border border-[#0B2C5C] text-[#0B2C5C] text-sm font-semibold rounded-lg hover:bg-[#0B2C5C] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-mcaTeal/40"
+                  onClick={() => setShowAllFlags(f => ({ ...f, pages: true }))}
+                  className="px-6 py-2.5 bg-white border border-nzDarkTeal text-nzDarkTeal text-sm font-semibold hover:bg-nzDarkTeal hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-nzCyan/40"
                 >
                   Show more ({filteredPages.length - MAX_RESULTS} remaining)
                 </button>
@@ -415,12 +434,12 @@ export default function Search() {
           </section>
         )}
 
-        {/* ═══════════════ ALL / CIRCULARS RESULTS ═══════════════ */}
-        {(type === 'all' || type === 'circulars') && filteredCirculars.length > 0 && (
+        {/* ═══════════════ CIRCULARS RESULTS ═══════════════ */}
+        {showCirculars && filteredCirculars.length > 0 && (
           <section className="mb-8" aria-label="Circulars and notices">
             {type === 'all' && (
-              <h2 className="text-sm font-bold text-[#0B2C5C] uppercase tracking-wider mb-3 flex items-center gap-2">
-                <i className="fa-solid fa-bullhorn text-[#0E7C7B]" aria-hidden="true" />
+              <h2 className="text-sm font-bold text-nzDarkTeal uppercase tracking-wider mb-3 flex items-center gap-2">
+                <i className="fa-solid fa-bullhorn text-mcaSaffron" aria-hidden="true" />
                 Circulars &amp; Notices
                 <span className="text-slate-400 font-normal normal-case tracking-normal">
                   ({filteredCirculars.length} result{filteredCirculars.length !== 1 ? 's' : ''})
@@ -428,72 +447,36 @@ export default function Search() {
               </h2>
             )}
 
-            {/* Type chips (only in circulars tab) */}
-            {type === 'circulars' && (
-              <div className="flex flex-wrap gap-2 mb-5">
-                {['All', 'Notification', 'Circular', 'Amendment', 'Update'].map((s) => (
-                  <button
-                    key={s}
-                    onClick={() => {
-                      setCircularType(s)
-                      setShowAll(false)
-                    }}
-                    className={`px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors focus:outline-none focus:ring-2 focus:ring-mcaTeal/40 ${
-                      circularType === s
-                        ? 'bg-[#0B2C5C] text-white border-[#0B2C5C]'
-                        : 'bg-white text-slate-600 border-slate-300 hover:border-[#0B2C5C] hover:text-[#0B2C5C]'
-                    }`}
-                  >
-                    {s}
-                  </button>
-                ))}
-              </div>
-            )}
-
-            <div className="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+            <div className="bg-white border border-nzDivider overflow-hidden shadow-sm">
               <div className="divide-y divide-slate-100">
-                {visibleCirculars.map((c) => (
-                  <Link
-                    key={c.id}
-                    to="/help/circulars"
-                    className="flex items-start gap-4 px-5 py-4 hover:bg-slate-50 transition-colors group"
-                  >
-                    <div className="mt-0.5 w-9 h-9 rounded-full bg-[#FF9933]/10 flex items-center justify-center shrink-0 group-hover:bg-[#FF9933] transition-colors">
-                      <i
-                        className={`fa-solid ${c._kind === 'notice' ? 'fa-file-lines' : 'fa-bullhorn'} text-[#FF9933] text-xs group-hover:text-white transition-colors`}
-                        aria-hidden="true"
-                      />
+                {visibleCirculars.map(c => (
+                  <Link key={c.id} to="/help/circulars" className="flex items-start gap-4 px-5 py-4 hover:bg-slate-50 transition-colors group">
+                    <div className="mt-0.5 w-9 h-9 bg-mcaSaffron/10 flex items-center justify-center shrink-0 group-hover:bg-mcaSaffron transition-colors">
+                      <i className={`fa-solid ${c._kind === 'notice' ? 'fa-file-lines' : 'fa-bullhorn'} text-mcaSaffron text-xs group-hover:text-white transition-colors`} aria-hidden="true" />
                     </div>
                     <div className="min-w-0 flex-1">
                       <div className="flex items-center gap-2 flex-wrap">
                         <span className="text-[10px] font-mono text-slate-400">{c.id}</span>
-                        <span className="text-[10px] text-slate-400">•</span>
+                        <span className="text-[10px] text-slate-400">&bull;</span>
                         <span className="text-[10px] text-slate-400">{c.date}</span>
                         {c.important && (
-                          <span className="inline-block text-[9px] font-bold uppercase tracking-wider text-white bg-red-500 rounded px-1.5 py-0.5">
-                            Important
-                          </span>
+                          <span className="inline-block text-[9px] font-bold uppercase tracking-wider text-white bg-mcaRed rounded px-1.5 py-0.5">Important</span>
                         )}
                       </div>
-                      <h3 className="text-sm font-semibold text-[#0B2C5C] mt-1 group-hover:text-[#0E7C7B] transition-colors leading-snug">
-                        {c.title}
-                      </h3>
-                      <span className="inline-block mt-1.5 text-[10px] font-semibold uppercase tracking-wider text-[#0E7C7B] bg-[#0E7C7B]/10 rounded px-2 py-0.5">
-                        {c.category}
-                      </span>
+                      <h3 className="text-sm font-semibold text-nzDarkTeal mt-1 group-hover:text-nzCyan transition-colors leading-snug">{c.title}</h3>
+                      <span className="inline-block mt-1.5 text-[10px] font-semibold uppercase tracking-wider text-nzCyan bg-nzCyan/10 rounded px-2 py-0.5">{c.category}</span>
                     </div>
-                    <i className="fa-solid fa-arrow-right text-slate-300 text-xs mt-2 group-hover:text-[#0E7C7B] transition-colors" aria-hidden="true" />
+                    <i className="fa-solid fa-arrow-right text-slate-300 text-xs mt-2 group-hover:text-nzCyan transition-colors" aria-hidden="true" />
                   </Link>
                 ))}
               </div>
             </div>
 
-            {/* Show more */}
-            {!showAll && filteredCirculars.length > MAX_RESULTS && type === 'circulars' && (
+            {!showAllFlags.circulars && filteredCirculars.length > MAX_RESULTS && (
               <div className="text-center mt-5">
                 <button
-                  onClick={() => setShowAll(true)}
-                  className="px-6 py-2.5 bg-white border border-[#0B2C5C] text-[#0B2C5C] text-sm font-semibold rounded-lg hover:bg-[#0B2C5C] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-mcaTeal/40"
+                  onClick={() => setShowAllFlags(f => ({ ...f, circulars: true }))}
+                  className="px-6 py-2.5 bg-white border border-nzDarkTeal text-nzDarkTeal text-sm font-semibold hover:bg-nzDarkTeal hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-nzCyan/40"
                 >
                   Show more ({filteredCirculars.length - MAX_RESULTS} remaining)
                 </button>
@@ -503,71 +486,10 @@ export default function Search() {
         )}
 
         {/* ═══════════════ EMPTY STATE ═══════════════ */}
-        {resultCount === 0 && q && <EmptyState query={q} />}
+        {resultCount === 0 && q && <EmptyState query={q} category={type} />}
 
-        {/* ═══════════════ NO QUERY — SHOW LANDING ═══════════════ */}
-        {!q && (
-          <div className="bg-white border border-slate-200 rounded-xl p-10 text-center shadow-sm">
-            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#0E7C7B]/10 flex items-center justify-center">
-              <i className="fa-solid fa-magnifying-glass text-[#0E7C7B] text-xl" aria-hidden="true" />
-            </div>
-            <h2 className="text-lg font-semibold text-[#0B2C5C] mb-2">
-              Search the MCA Portal
-            </h2>
-            <p className="text-sm text-slate-500 max-w-md mx-auto leading-relaxed">
-              Find e-Filing forms, portal pages, circulars, and more. Use the tabs above
-              to narrow your search, or type a keyword to get started.
-            </p>
-            <div className="mt-6 flex flex-wrap justify-center gap-3 text-xs">
-              <Link to="/efiling" className="px-4 py-2 bg-[#0B2C5C] text-white rounded-lg font-semibold hover:bg-[#0B2C5C]/90 transition-colors">
-                Browse all forms
-              </Link>
-              <Link to="/help/faqs" className="px-4 py-2 border border-[#0B2C5C] text-[#0B2C5C] rounded-lg font-semibold hover:bg-[#0B2C5C] hover:text-white transition-colors">
-                Visit Help &amp; FAQs
-              </Link>
-              <Link to="/sitemap" className="px-4 py-2 border border-slate-300 text-slate-600 rounded-lg font-semibold hover:border-[#0B2C5C] hover:text-[#0B2C5C] transition-colors">
-                View Site Map
-              </Link>
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
-  )
-}
-
-/* ─── Empty State ─── */
-function EmptyState({ query }) {
-  return (
-    <div className="bg-white border border-slate-200 rounded-xl p-10 text-center shadow-sm">
-      <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-slate-100 flex items-center justify-center">
-        <i className="fa-solid fa-magnifying-glass text-slate-400 text-xl" aria-hidden="true" />
-      </div>
-      <h3 className="text-lg font-semibold text-[#0B2C5C] mb-2">
-        We couldn't find any results
-        {query && (
-          <>
-            {' '}
-            for <span className="text-[#0E7C7B]">"{query}"</span>
-          </>
-        )}
-      </h3>
-      <p className="text-sm text-slate-500 max-w-md mx-auto leading-relaxed">
-        Check your spelling, try fewer keywords, or browse by category using the tabs above.
-      </p>
-      <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
-        <Link
-          to="/"
-          className="px-5 py-2.5 bg-[#0B2C5C] text-white text-sm font-semibold rounded-lg hover:bg-[#0B2C5C]/90 transition-colors focus:outline-none focus:ring-2 focus:ring-mcaTeal/40"
-        >
-          Back to Home
-        </Link>
-        <Link
-          to="/sitemap"
-          className="px-5 py-2.5 border border-[#0B2C5C] text-[#0B2C5C] text-sm font-semibold rounded-lg hover:bg-[#0B2C5C] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-mcaTeal/40"
-        >
-          Browse Site Map
-        </Link>
+        {/* ═══════════════ NO QUERY — QUICK ACTIONS ═══════════════ */}
+        {!q && <QuickActions />}
       </div>
     </div>
   )
