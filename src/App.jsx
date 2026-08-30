@@ -19,6 +19,7 @@ import ViewDocs from './pages/ViewDocs'
 import FeeCalculator from './pages/FeeCalculator'
 import MCAServices from './pages/MCAServices'
 import SiteMap from './pages/SiteMap'
+import Dashboard from './pages/Dashboard'
 
 // BrowserRouter never resets scroll on navigation (<ScrollRestoration />
 // requires a data router), so short pages render out of view after a click.
@@ -77,6 +78,10 @@ export default function App() {
             {/* Auth */}
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Login />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+
+            {/* Online Services */}
+            <Route path="/online-services" element={<MCAServices />} />
 
             {/* Information */}
             <Route path="/sitemap" element={<SiteMap />} />

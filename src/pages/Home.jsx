@@ -176,7 +176,7 @@ export default function Home() {
                 <span className="block text-xs text-nzMuted mb-1.5">{c.date}</span>
                 <h3 className="text-lg mb-2">
                   <Link
-                    to={`/notices/${c.id}`}
+                    to="/help/circulars"
                     className="text-nzPrimary underline underline-offset-2 hover:text-nzMediumTeal transition-colors"
                   >
                     {c.title}
@@ -187,7 +187,7 @@ export default function Home() {
                 </span>
                 <div className="mt-2">
                   <Link
-                    to={`/notices/${c.id}`}
+                    to="/help/circulars"
                     className="text-sm font-medium text-nzPrimary underline underline-offset-2 hover:text-nzMediumTeal transition-colors"
                   >
                     View this notice
