@@ -68,7 +68,10 @@ function getMegaCols(treeId) {
 
     useEffect(() => {
       const handler = (e) => {
-        if (megaRef.current && !megaRef.current.contains(e.target)) setMegaId(null)
+        const navBar = document.getElementById('primary-nav')
+        if (megaRef.current && !megaRef.current.contains(e.target) && !(navBar && navBar.contains(e.target))) {
+          setMegaId(null)
+        }
       }
       document.addEventListener('mousedown', handler)
       return () => document.removeEventListener('mousedown', handler)
