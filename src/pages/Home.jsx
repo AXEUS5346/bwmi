@@ -59,14 +59,8 @@ export default function Home() {
           1. HERO SECTION — nzDarkTeal background
          ═══════════════════════════════════════════════════════════════════ */}
       <section className="bg-nzDarkTeal py-16 md:py-20" aria-label="MCA Register">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h1 className="text-white font-[200] text-4xl md:text-[52px] leading-tight mb-3 tracking-tight">
-            Ministry of Corporate Affairs
-          </h1>
-          <p className="text-white/80 text-lg mb-10 font-light">
-            Companies Register of India
-          </p>
-          {!isAuthenticated && (
+      <div className="max-w-4xl mx-auto px-4 text-center">
+        {!isAuthenticated && (
             <Link
               to="/login"
               className="inline-block bg-nzCyan text-nzDarkTeal font-semibold text-sm px-8 py-3 hover:bg-white transition-colors"

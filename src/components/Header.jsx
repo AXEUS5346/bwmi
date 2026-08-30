@@ -94,11 +94,7 @@ export default function Header() {
         <div className="max-w-[79rem] mx-auto px-4 sm:px-6 flex items-center justify-between h-16 sm:h-20 gap-4">
           {/* Left: Logo + Title */}
           <Link to="/" className="flex items-center gap-3 shrink-0">
-            <img src="/images/mca_logo.svg" alt="MCA Logo" className="h-10 w-10 sm:h-12 sm:w-12" />
-            <div className="flex flex-col justify-center">
-              <span className="text-sm sm:text-base font-semibold text-nzDarkTeal leading-tight">Ministry of Corporate Affairs</span>
-              <span className="text-[10px] sm:text-xs text-nzMuted leading-tight">Companies Register of India</span>
-            </div>
+            <span className="text-sm sm:text-base font-semibold text-nzDarkTeal">MCA</span>
           </Link>
 
           {/* Center: Search Bar */}
