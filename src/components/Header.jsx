@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { useAuth } from '../store/AuthContext'
 import { serviceTree } from '../data/serviceTree'
 
@@ -34,10 +34,11 @@ export default function Header() {
     return () => document.removeEventListener('mousedown', handler)
   }, [])
 
+  const location = useLocation()
   useEffect(() => {
-    const unlisten = nav(() => { setMegaId(null); setMobileOpen(false) })
-    return () => unlisten()
-  }, [nav])
+    setMegaId(null)
+    setMobileOpen(false)
+  }, [location.pathname])
 
   const megaEnter = (id) => { clearTimeout(megaTimer.current); setMegaId(id) }
   const megaLeave = () => { megaTimer.current = setTimeout(() => setMegaId(null), 180) }
