@@ -473,7 +473,7 @@ export default function Help() {
                   <i className="fa-solid fa-phone text-[#FF9933] mt-0.5" />
                   <div>
                     <p className="font-semibold">Helpdesk (Toll-Free)</p>
-                    <p className="text-slate-300">1800-11-0030</p>
+                    <p className="text-slate-300">1800-XXX-XXXX</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-2.5">
