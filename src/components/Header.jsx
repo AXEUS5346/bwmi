@@ -203,7 +203,7 @@ function getMegaCols(treeId) {
                     {item.label}
                   </Link>
                 ) : (
-                  <button type="button" role="menuitem" aria-haspopup="true" aria-expanded={megaId === item.treeId} onMouseEnter={() => megaEnter(item.treeId)} onMouseLeave={megaLeave} onClick={() => setMegaId(prev => prev === item.treeId ? null : item.treeId)} className={`flex items-center gap-1.5 px-[36px] py-[28px] text-[16px] font-medium transition-colors ${megaId === item.treeId ? 'bg-white/10' : 'hover:bg-white/10'}`}>
+                  <button type="button" role="menuitem" aria-haspopup="true" aria-expanded={megaId === item.treeId} onClick={() => setMegaId(prev => prev === item.treeId ? null : item.treeId)} className={`flex items-center gap-1.5 px-[36px] py-[28px] text-[16px] font-medium transition-colors ${megaId === item.treeId ? 'bg-white/10' : 'hover:bg-white/10'}`}>
                     {item.label}
                     <svg className={`w-3 h-3 text-nzCyan transition-transform ${megaId === item.treeId ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
                   </button>
@@ -226,7 +226,7 @@ function getMegaCols(treeId) {
 
       {/* Mega Menu */}
       {megaId && (
-        <div ref={megaRef} className="hidden md:block absolute left-0 right-0 z-40 bg-nzDarkTeal border-b border-white/10 shadow-xl" onMouseEnter={() => megaEnter(megaId)} onMouseLeave={megaLeave}>
+        <div ref={megaRef} className="hidden md:block absolute left-0 right-0 z-40 bg-nzDarkTeal border-b border-white/10 shadow-xl">
           <div className="max-w-[79rem] mx-auto px-6 py-6">
             <div className="grid grid-cols-3 gap-8">
               {getMegaCols(megaId).map((col) => (
