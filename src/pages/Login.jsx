@@ -55,7 +55,7 @@ export default function Login() {
 
         {/* ── Page Title ── */}
         <h1 className="text-[28px] font-[200] text-nzBlack mb-10">
-          Sign in to the Companies Register
+          Sign in to the MCA Portal
         </h1>
 
         {/* ── Step 1: Email Login ── */}
