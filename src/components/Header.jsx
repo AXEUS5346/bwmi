@@ -1,57 +1,111 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, createContext, useContext } from 'react'
 import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { useAuth } from '../store/AuthContext'
 import { serviceTree } from '../data/serviceTree'
 
-const PRIMARY_NAV = [
-  { label: 'Home', href: '/' },
-  { label: 'Register a Company', treeId: 'start' },
-  { label: 'Maintain a Company', treeId: 'manage' },
-  { label: 'Online Services', treeId: 'file' },
-  { label: 'Help Centre', treeId: 'help' },
-]
+/* ─── Language Context ─── */
+export const LanguageContext = createContext()
+export const useLanguage = () => useContext(LanguageContext)
+
+const TRANSLATIONS = {
+  en: {
+    home: 'Home',
+    registerCompany: 'Register a Company',
+    maintainCompany: 'Maintain a Company',
+    onlineServices: 'Online Services',
+    helpCentre: 'Help Centre',
+    search: 'Search companies, directors, forms...',
+    accessAccount: 'Access your account',
+    logout: 'Logout',
+    siteMap: 'Site map',
+    governmentOfIndia: 'Government of India',
+  },
+  hi: {
+    home: 'होम',
+    registerCompany: 'कंपनी रजिस्टर करें',
+    maintainCompany: 'कंपनी बनाए रखें',
+    onlineServices: 'ऑनलाइन सेवाएं',
+    helpCentre: 'सहायता केंद्र',
+    search: 'कंपनी, निदेशक, फॉर्म खोजें...',
+    accessAccount: 'अपने खाते तक पहुंचें',
+    logout: 'लॉग आउट',
+    siteMap: 'साइट मैप',
+    governmentOfIndia: 'भारत सरकार',
+  },
+}
+
+const NAV_KEYS = ['home', 'registerCompany', 'maintainCompany', 'onlineServices', 'helpCentre']
+const NAV_TREE_IDS = [null, 'start', 'manage', 'file', 'help']
+
+function getPrimaryNav(t) {
+  return NAV_KEYS.map((key, i) => ({
+    label: t[key],
+    href: i === 0 ? '/' : undefined,
+    treeId: NAV_TREE_IDS[i],
+  }))
+}
 
 function getMegaCols(treeId) {
   const node = serviceTree.find((s) => s.id === treeId)
   return node?.cols || []
 }
 
-export default function Header() {
-  const [mobileOpen, setMobileOpen] = useState(false)
-  const [megaId, setMegaId] = useState(null)
-  const [q, setQ] = useState('')
-  const [fontSize, setFontSize] = useState(16)
-  const nav = useNavigate()
-  const { user, logout } = useAuth()
-  const megaRef = useRef(null)
-  const megaTimer = useRef(null)
+  export default function Header() {
+    const [mobileOpen, setMobileOpen] = useState(false)
+    const [megaId, setMegaId] = useState(null)
+    const [q, setQ] = useState('')
+    const [fontSize, setFontSize] = useState(() => parseInt(localStorage.getItem('fontSize') || '16'))
+    const [lang, setLang] = useState(() => localStorage.getItem('lang') || 'en')
+    const nav = useNavigate()
+    const { user, logout } = useAuth()
+    const megaRef = useRef(null)
+    const megaTimer = useRef(null)
+    const t = TRANSLATIONS[lang]
 
-  useEffect(() => {
-    const handler = (e) => {
-      if (megaRef.current && !megaRef.current.contains(e.target)) setMegaId(null)
+    useEffect(() => {
+      const handler = (e) => {
+        if (megaRef.current && !megaRef.current.contains(e.target)) setMegaId(null)
+      }
+      document.addEventListener('mousedown', handler)
+      return () => document.removeEventListener('mousedown', handler)
+    }, [])
+
+    const location = useLocation()
+    useEffect(() => {
+      setMegaId(null)
+      setMobileOpen(false)
+    }, [location.pathname])
+
+    const megaEnter = (id) => { clearTimeout(megaTimer.current); setMegaId(id) }
+    const megaLeave = () => { megaTimer.current = setTimeout(() => setMegaId(null), 180) }
+
+    const PRIMARY_NAV = getPrimaryNav(t)
+      const doSearch = (e) => {
+      e.preventDefault()
+      if (!q.trim()) return
+      nav(`/search?q=${encodeURIComponent(q.trim())}`)
+      setQ('')
     }
-    document.addEventListener('mousedown', handler)
-    return () => document.removeEventListener('mousedown', handler)
-  }, [])
 
-  const location = useLocation()
-  useEffect(() => {
-    setMegaId(null)
-    setMobileOpen(false)
-  }, [location.pathname])
+    const cycleFontSize = (dir) => {
+      setFontSize(prev => {
+        const next = Math.min(24, Math.max(12, prev + (dir === 'up' ? 2 : -2)))
+        localStorage.setItem('fontSize', next)
+        return next
+      })
+    }
 
-  const megaEnter = (id) => { clearTimeout(megaTimer.current); setMegaId(id) }
-  const megaLeave = () => { megaTimer.current = setTimeout(() => setMegaId(null), 180) }
+    const toggleLang = () => {
+      setLang(prev => {
+        const next = prev === 'en' ? 'hi' : 'en'
+        localStorage.setItem('lang', next)
+        return next
+      })
+    }
 
-  const doSearch = (e) => {
-    e.preventDefault()
-    if (!q.trim()) return
-    nav(`/search?q=${encodeURIComponent(q.trim())}`)
-    setQ('')
-  }
-
-  return (
-    <header className="sticky top-0 z-50" style={{ fontSize: `${fontSize}px` }} role="banner">
+    return (
+    <LanguageContext.Provider value={{ lang, t, fontSize }}>
+    <header className="sticky top-0 z-50" role="banner" style={{ fontSize: `${fontSize}px` }}>
       {/* Tricolor Bar */}
       <div className="tricolor-bar" aria-hidden="true">
         <div className="bg-mcaSaffron" />
@@ -64,25 +118,25 @@ export default function Header() {
         <div className="max-w-[79rem] mx-auto px-4 sm:px-6 flex items-center justify-between h-10">
           <div className="flex items-center gap-2">
             <span className="text-mcaSaffron text-sm" aria-hidden="true">&#10022;</span>
-            <span className="font-medium tracking-wide">Government of India</span>
+            <span className="font-medium tracking-wide">{t.governmentOfIndia}</span>
             <span className="w-px h-4 bg-white/30 mx-1" aria-hidden="true" />
             <Link to="/sitemap" className="flex items-center gap-1 px-2 py-0.5 bg-mcaSaffron text-white text-[11px] font-semibold hover:bg-[#E88A2E] transition-colors">
               <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" /></svg>
-              Site map
+              {t.siteMap}
             </Link>
           </div>
           <div className="flex items-center gap-3">
-            <button type="button" className="flex items-center gap-1 px-2 py-1 hover:bg-white/10 transition-colors">
+            <button type="button" onClick={toggleLang} className="flex items-center gap-1 px-2 py-1 hover:bg-white/10 transition-colors">
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
               </svg>
-              <span>हिन्दी</span>
+              <span>{lang === 'en' ? 'हिन्दी' : 'English'}</span>
             </button>
             <span className="w-px h-4 bg-white/30" aria-hidden="true" />
             <div className="flex items-center gap-1">
               <span className="text-[10px] opacity-70">A</span>
-              <button type="button" onClick={() => setFontSize(s => Math.min(24, Math.max(12, s - 2)))} className="w-5 h-5 bg-white/15 hover:bg-white/25 flex items-center justify-center text-[11px] font-bold">A&minus;</button>
-              <button type="button" onClick={() => setFontSize(s => Math.min(24, Math.max(12, s + 2)))} className="w-5 h-5 bg-white/15 hover:bg-white/25 flex items-center justify-center text-[11px] font-bold">A+</button>
+              <button type="button" onClick={() => cycleFontSize('down')} className="w-5 h-5 bg-white/15 hover:bg-white/25 flex items-center justify-center text-[11px] font-bold">A&minus;</button>
+              <button type="button" onClick={() => cycleFontSize('up')} className="w-5 h-5 bg-white/15 hover:bg-white/25 flex items-center justify-center text-[11px] font-bold">A+</button>
             </div>
             <span className="w-px h-4 bg-white/30" aria-hidden="true" />
           </div>
@@ -104,7 +158,7 @@ export default function Header() {
                 type="search"
                 value={q}
                 onChange={e => setQ(e.target.value)}
-                placeholder="Search companies, directors, forms..."
+                placeholder={t.search}
                 className="w-full border border-nzDivider bg-nzLightBg px-4 py-2.5 pr-12 text-sm text-nzDarkTeal placeholder-nzMuted focus:border-nzPrimary focus:outline-none transition-colors"
                 style={{ borderRadius: 0 }}
               />
@@ -119,12 +173,12 @@ export default function Header() {
             {user ? (
               <>
                 <span className="hidden sm:flex items-center gap-1.5 text-sm text-nzDarkTeal font-medium">Hello {user.name || user.email}</span>
-                <button type="button" onClick={logout} className="text-xs border border-nzDarkTeal text-nzDarkTeal px-3 py-1.5 hover:bg-nzDarkTeal hover:text-white transition-colors">Logout</button>
+                <button type="button" onClick={logout} className="text-xs border border-nzDarkTeal text-nzDarkTeal px-3 py-1.5 hover:bg-nzDarkTeal hover:text-white transition-colors">{t.logout}</button>
               </>
             ) : (
-              <Link to="/login" className="flex items-center gap-2 bg-nzPrimary text-white px-5 py-2 text-sm font-semibold hover:bg-[#005f8a] transition-colors" style={{ borderRadius: 0 }}>
+              <Link to="/login" className="flex items-center gap-2 bg-nzPrimary text-white px-5 py-2 text-sm font-semibold hover:bg-[#005f8a] transition-colors">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" /></svg>
-                Access your account
+                {t.accessAccount}
               </Link>
             )}
           </div>
@@ -224,6 +278,7 @@ export default function Header() {
         </div>
       )}
     </header>
+    </LanguageContext.Provider>
   )
 }
 
