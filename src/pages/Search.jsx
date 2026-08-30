@@ -332,13 +332,13 @@ export default function Search() {
                         <Link to={`/efiling/${f.id}`} className="font-medium text-nzDarkTeal hover:underline focus:outline-none focus:ring-2 focus:ring-nzCyan/40">{f.id}</Link>
                         <Link to={`/efiling/${f.id}`} className="block text-xs text-slate-400 mt-0.5 hover:text-nzDarkTeal hover:underline focus:outline-none focus:ring-2 focus:ring-nzCyan/40">{f.title}</Link>
                       </td>
-                      <td className="px-4 py-3">
+                      <td className="px-4 py-3 pointer-events-none">
                         <span className="inline-block px-2 py-0.5 rounded-full text-[10px] font-semibold uppercase tracking-wider bg-nzCyan/10 text-nzCyan">
                           {f.category}
                         </span>
                       </td>
-                      <td className="px-4 py-3 text-xs text-slate-600 max-w-xs truncate">{f.desc}</td>
-                      <td className="px-4 py-3 text-right text-xs text-slate-700 font-medium whitespace-nowrap">{f.fee}</td>
+                      <td className="px-4 py-3 text-xs text-slate-600 max-w-xs truncate pointer-events-none">{f.desc}</td>
+                      <td className="px-4 py-3 text-right text-xs text-slate-700 font-medium whitespace-nowrap pointer-events-none">{f.fee}</td>
                       <td className="px-4 py-3 text-center">
                         <Link to={`/efiling/${f.id}`} className="text-nzCyan font-semibold text-xs hover:underline focus:outline-none focus:ring-2 focus:ring-nzCyan/40">
                           File now &rarr;
